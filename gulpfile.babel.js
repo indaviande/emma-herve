@@ -12,39 +12,64 @@ import atimport from 'postcss-import';
 import del from 'del';
 import named from 'vinyl-named';
 import webpack from 'webpack-stream';
+import purgecss from '@fullhuman/postcss-purgecss';
 import browserSync from 'browser-sync';
 import imagemin from 'gulp-imagemin';
 const PRODUCTION = yargs.argv.prod;
 
+const srcFolder = 'src';
+const destFolder = 'static';
+const bundleCssFile = srcFolder + '/scss/app.scss';
+const bundleJsFile = srcFolder + '/js/bundle.js';
+const tailwindConfig = './tailwind.config.js';
+const purgeCssFiles = './themes/emmaherve/layouts/**/*.html';
+
 const server = browserSync.create();
 
-export const clean = () => del(['static']);
+export const clean = () => del([destFolder]);
 
 export const styles = () => {
-	return src('src/scss/app.scss')
+	return src(bundleCssFile)
 		.pipe(gulpif(!PRODUCTION, sourcemaps.init()))
 		.pipe(sass().on('error', sass.logError))
 		.pipe(
-			postcss([atimport(), tailwindcss('./tailwind.config.js'), postcssPresetEnv({ stage: 1 })])
+			postcss([
+				atimport(),
+				tailwindcss(tailwindConfig),
+				postcssPresetEnv({ stage: 1 }),
+				...(process.env.NODE_ENV === 'production'
+					? [
+							purgecss({
+								content: [purgeCssFiles],
+								defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
+							})
+					  ]
+					: [])
+			])
 		)
 		.pipe(gulpif(PRODUCTION, postcss([autoprefixer])))
 		.pipe(gulpif(PRODUCTION, cleanCss({ compatibility: 'ie8' })))
 		.pipe(gulpif(!PRODUCTION, sourcemaps.write()))
-		.pipe(dest('static/css'))
+		.pipe(dest(destFolder + '/css'))
 		.pipe(server.stream());
 };
 export const images = () => {
-	return src(['src/images/*.{jpg,jpeg,png,svg,gif}', 'src/images/**/*.{jpg,jpeg,png,svg,gif}'])
+	return src([
+		srcFolder + '/images/*.{jpg,jpeg,png,svg,ico,gif}',
+		srcFolder + '/images/**/*.{jpg,jpeg,png,svg,ico,gif}'
+	])
 		.pipe(gulpif(PRODUCTION, imagemin()))
-		.pipe(dest('static/images'));
+		.pipe(dest(destFolder + '/images'));
 };
 export const copy = () => {
-	return src(['src/**/*', '!src/{images,js,scss,css}', '!src/{images,js,scss,css}/**/*']).pipe(
-		dest('static')
-	);
+	return src([
+		srcFolder + '/**/*',
+		'!' + srcFolder + '/{images,js,scss,css}',
+		'!' + srcFolder + '/{images,js,scss,css}/**/*'
+	]).pipe(dest(destFolder));
 };
 export const scripts = () => {
-	return src('src/js/bundle.js')
+	return src(bundleJsFile)
 		.pipe(named())
 		.pipe(
 			webpack({
@@ -71,13 +96,20 @@ export const scripts = () => {
 				}
 			})
 		)
-		.pipe(dest('static/js'));
+		.pipe(dest(destFolder + '/js'));
 };
 export const watchForChanges = () => {
-	watch('src/scss/**/*.scss', styles);
-	watch('src/images/**/*.{jpg,jpeg,png,svg,gif}', series(images));
-	watch(['src/**/*', '!src/{images,js,scss}', '!src/{images,js,scss}/**/*'], series(copy));
-	watch('src/js/**/*.js', series(scripts));
+	watch(srcFolder + '/scss/**/*.scss', styles);
+	watch(srcFolder + '/images/**/*.{jpg,jpeg,png,svg,gif}', series(images));
+	watch(
+		[
+			srcFolder + '/**/*',
+			'!' + srcFolder + 'src/{images,js,scss}',
+			'!' + srcFolder + 'src/{images,js,scss}/**/*'
+		],
+		series(copy)
+	);
+	watch(srcFolder + '/js/**/*.js', series(scripts));
 };
 
 export const dev = series(clean, parallel(styles, images, copy, scripts), watchForChanges);

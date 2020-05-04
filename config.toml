@@ -1,14 +1,15 @@
-baseURL = "https://apap.netlify.com/"
+baseURL = "https://emma-herve.netlify.com/"
 languageCode = "fr-fr"
 languageLang = "fr"
 defaultContentLanguage = "fr"
-title = "Joyeux Anniversaire Apap'"
-theme = "apap"
+title = "Emma Hervé"
+theme = "emmaherve"
 googleAnalytics = ""
 disableLiveReload = false
 disableKinds = ["RSS","taxonomy", "taxonomyTerm"]
 relativeURLs = true
 staticDir = "static"
+enableRobotsTXT = true
 
 [languages]
   [languages.fr]
@@ -19,7 +20,7 @@ staticDir = "static"
     contentDir = "content"
 
 [params]
-  description = "Apap' est un être drôlement sympathique qui mérite bien quelques vidéos."
+  description = "Cabinet d'Ostéopathie Paris 15ème"
   homeTitle = " - Le meilleur des kakapos"
   linkedin = ""
   og_image = "images/visuel-partage.jpg"

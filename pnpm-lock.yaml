@@ -3,7 +3,9 @@ dependencies:
 devDependencies:
   '@babel/core': 7.8.4
   '@babel/preset-env': 7.8.4_@babel+core@7.8.4
-  '@babel/register': 7.8.3_@babel+core@7.8.4
+  '@babel/register': 7.9.0_@babel+core@7.8.4
+  '@fullhuman/postcss-purgecss': 2.1.2
+  animejs: 3.2.0
   autoprefixer: 9.7.4
   babel-loader: 8.0.6_@babel+core@7.8.4+webpack@4.41.6
   browser-sync: 2.26.7
@@ -18,6 +20,7 @@ devDependencies:
   gulp-postcss: 8.0.0
   gulp-sass: 4.0.2
   gulp-sourcemaps: 2.6.5
+  lottie-web: 5.6.8
   postcss-import: 12.0.1
   postcss-preset-env: 6.7.0
   tailwindcss: 1.2.0
@@ -781,7 +784,7 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-HihCgpr45AnSOHRbS5cWNTINs0TwaR8BS8xIIH+QwiW8cKL0llV91njQMpeMReEPVs+1Ao0x3RLEBLtt1hOq4w==
-  /@babel/register/7.8.3_@babel+core@7.8.4:
+  /@babel/register/7.9.0_@babel+core@7.8.4:
     dependencies:
       '@babel/core': 7.8.4
       find-cache-dir: 2.1.0
@@ -793,7 +796,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
     resolution:
-      integrity: sha512-t7UqebaWwo9nXWClIPLPloa5pN33A2leVs8Hf0e9g9YwUP8/H9NeR7DJU+4CXo23QtjChQv5a3DjEtT83ih1rg==
+      integrity: sha512-Tv8Zyi2J2VRR8g7pC5gTeIN8Ihultbmk0ocyNz8H2nEZbmhp1N6q0A1UGsQbDvGP/sNinQKUHf3SqXwqjtFv4Q==
   /@babel/template/7.8.3:
     dependencies:
       '@babel/code-frame': 7.8.3
@@ -837,6 +840,13 @@ packages:
       node: '>=4.0.0'
     resolution:
       integrity: sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
+  /@fullhuman/postcss-purgecss/2.1.2:
+    dependencies:
+      postcss: 7.0.27
+      purgecss: 2.1.2
+    dev: true
+    resolution:
+      integrity: sha512-Jf34YVBK9GtXTblpu0svNUJdA7rTQoRMz+yEJe6mwTnXDIGipWLzaX/VgU/x6IPC6WvU5SY/XlawwqhxoyFPTg==
   /@gulp-sourcemaps/identity-map/1.0.2:
     dependencies:
       acorn: 5.7.3
@@ -1146,6 +1156,10 @@ packages:
       node: '>=0.4.2'
     resolution:
       integrity: sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
+  /animejs/3.2.0:
+    dev: true
+    resolution:
+      integrity: sha512-zhtGl5cS0G2f5DfciMO8uwWpnx06nfFnHlXYYXHBazHep1Lyd6kEtBQP+9hpYKE0dBZjIigHp9VpMO95ZfXQJQ==
   /ansi-colors/1.1.0:
     dependencies:
       ansi-wrap: 0.1.0
@@ -2264,6 +2278,12 @@ packages:
     optional: true
     resolution:
       integrity: sha1-Br42f+v9oMMwqh4qBy09yXYkJdQ=
+  /commander/5.1.0:
+    dev: true
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha512-P0CysNDQ7rtVw4QIQtm+MRxV66vKFSvlsQvGYXZWR3qFU0jlMKHZZZgw8e+8DSah4UDKMqnknRDQz+xuQXQ/Zg==
   /commondir/1.0.1:
     dev: true
     resolution:
@@ -5346,6 +5366,10 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
+  /lottie-web/5.6.8:
+    dev: true
+    resolution:
+      integrity: sha512-2b7KDEIzpp3Y+u9BtFMHBkUFWe6TFgVdYvXvpfmbbxAL9XiwHUywAoWH1GhCCMmGqWqkxw8v4IxnOq/3hiOtJg==
   /loud-rejection/1.6.0:
     dependencies:
       currently-unhandled: 0.4.1
@@ -6929,6 +6953,16 @@ packages:
       node: '>=6.0.0'
     resolution:
       integrity: sha512-IY4oRjpXWYshuTDFxMVkJDtWIk2LhsTlu8bZnbEJA4+bYT16Lvpo8Qv6EvDumhYRgzjZl489pmsY3qVgJQ08nA==
+  /postcss/7.0.27:
+    dependencies:
+      chalk: 2.4.2
+      source-map: 0.6.1
+      supports-color: 6.1.0
+    dev: true
+    engines:
+      node: '>=6.0.0'
+    resolution:
+      integrity: sha512-WuQETPMcW9Uf1/22HWUWP9lgsIC+KEHg2kozMflKjbeUtw9ujvFX6QmIfozaErDkmLWS9WEnEdEe6Uo9/BNTdQ==
   /prepend-http/1.0.4:
     dev: true
     engines:
@@ -7039,6 +7073,16 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
+  /purgecss/2.1.2:
+    dependencies:
+      commander: 5.1.0
+      glob: 7.1.6
+      postcss: 7.0.27
+      postcss-selector-parser: 6.0.2
+    dev: true
+    hasBin: true
+    resolution:
+      integrity: sha512-5oDBxiT9VonwKmEMohPFRFZrj8fdSVKxHPwq7G5Rx/2pXicZFJu+D4m5bb3NuV0sSK3ooNxq5jFIwwHzifP5FA==
   /q/1.5.1:
     dev: true
     engines:
@@ -9102,8 +9146,10 @@ packages:
 specifiers:
   '@babel/core': ^7.7.5
   '@babel/preset-env': ^7.7.6
-  '@babel/register': ^7.7.4
+  '@babel/register': ^7.9.0
   '@barba/core': ^2.9.7
+  '@fullhuman/postcss-purgecss': ^2.1.0
+  animejs: ^3.1.0
   autoprefixer: ^9.7.3
   babel-loader: ^8.0.6
   browser-sync: ^2.26.7
@@ -9118,6 +9164,7 @@ specifiers:
   gulp-postcss: ^8.0.0
   gulp-sass: ^4.0.2
   gulp-sourcemaps: ^2.6.5
+  lottie-web: ^5.6.8
   postcss-import: ^12.0.1
   postcss-preset-env: ^6.7.0
   tailwindcss: ^1.1.4

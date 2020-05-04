@@ -21,6 +21,7 @@
 
         <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/app.css">
 
+        {{ partial "favicon.html" . }}
         {{ partial "opengraph.html" . }}
 
         {{ template "_internal/google_analytics_async.html" . }}
