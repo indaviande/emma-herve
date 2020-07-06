@@ -1,10 +1,28 @@
 .btn {
-  @include Syne();
-  @include Bold();
+  @include Jost();
+  @include Medium();
   display: inline-block;
-  font-size: 1em;
-  line-height: 1.22;
   text-align: center;
-  padding: 25px 25px;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  max-width: 250px;
+  background-color: transparent;
+  color: theme('colors.dark');
+  border: 1px solid rgba(246, 126, 87, 0.4);
+  line-height: 1.5;
+  font-size: 0.875em;
+
+  @apply px-6 py-4;
+}
+
+.btn-doctolib {
+  background-color: theme('colors.blue.500');
+  display: block;
+  color: theme('colors.white');
+  border: none;
+
+  &:hover {
+    @apply bg-blue-300;
+  }
 }

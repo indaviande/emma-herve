@@ -22,9 +22,14 @@ enableRobotsTXT = true
 [params]
   description = "Cabinet d'Ostéopathie Paris 15ème"
   homeTitle = " - Le meilleur des kakapos"
-  linkedin = ""
+  facebookUrl = "https://www.facebook.com/OsteopathieEmmaHerve"
   og_image = "images/visuel-partage.jpg"
-  mail = "contact@double.cat"
+  mail = "emmaosteo@gmail.com"
+  address = "12 Rue Ferdinand Fabre, 75015 Paris"
+  mapsUrl = "https://www.google.com/maps/place/Emma+Herv%C3%A9/@48.8384865,2.2945037,17z/data=!3m1!4b1!4m5!3m4!1s0x47e670156b2b918f:0x361fcdc45366b4cb!8m2!3d48.838483!4d2.2966924"
+  tel = "06 30 87 41 95"
+  doctoUrl = "https://www.doctolib.fr/osteopathe/paris/emma-herve"
+  doctotxt = "Prendre rdv sur doctolib"
 
 [markup.goldmark.renderer] 
 unsafe= true

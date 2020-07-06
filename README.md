@@ -1,4 +1,4 @@
-# Apap' birthday by DoubleCat Studio
+# Emma Hervé by DoubleCat Studio
 
 ## Before Starting
 

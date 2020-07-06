@@ -12,23 +12,23 @@ html {
 
 @screen md {
   html {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
 @screen lg {
   html {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
 body {
-  font-family: 'Syne', sans-serif;
+  @include Jost();
   @include Normal();
   font-style: normal;
-  line-height: 1.5;
-  color: theme('colors.darkblue');
-  background-color: theme('colors.orange');
+  line-height: 1.75;
+  color: theme('colors.dark');
+  background-color: theme('colors.white');
   min-height: 100vh;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

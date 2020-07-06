@@ -2,12 +2,16 @@
   font-weight: 400;
 }
 
+@mixin Medium() {
+  font-weight: 500;
+}
+
 @mixin Bold() {
   font-weight: 700;
 }
 
 strong {
-  @include Bold();
+  @include Medium();
 }
 
 @mixin Ease() {
@@ -23,12 +27,12 @@ strong {
   }
 }
 
-@mixin Bagnard() {
-  font-family: "Bagnard", sans-serif;
+@mixin Albra() {
+  font-family: "Albra", serif;
 }
 
-@mixin Syne() {
-  font-family: "Syne", sans-serif;
+@mixin Jost() {
+  font-family: "Jost", sans-serif;
 }
 
 @mixin translator($x, $y) {

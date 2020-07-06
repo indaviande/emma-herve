@@ -6,10 +6,21 @@ module.exports = {
 	separator: ':',
 	theme: {
 		colors: {
-			transparent: 'transparent',
-			yellow: '#EBC46D',
-			orange: '#F27552',
-			pink: '#FFBBB0',
+			yellow: {
+				300: '#FEF0A5',
+				500: '#FFDFAF'
+			},
+			blue: {
+				300: '#ACE0F5',
+				500: '#0596DE'
+			},
+			beige: '#FBF5F1',
+			pink: {
+				300: '#F7DBD1',
+				500: '#FFBFA8',
+				700: '#FFA788'
+			},
+			dark: '#4F4C6E',
 			white: '#FFFFFF'
 		},
 		spacing: {

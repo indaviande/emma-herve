@@ -1,23 +1,43 @@
-p {
-  @include Syne();
+p,
+.p {
+  @include Jost();
   @include Normal();
   font-size: 1em;
-  line-height: 1.5;
+  line-height: 1.75;
+  color: theme('colors.dark');
 }
 
-h1,
-h2,
-h3,
-h5 {
-  @include Bagnard();
+.p-bold,
+.intro-p {
+  @include Medium();
+}
+
+.p-big {
+  @include Albra();
   @include Normal();
+  font-size: 1.125em;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
-h4,
-a {
-  @include Syne();
-  @include Bold();
+.nav,
+.cta {
+  @include Jost();
+  @include Medium();
+  font-size: 0.875em;
+  line-height: 1.2;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
+  color: theme('colors.dark');
+}
+
+.intro-header {
+  @include Albra();
+  @include Medium();
+  font-size: 1.8125;
+  line-height: 1.38;
+  letter-spacing: 0.02em;
+  color: theme('colors.dark');
 }
 
 h1,
@@ -34,30 +54,54 @@ h6 {
   }
 }
 
-h1 {
-  font-size: 3.33em;
-  line-height: 1.1;
-}
-
-h2 {
-  font-size: 2.22em;
-  line-height: 1;
-}
-
-h3 {
-  font-size: 1.55em;
+.h1-hp {
+  @include Albra();
+  @include Normal();
+  font-size: 3.125em;
   line-height: 1.15;
+  color: theme('colors.pink.700');
 }
 
-h4 {
-  font-size: 1em;
+.h1-page {
+  @include Jost();
+  @include Medium();
+  font-size: 3.75em;
+  line-height: 1.15;
+  color: theme('colors.pink.700');
+}
+
+.h2 {
+  @include Jost();
+  @include Medium();
+  font-size: 2.875em;
   line-height: 1.2;
-  text-decoration: underline;
+  color: theme('colors.pink.700');
 }
 
-h5 {
-  font-size: 1.11em;
-  line-height: 1.15;
+.h3 {
+  @include Jost();
+  @include Medium();
+  font-size: 1.75em;
+  line-height: 1.35;
+  color: theme('colors.dark');
+}
+
+.h4 {
+  @include Jost();
+  @include Medium();
+  font-size: 1.375em;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  color: theme('colors.dark');
+}
+
+.h5 {
+  @include Jost();
+  font-size: 1em;
+  line-height: 1.5;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: theme('colors.dark');
 }
 
 a {
