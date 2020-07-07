@@ -467,3 +467,24 @@
 .mix-blend-color {
   mix-blend-mode: color;
 }
+
+
+@keyframes boxMoving {
+
+  0%,
+  100% {
+    box-shadow: 2em -1.5em theme('colors.yellow.300'), 2em 1.5em theme('colors.yellow.300');
+  }
+
+  50% {
+    box-shadow: 1.8em -1.2em theme('colors.yellow.300'), 2.2em 1.7em theme('colors.yellow.300');
+  }
+
+  // TODO: Make the animation smooth
+}
+
+.yellow-box-shadow {
+  box-shadow: 2em -1.5em theme('colors.yellow.300'), 2em 1.5em theme('colors.yellow.300');
+  transition: box-shadow 1s ease;
+  animation: boxMoving 5s linear infinite;
+}

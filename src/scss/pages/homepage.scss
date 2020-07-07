@@ -1,0 +1,10 @@
+.bg-hand {
+  background-image: url('http://localhost:1313//images/hp-header-hand-2.svg');
+  height: 40vh;
+}
+
+@screen lg {
+  .bg-hand {
+    height: 100vh;
+  }
+}

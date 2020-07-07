@@ -1,16 +1,12 @@
-{{ define "header" }}
-{{ partial "header.html" . }}
-
-{{ end }}
-
-{{ define "main" }}
-
+{{ define "header" }} {{ partial "header.html" . }} {{ end }} {{ define "main" }}
 
 <main class="bg-red-300" data-barba="wrapper">
 	<article data-barba="container">
 		<section class="w-full min-h-screen flex flex-wrap">
-			<div class="w-full order-2 lg:order-1 lg:w-5/12 bg-beige flex items-end">
-				<img class="w-full" src="{{ .Site.BaseURL }}/images/hp-header-hand-2.svg">
+			<div
+				class="w-full order-2 lg:order-1 lg:w-5/12 bg-beige flex items-end bg-hand bg-center lg:bg-bottom bg-no-repeat bg-cover"
+			>
+				<!-- <img class="w-full" src="{{ .Site.BaseURL }}/images/hp-header-hand-2.svg" /> -->
 				<!-- TODO: Remove pixel -->
 			</div>
 
@@ -19,33 +15,118 @@
 					{{ partial "doctolib.html" . }}
 				</div>
 
-				<div class="flex flex-col justify-center px-16  py-16 lg:py-8">
-					<h1 class="h1-hp mb-24 xl:w-2/3"><span class="text-dark">Emma Hervé</span><br>
-						vous reçoit dans son cabinet d’ostéopathie à Paris 15.</h1>
+				<div class="flex flex-col justify-center pt-32 p-8 md:pt-32 md:p-16 lg:py-8">
+					<h1 class="h1-hp mb-12 md:mb-16 lg:mb-24 xl:w-2/3">
+						<span class="text-dark">Emma Hervé</span><br />
+						vous reçoit dans son cabinet d’ostéopathie à Paris 15.
+					</h1>
 
 					<div class="hp-questions">
-						<a href="#" class="h4 border-b-2 pb-1 border-pink-700 mb-6">
+						<a href="#osteopathe" class="h4 border-b-2 pb-1 border-pink-700 mb-6">
 							Comment se déroule une consultation ?
 						</a>
-						<br>
-						<a href="#" class="h4 border-b-2 pb-1 border-pink-700 mb-6">
+						<br />
+						<a href="#votre-osteopathe" class="h4 border-b-2 pb-1 border-pink-700 mb-6">
 							Le parcours de mon ostéopathe
 						</a>
-						<br>
+						<br />
+						<a href="#contact-infos" class="h4 border-b-2 pb-1 border-pink-700 mb-6">
+							Contact et tarifs du cabinet
+						</a>
+
+						<br />
 						<a href="#osteopathe" class="mt-6">
-							<svg width="23" height="54" viewBox="0 0 23 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<svg
+								width="23"
+								height="54"
+								viewBox="0 0 23 54"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
 								<path
 									d="M10.578 53.2788C11.1638 53.8646 12.1135 53.8646 12.6993 53.2788L22.2453 43.7329C22.8311 43.1471 22.8311 42.1974 22.2453 41.6116C21.6595 41.0258 20.7097 41.0258 20.124 41.6116L11.6387 50.0968L3.15339 41.6116C2.5676 41.0258 1.61785 41.0258 1.03207 41.6116C0.446282 42.1974 0.446282 43.1471 1.03207 43.7329L10.578 53.2788ZM10.1387 0.853149L10.1387 52.2182L13.1387 52.2182L13.1387 0.853149L10.1387 0.853149Z"
-									fill="#FFA788" />
+									fill="#FFA788"
+								/>
 							</svg>
 						</a>
 					</div>
 				</div>
-
-
 			</div>
+		</section>
 
+		<section id="osteopathe" class="w-full bg-beige min-h-screen flex items-center ">
+			<div class="container flex flex-wrap py-8 md:py-16">
+				<div class="w-full lg:w-1/2 order-2 lg:order-1 flex justify-center items-center py-8">
+					<img
+						class="max-img-width  w-10/12 md:w-7/12 lg:w-1/2"
+						src="{{ .Site.BaseURL }}/images/hp-bench.svg"
+					/>
+				</div>
 
+				<div
+					class="w-full md:w-10/12 mx-auto order-1 lg:order-2 lg:w-1/2 flex flex-col justify-center py-8"
+				>
+					<h2 class="h2">
+						Qu’est-ce qu’un ostéopathe ?
+					</h2>
+					<p class="p-big">
+						Découvrez en quoi consiste l'ostéopathe, les différents motifs de consultation et
+						comment se déroule une séance d’osthéopathie. Nourrissons, seniors, travailleurs,
+						sportifs, femmes enceintes, l'ostéopathe s'adresse à tous.<br />
+						“Et il y en a une sur Paris 15 !”
+					</p>
+					<a class="btn mt-4" href="{{ .Site.BaseURL }}">Tout comprendre sur l’osthéopathe</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="votre-osteopathe" class="w-full bg-white min-h-screen flex items-center ">
+			<div class="container flex flex-wrap py-8 md:py-16">
+				<div
+					class="lg:pl-16 w-full md:w-10/12 mx-auto order-2 lg:order-1 lg:w-7/12 flex flex-col justify-center py-8"
+				>
+					<h2 class="h2">
+						Votre ostéopathe Emma Hervé
+					</h2>
+					<p class="p-big">
+						Diplômée d'état, votre ostéopathe Emma Hervé, vous accueille dans le 15ème
+						arrondissement de Paris.  Découvrez son parcours professionnel, ses spécialisations
+						post-graduées...
+					</p>
+					<a class="btn mt-4" href="{{ .Site.BaseURL }}">Voir mon parcours d’osthéopathe</a>
+				</div>
+
+				<div class="w-full lg:w-5/12 order-1 lg:order-2 flex justify-center items-center py-8">
+					<img
+						class="yellow-box-shadow max-img-height w-10/12 md:w-7/12 lg:w-1/2 w-32"
+						src="{{ .Site.BaseURL }}/images/photo-emma.jpg"
+					/>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact-infos" class="w-full bg-beige min-h-screen flex items-center ">
+			<div class="container flex flex-wrap py-8 md:py-16">
+				<div class="w-full lg:w-1/2 order-2 lg:order-1 flex justify-center items-center py-8">
+					<img
+						class="max-img-width w-10/12 md:w-7/12 lg:w-1/2"
+						src="{{ .Site.BaseURL }}/images/hp-location.svg"
+					/>
+				</div>
+
+				<div
+					class="w-full md:w-10/12 mx-auto order-1 lg:order-2 lg:w-1/2 flex flex-col justify-center py-8"
+				>
+					<h2 class="h2">
+						Un cabinet au coeur du 15e arrondissement de Paris
+					</h2>
+					<p class="p-big">
+						Retrouvez toutes les informations pratiques pour vous rendre sur place, les tarifs,
+						votre couverture et comment régler la consultation.
+					</p>
+					<a class="btn mt-4" href="{{ .Site.BaseURL }}">Contact et infos sur Paris 15</a>
+				</div>
+			</div>
 		</section>
 	</article>
 </main>

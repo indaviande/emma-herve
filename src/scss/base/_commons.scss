@@ -44,6 +44,17 @@ body {
 //   height: auto;
 // }
 
+.max-img-height {
+  max-height: 50vh;
+  width: auto;
+}
+
+.max-img-width {
+  max-width: 40vw;
+  width: auto;
+}
+
+
 .ease {
   @include tran_simple(.3s);
 }
