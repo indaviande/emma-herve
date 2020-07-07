@@ -1,3 +1,36 @@
-<!-- <footer class="w-full bg-black-600 pb-8 pt-16 md:py-24">
+<footer class="w-full bg-beige">
+  <div class="container pt-8 pb-4">
+    <hr class="border-t-1 border-blue-300 mb-8">
 
-</footer> -->
+    <nav class="flex flex-wrap justify-between">
+      <div class="flex flex-col">
+        <div class="nav-links mb-6">
+          <a class="nav dim mr-10 text-pink-700" href="{{ .Site.BaseURL }}">L'osthéopathie</a>
+          <a class="nav dim mr-10 text-pink-700" href="{{ .Site.BaseURL }}">Mon ostéo</a>
+        </div>
+        <a class="nav dim mr-10 text-dark mb-6" rel="noopener noreferrer" target="_blank"
+          href="{{ .Site.Params.facebookUrl }}">Facebook</a>
+        <a class="nav dim-inv mr-10 text-dark mb-8" rel="noopener noreferrer" target="_blank"
+          href="{{ .Site.Params.facebookUrl }}">Mentions Légales</a>
+      </div>
+
+      <div class="flex flex-wrap">
+        <address class="w-full lg:w-auto order-2 lg:order-1 text-left lg:text-right mr-0 md:mr-8 not-italic mb-8">
+          <a class="p border-b border-blue-300 inline dim" target="_blank" rel="noopener noreferrer"
+            href="{{ .Site.Params.mapsUrl }}">{{ .Site.Params.address }}</a>
+          <br>
+          <a class="p border-b border-blue-300 inline dim" href="tel:{{ .Site.Params.tel }}">{{ .Site.Params.tel }}</a>
+        </address>
+        <div class="order-1 lg:order-2 ease lg:h-full mb-8 lg:mb-0">
+          <a class="btn btn-doctolib" target="_blank" rel="noopener noreferrer"
+            href="{{ .Site.Params.doctoUrl }}">{{ .Site.Params.doctotxt }}</a>
+        </div>
+      </div>
+
+    </nav>
+
+    <a class="dim-inv" href="https://www.double.cat/" target="_blank" rel='noopener noreferrer'>Design &
+      Développement par <span class="border-b border-dark">DoubleCat
+        Studio</span></a>
+  </div>
+</footer>
