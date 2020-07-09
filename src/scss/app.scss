@@ -18,11 +18,11 @@
 'base/print',
 'base/aspect-ratios';
 
-@import 'components/transforms',
-'components/button',
+@import 'components/button',
 'components/lists',
 'components/forms',
-'components/magazine';
+'components/magazine',
+'components/transforms';
 
 @import 'layout/general',
 'layout/header',
@@ -30,6 +30,7 @@
 'layout/footer';
 
 @import 'pages/e404',
-'pages/homepage';
+'pages/homepage',
+'pages/page';
 
 // @import 'vendors/';

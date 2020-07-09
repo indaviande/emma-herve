@@ -1,0 +1,258 @@
+{{ define "meta-title" }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}
+{{ define "meta-description" }}{{ .Description }}{{ end }}
+
+{{ define "header" }} {{ partial "header.html" . }} {{ end }}
+
+{{ define "main" }}
+<main class="bg-white" data-barba="wrapper">
+  <article data-barba="container">
+    {{ partial "page-hero-nav.html" . }}
+
+    {{ partial "shape-points.html" . }}
+
+    <section class="shape-points-reverse bg-no-repeat bg-cover pt-0 lg:pt-48"
+      style="background-image:url('{{ .Site.BaseURL }}images/osteopathie-shape-2.svg')">
+      <div class="container flex flex-wrap w-full md:w-10/12">
+        <div class="w-full lg:w-7/12 order-2 lg:order-1">
+          <div class="flex mb-12">
+            <div class="hidden lg:block lg:w-1/6"></div>
+
+            <div class="list-contents w-full lg:w-5/6">
+              <h3 class="intro-header">Le temps de consultation dure 40 minutes en moyenne <span
+                  class="text-pink-700">et
+                  coûte 60€.</span>
+              </h3>
+            </div>
+          </div>
+          <ul>
+            <li class="colored-circle-element flex mb-8 md:mb-12">
+              <div class="w-1/6">
+                <span class="colored-circle"></span>
+              </div>
+
+              <div class="list-contents w-5/6 pl-4 md:pl-0">
+                <h4 class="h4 mb-6">Adapté à chacun</h4>
+                <p class="p">Pour chaque patient, j’établis un diagnostic spécifique et propose un traitement adapté au
+                  cas
+                  par cas. À cela, s'ajoutent des conseils personnalisés sur l'hygiène de vie (posture, alimentation,
+                  exercices physiques etc…).</p>
+              </div>
+            </li>
+            <li class="colored-circle-element flex mb-8 md:mb-12">
+              <div class="w-1/6">
+                <span class="colored-circle"></span>
+              </div>
+
+              <div class="list-contents w-5/6 pl-4 md:pl-0">
+                <h4 class="h4 mb-6">Adapté à chacun</h4>
+                <p class="p">Pour chaque patient, j’établis un diagnostic spécifique et propose un traitement adapté au
+                  cas
+                  par cas. À cela, s'ajoutent des conseils personnalisés sur l'hygiène de vie (posture, alimentation,
+                  exercices physiques etc…).</p>
+              </div>
+            </li>
+            <li class="colored-circle-element flex mb-8 md:mb-12">
+              <div class="w-1/6">
+                <span class="colored-circle"></span>
+              </div>
+
+              <div class="list-contents w-5/6 pl-4 md:pl-0">
+                <h4 class="h4 mb-6">Adapté à chacun</h4>
+                <p class="p">Pour chaque patient, j’établis un diagnostic spécifique et propose un traitement adapté au
+                  cas
+                  par cas. À cela, s'ajoutent des conseils personnalisés sur l'hygiène de vie (posture, alimentation,
+                  exercices physiques etc…).</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="w-full lg:w-5/12 order-1 lg:order-2 pl-0 lg:pl-8 lg:pl-24 pt-16 md:pt-32 pb-0 md:pb-8 lg:pb-0">
+          <h5 class="cta mb-6">Ostéo-quoi?</h5>
+          <h2 class="h2">En quoi consiste l’ostéopathie ?</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="motifs bg-beige py-16 md:py-24">
+      <div class="container flex flex-wrap w-full md:w-10/12">
+        <div class="w-full lg:w-1/2 pr-0 md:pr-32">
+          <h5 class="cta mb-6">Aïe, j'ai mal !</h5>
+          <h2 class="h2">Les motifs de consultation</h2>
+        </div>
+
+        <div class="w-full lg:w-1/2 pt-4 lg:pt-12">
+          <p class="intro-header mb-6">Petite liste non-exhaustive des maux rencontrés par mes patients </p>
+          <p class="p mb-12">
+            – Vous avez mal au dos<br>
+            – Sciatique, la cruralgie ou la névralgie<br>
+            – Troubles digestifs<br>
+            – Constipations<br>
+            – Dysfonctionnement de la sphère ORL</p>
+          <a href="" class="inline-link">Découvrir plus d'exemples</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="osteopathe-pour-tous bg-white py-16 md:py-24">
+      <div class="container w-full md:w-10/12">
+        <div class="titre flex flex-wrap mb-16">
+          <div class="w-full lg:w-1/2 pr-0 md:pr-32">
+            <h5 class="cta mb-6">Pour qui ?</h5>
+            <h2 class="h2">L’ostéopathie pour tous !</h2>
+          </div>
+
+          <div class="w-full lg:w-1/2 pt-4 lg:pt-12">
+            <p class="intro-header mb-6">L'ostéopathie accompagne la croissance et le développement harmonieux du corps
+              de
+              la naissance à l'âge adulte.</p>
+          </div>
+        </div>
+
+        <div class="pour-qui flex flex-wrap">
+          <div class="pour-qui-block pour-qui-block-image flex flex-wrap">
+            <div class="block-image w-full lg:w-1/2 pr-0 md:pr-32 mb-16">
+              <figure class="relative">
+                <span class="colored-circle-big absolute top-50-left-50 transform-m50-m50"></span>
+                <img class="w-full" src="{{ .Site.BaseURL }}images/test/Vector-1.jpg">
+              </figure>
+            </div>
+            <div class="w-full lg:w-1/2 pr-0 md:pr-32 mb-16">
+              <h3 class="h3">Femmes enceintes</h3>
+              <hr class="my-8 border-t-2 border-pink-700">
+              <p class="p-bold text-pink-700 mb-6">Au cours de la grossesse le corps est soumis à beaucoup de
+                changements
+                mécaniques et
+                hormonaux.</p>
+              <p>Des douleurs existantes peuvent s’intensifier et de nouvelles douleurs
+                apparaissent. Les motifs de consultations les plus fréquents sont des lombalgies avec sciatalgie, des
+                douleurs dans le bas ventre, des troubles de digestion avec souvent des acidités gastriques, des
+                contractions précoces, des troubles du sommeil... Une consultation d’ostéopathie pour femme enceinte par
+                trimestre est indiquée afin de préparer au mieux les structures du corps qui seront sollicitées pendant
+                l’accouchement.</p>
+              <p>
+                Après l'accouchement des douleurs lombaires, des pesanteurs pelviennes peuvent persister. Une
+                consultation
+                ostéopathique post accouchement rééquilibre le corps suite à tous les changements qu'il vient de subir
+                permettant ainsi de retrouver un confort de vie et de prévenir d'éventuelles douleurs.</p>
+            </div>
+          </div>
+
+          <!--TODO: If there is an image block, add w-1/2 blocks, if not add a w-full block -->
+
+          <!-- Alternate block with image order -->
+
+          <div class="pour-qui-block pour-qui-block-text w-full lg:w-1/2 pr-0 md:pr-32 mb-16">
+            <div class="">
+              <h3 class="h3">Femmes enceintes</h3>
+              <hr class="my-8 border-t-2 border-pink-700">
+              <p class="p-bold text-pink-700 mb-6">Au cours de la grossesse le corps est soumis à beaucoup de
+                changements
+                mécaniques et
+                hormonaux.</p>
+              <p>Des douleurs existantes peuvent s’intensifier et de nouvelles douleurs
+                apparaissent. Les motifs de consultations les plus fréquents sont des lombalgies avec sciatalgie, des
+                douleurs dans le bas ventre, des troubles de digestion avec souvent des acidités gastriques, des
+                contractions précoces, des troubles du sommeil... Une consultation d’ostéopathie pour femme enceinte par
+                trimestre est indiquée afin de préparer au mieux les structures du corps qui seront sollicitées pendant
+                l’accouchement.</p>
+              <p>
+                Après l'accouchement des douleurs lombaires, des pesanteurs pelviennes peuvent persister. Une
+                consultation
+                ostéopathique post accouchement rééquilibre le corps suite à tous les changements qu'il vient de subir
+                permettant ainsi de retrouver un confort de vie et de prévenir d'éventuelles douleurs.</p>
+            </div>
+          </div>
+
+          <div class="pour-qui-block pour-qui-block-text w-full lg:w-1/2 pr-0 md:pr-32 mb-16">
+            <div class="">
+              <h3 class="h3">Femmes enceintes</h3>
+              <hr class="my-8 border-t-2 border-pink-700">
+              <p class="p-bold text-pink-700 mb-6">Au cours de la grossesse le corps est soumis à beaucoup de
+                changements
+                mécaniques et
+                hormonaux.</p>
+              <p>Des douleurs existantes peuvent s’intensifier et de nouvelles douleurs
+                apparaissent. Les motifs de consultations les plus fréquents sont des lombalgies avec sciatalgie, des
+                douleurs dans le bas ventre, des troubles de digestion avec souvent des acidités gastriques, des
+                contractions précoces, des troubles du sommeil... Une consultation d’ostéopathie pour femme enceinte par
+                trimestre est indiquée afin de préparer au mieux les structures du corps qui seront sollicitées pendant
+                l’accouchement.</p>
+              <p>
+                Après l'accouchement des douleurs lombaires, des pesanteurs pelviennes peuvent persister. Une
+                consultation
+                ostéopathique post accouchement rééquilibre le corps suite à tous les changements qu'il vient de subir
+                permettant ainsi de retrouver un confort de vie et de prévenir d'éventuelles douleurs.</p>
+            </div>
+          </div>
+          <div class="pour-qui-block pour-qui-block-image flex flex-wrap">
+            <div class="block-image w-full lg:w-1/2 pr-0 md:pr-32 mb-16">
+              <figure class="relative">
+                <span class="colored-circle-big absolute top-50-left-50 transform-m50-m50"></span>
+                <img class="w-full" src="{{ .Site.BaseURL }}images/test/Vector-1.jpg">
+              </figure>
+            </div>
+            <div class="text-block w-full lg:w-1/2 pr-0 md:pr-32 mb-16">
+              <h3 class="h3">Femmes enceintes</h3>
+              <hr class="my-8 border-t-2 border-pink-700">
+              <p class="p-bold text-pink-700 mb-6">Au cours de la grossesse le corps est soumis à beaucoup de
+                changements
+                mécaniques et
+                hormonaux.</p>
+              <p>Des douleurs existantes peuvent s’intensifier et de nouvelles douleurs
+                apparaissent. Les motifs de consultations les plus fréquents sont des lombalgies avec sciatalgie, des
+                douleurs dans le bas ventre, des troubles de digestion avec souvent des acidités gastriques, des
+                contractions précoces, des troubles du sommeil... Une consultation d’ostéopathie pour femme enceinte par
+                trimestre est indiquée afin de préparer au mieux les structures du corps qui seront sollicitées pendant
+                l’accouchement.</p>
+              <p>
+                Après l'accouchement des douleurs lombaires, des pesanteurs pelviennes peuvent persister. Une
+                consultation
+                ostéopathique post accouchement rééquilibre le corps suite à tous les changements qu'il vient de subir
+                permettant ainsi de retrouver un confort de vie et de prévenir d'éventuelles douleurs.</p>
+            </div>
+          </div>
+
+          <div class="pour-qui-block pour-qui-block-image flex flex-wrap">
+            <div class="block-image w-full lg:w-1/2 pr-0 md:pr-32 mb-16">
+              <figure class="relative">
+                <span class="colored-circle-big absolute top-50-left-50 transform-m50-m50"></span>
+                <img class="w-full" src="{{ .Site.BaseURL }}images/test/Vector-1.jpg">
+              </figure>
+            </div>
+            <div class="text-block w-full lg:w-1/2 pr-0 md:pr-32 mb-16">
+              <h3 class="h3">Femmes enceintes</h3>
+              <hr class="my-8 border-t-2 border-pink-700">
+              <p class="p-bold text-pink-700 mb-6">Au cours de la grossesse le corps est soumis à beaucoup de
+                changements
+                mécaniques et
+                hormonaux.</p>
+              <p>Des douleurs existantes peuvent s’intensifier et de nouvelles douleurs
+                apparaissent. Les motifs de consultations les plus fréquents sont des lombalgies avec sciatalgie, des
+                douleurs dans le bas ventre, des troubles de digestion avec souvent des acidités gastriques, des
+                contractions précoces, des troubles du sommeil... Une consultation d’ostéopathie pour femme enceinte par
+                trimestre est indiquée afin de préparer au mieux les structures du corps qui seront sollicitées pendant
+                l’accouchement.</p>
+              <p>
+                Après l'accouchement des douleurs lombaires, des pesanteurs pelviennes peuvent persister. Une
+                consultation
+                ostéopathique post accouchement rééquilibre le corps suite à tous les changements qu'il vient de subir
+                permettant ainsi de retrouver un confort de vie et de prévenir d'éventuelles douleurs.</p>
+            </div>
+          </div>
+
+          <!-- TODO: adapt colored circle -->
+        </div>
+      </div>
+    </section>
+
+    {{ partial "more-pages.html" . }}
+
+    {{ partial "magazine.html" . }}
+  </article>
+</main>
+
+
+{{ end }}

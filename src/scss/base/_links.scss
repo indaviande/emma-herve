@@ -10,14 +10,10 @@
 //   text-transform: uppercase;
 // }
 
-a.infos-underline-link {
-  font-family: Syne;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1rem;
-  line-height: 1.47;
-  text-decoration: underline;
-  text-transform: none;
+a.inline-link {
+  @include Jost();
+  @include Normal();
+  @apply text-pink-700 border-b border-pink-700 pb-1 dim;
 }
 
 a.infos-no-underline-link {

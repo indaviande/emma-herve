@@ -5,6 +5,7 @@ p,
   font-size: 1em;
   line-height: 1.75;
   color: theme('colors.dark');
+  @apply mb-6;
 }
 
 .p-bold,
@@ -26,7 +27,7 @@ p,
   @include Jost();
   @include Medium();
   font-size: 0.875em;
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   // color: theme('colors.dark');
@@ -35,7 +36,7 @@ p,
 .intro-header {
   @include Albra();
   @include Medium();
-  font-size: 1.8125;
+  font-size: 1.8125em;
   line-height: 1.38;
   letter-spacing: 0.02em;
   color: theme('colors.dark');
@@ -69,6 +70,7 @@ h6 {
   font-size: 3.75em;
   line-height: 1.15;
   color: theme('colors.pink.700');
+  @apply mb-12;
 }
 
 .h2 {
