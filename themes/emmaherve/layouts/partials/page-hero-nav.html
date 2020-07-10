@@ -5,7 +5,7 @@
 			<h5 class="cta text-dark mb-4">{{ . }}</h5>
 			{{ end }}
 			<h1 class="h1-page w-full md:w-4/5">
-				{{ .Title }}
+				{{ .Title | markdownify }}
 			</h1>
 
 			{{ with .Params.chapeau }}
@@ -17,7 +17,8 @@
 
 		<!-- TODO: If statement pour l'image -->
 		<div class="w-full lg:w-5/12 flex justify-center lg:justify-end items-center py-8">
-			<img class="max-img-width w-10/12 md:w-7/12 lg:w-1/2 w-32" src="{{ .Site.BaseURL }}{{ .Params.heroImgUrl }}" />
+			<img class="{{ .Params.imgClasses }} max-img-width w-10/12 md:w-7/12 lg:w-1/2 w-32"
+				src="{{ .Site.BaseURL }}{{ .Params.heroImgUrl }}" />
 		</div>
 	</div>
 </section>
@@ -35,9 +36,11 @@
 			<!-- TODO: Sticky bar sous le header -->
 
 			{{ range $nav }}
-			<a class="cta px-4 mb-4 lg:mb-0 text-center" href="#{{ .id }}">
-				<h5 class="dim">{{ .text }}</h5>
-			</a>
+
+			<h5 class="dim">
+				<a class="cta px-4 mb-4 lg:mb-0 text-center text-pink-700" href="#{{ .id }}">{{ .text }}</a>
+			</h5>
+
 			{{ end }}
 		</div>
 	</div>

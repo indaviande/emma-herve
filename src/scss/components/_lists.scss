@@ -15,13 +15,13 @@ ol {
 
   li {
     counter-increment: my-ol-counter;
-  }
 
-  li::before {
-    content: counter(my-ol-counter) ". ";
-    padding-right: theme('padding.4');
-    width: 1.5rem;
-    @apply inline-block text-pink-700;
+    &::before {
+      content: counter(my-ol-counter) ". ";
+      padding-right: theme('padding.4');
+      width: 1.5rem;
+      @apply inline-block text-pink-700;
+    }
   }
 }
 
@@ -30,14 +30,14 @@ ul {
   counter-reset: my-ul-counter;
   padding-left: 0;
 
-  li {
+  li:not(.colored-circle-element):not(.no-style) {
     counter-increment: my-ul-counter;
-  }
 
-  li::before {
-    content: "– ";
-    padding-right: theme('padding.4');
-    width: 1.5rem;
-    @apply inline-block text-pink-700;
+    &::before {
+      content: "– ";
+      padding-right: theme('padding.4');
+      width: 1.5rem;
+      @apply inline-block text-pink-700;
+    }
   }
 }

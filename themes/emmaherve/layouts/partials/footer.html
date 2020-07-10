@@ -5,8 +5,9 @@
     <nav class="flex flex-wrap justify-between">
       <div class="flex flex-col">
         <div class="nav-links mb-6">
-          <a class="nav dim mr-10 text-pink-700" href="{{ .Site.BaseURL }}">L'osthéopathie</a>
-          <a class="nav dim mr-10 text-pink-700" href="{{ .Site.BaseURL }}">Mon ostéo</a>
+          {{ range .Site.Menus.main }}
+          <a class="nav dim mr-10 text-pink-700" href="{{ .URL }}">{{ .Name }}</a>
+          {{ end }}
         </div>
         <a class="nav dim mr-10 text-dark mb-6" rel="noopener noreferrer" target="_blank"
           href="{{ .Site.Params.facebookUrl }}">Facebook</a>

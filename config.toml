@@ -31,5 +31,26 @@ enableRobotsTXT = true
   doctoUrl = "https://www.doctolib.fr/osteopathe/paris/emma-herve"
   doctotxt = "Prendre rdv sur doctolib"
 
+[menu]
+  [[menu.main]]
+    name = "L’ostéopathie"
+    url = "/osteopathie/osteopathie"
+    weight = 1
+
+  [[menu.main]]
+    name = "Mon ostéo"
+    url = "/emma-herve/emma-herve"
+    weight = 2
+
+  [[menu.main]]
+  name = "Contact et tarifs"
+  url = "/contact-tarifs/contact-tarifs"
+  weight = 3
+  
+  [[menu.main]]
+  name = "Le Mag"
+  url = "/article"
+  weight = 4
+
 [markup.goldmark.renderer] 
 unsafe= true
