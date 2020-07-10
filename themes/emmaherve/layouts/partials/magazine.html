@@ -1,9 +1,29 @@
-<section class="magazine w-full min-h-screen flex items-center ">
-  <div class="container py-8 md:py-16">
+<section class="magazine w-full flex items-center py-8 md:py-16 lg:py-24">
+  <div class="container">
     <h3 class="h2 text-center w-full">Le magazine du cabinet</h3>
 
     <div class="magazine-articles w-full py-8 mx-auto">
       <div class="-mx-4 flex flex-wrap">
+        {{ $articles := (where .Site.RegularPages "Type" "article" ).ByDate }}
+
+        {{ range first 4 $articles }}
+
+        <div class="article-card article-card--default w-1/2 lg:w-1/4 px-4 mb-12">
+          <a href="https://goodonyou.eco/what-is-circular-fashion/" class="article-card__inner w-full">
+            <div class="article-card__image-container">
+              <img class="article-card__image article-card__image--center w-full" alt="" style="opacity: 1;"
+                src="{{ .Site.BaseURL }}{{ .Params.coverImgUrl }}">
+            </div>
+            <div class="article-card__contents">
+              <h5 class="cta text-pink-700 mb-2">{{ .Params.category }}</h5>
+              <h4 class="p article-card__title w-full md:w-4/5">{{ .Params.title }}</h4>
+            </div>
+          </a>
+        </div>
+
+        {{ end }}
+
+        <!--         
         <div class="article-card article-card--default w-1/2 lg:w-1/4 px-4 mb-12">
           <a href="https://goodonyou.eco/what-is-circular-fashion/" class="article-card__inner">
             <div class="article-card__image-container">
@@ -28,39 +48,13 @@
               <h4 class="p article-card__title w-full md:w-4/5">Comment bien s’asseoir devant votre ordinateur</h4>
             </div>
           </a>
-        </div>
-
-        <div class="article-card article-card--default w-1/2 lg:w-1/4 px-4 mb-12">
-          <a href="https://goodonyou.eco/what-is-circular-fashion/" class="article-card__inner">
-            <div class="article-card__image-container">
-              <img class="article-card__image article-card__image--center" alt="" style="opacity: 1;"
-                src="{{ .Site.BaseURL }}/images/test/Vector.jpg">
-            </div>
-            <div class="article-card__contents">
-              <h5 class="cta text-pink-700 mb-2">Conseil</h5>
-              <h4 class="p article-card__title w-full md:w-4/5">Comment bien s’asseoir devant votre ordinateur</h4>
-            </div>
-          </a>
-        </div>
-
-        <div class="article-card article-card--default w-1/2 lg:w-1/4 px-4 mb-12">
-          <a href="https://goodonyou.eco/what-is-circular-fashion/" class="article-card__inner">
-            <div class="article-card__image-container">
-              <img class="article-card__image article-card__image--center" alt="" style="opacity: 1;"
-                src="{{ .Site.BaseURL }}/images/test/Vector.jpg">
-            </div>
-            <div class="article-card__contents">
-              <h5 class="cta text-pink-700 mb-2">Conseil</h5>
-              <h4 class="p article-card__title w-full md:w-4/5">Comment bien s’asseoir devant votre ordinateur</h4>
-            </div>
-          </a>
-        </div>
+        </div> -->
       </div>
 
     </div>
 
     <div class="w-full text-center">
-      <a class="btn" href="{{ .Site.BaseURL }}">Tous les articles</a>
+      <a class="btn" href="{{ .Site.BaseURL }}articles">Tous les articles</a>
     </div>
 
   </div>

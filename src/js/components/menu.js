@@ -55,7 +55,7 @@ const addHeaderHeight = section => {
 	section.style.paddingTop = `${currentPadding + headerHeight}px`;
 };
 
-const introSection = document.querySelector('.site-main > section');
+const introSection = document.querySelector('.page-hero, .hp-hero');
 if (introSection) {
 	addHeaderHeight(introSection);
 }

@@ -13,7 +13,7 @@
 a.inline-link {
   @include Jost();
   @include Normal();
-  @apply text-pink-700 border-b border-pink-700 pb-1 dim;
+  @apply text-pink-700 border-b border-pink-700 pb-1;
 }
 
 a.infos-no-underline-link {
