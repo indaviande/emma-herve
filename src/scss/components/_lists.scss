@@ -1,15 +1,43 @@
 // UL list
 
+ol,
 ul {
-  list-style-type: disc;
-  // padding-left: theme('padding.4');
+  padding-left: theme('padding.4');
+  @include Medium();
+  @apply text-dark mb-4;
+}
+
+
+ol {
+  list-style: none;
+  counter-reset: my-ol-counter;
+  padding-left: 0;
 
   li {
-    padding: 10px 0;
+    counter-increment: my-ol-counter;
+  }
+
+  li::before {
+    content: counter(my-ol-counter) ". ";
+    padding-right: theme('padding.4');
+    width: 1.5rem;
+    @apply inline-block text-pink-700;
   }
 }
 
-ol {
-  list-style-type: decimal;
-  padding-left: theme('padding.4');
+ul {
+  list-style: none;
+  counter-reset: my-ul-counter;
+  padding-left: 0;
+
+  li {
+    counter-increment: my-ul-counter;
+  }
+
+  li::before {
+    content: "– ";
+    padding-right: theme('padding.4');
+    width: 1.5rem;
+    @apply inline-block text-pink-700;
+  }
 }

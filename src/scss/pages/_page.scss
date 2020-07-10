@@ -78,3 +78,23 @@
     order: 1;
   }
 }
+
+.post-content {
+  img {
+    max-height: 50vh;
+    max-width: 70vw;
+    width: auto;
+    @apply mx-auto my-8;
+  }
+}
+
+@screen md {
+  .post-content {
+    img {
+      max-height: 50vh;
+      max-width: 40vw;
+      width: auto;
+      @apply mx-auto my-8;
+    }
+  }
+}

@@ -1,6 +1,9 @@
 <section class="page-hero w-full flex flex-wrap w-full lg:w-10/12 mx-auto">
 	<div class="container flex flex-wrap py-8 md:py-16">
 		<div class="w-full md:w-10/12 mx-auto  lg:w-7/12 flex flex-col justify-center py-8">
+			{{ with .Params.category }}
+			<h5 class="cta text-dark mb-4">{{ . }}</h5>
+			{{ end }}
 			<h1 class="h1-page w-full md:w-4/5">
 				{{ .Title }}
 			</h1>
