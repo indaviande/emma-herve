@@ -1,0 +1,8 @@
+header {
+  transform: translateY(0);
+  @include tran_simple(0.3s);
+
+  &.scroll-down {
+    transform: translateY(-100%);
+  }
+}
