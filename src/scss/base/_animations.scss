@@ -22,6 +22,17 @@
   animation: spin 3s linear infinite;
 }
 
+.spin--long {
+
+  &:nth-child(even) {
+    animation: spin 60s linear infinite;
+  }
+
+  &:nth-child(odd) {
+    animation: spin 60s linear reverse infinite;
+  }
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);

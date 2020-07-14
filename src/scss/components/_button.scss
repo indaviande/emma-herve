@@ -26,3 +26,27 @@
     @apply bg-blue-300;
   }
 }
+
+.btn-full {
+  height: 90px;
+  max-width: 100%;
+  @apply w-full flex justify-center items-center;
+}
+
+.tiers-link:nth-child(n+1) {
+  .btn-full {
+    @apply bg-blue-500;
+  }
+}
+
+.tiers-link:nth-child(n+2) {
+  .btn-full {
+    @apply bg-pink-500;
+  }
+}
+
+.tiers-link:nth-child(n+3) {
+  .btn-full {
+    @apply bg-pink-700;
+  }
+}

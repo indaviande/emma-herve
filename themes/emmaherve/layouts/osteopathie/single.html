@@ -24,48 +24,65 @@
               </h3>
             </div>
           </div>
+
           <ul>
+            {{ $listItem := .Params.shapePointsReverse.point }}
+            {{ range $listItem }}
             <li class="colored-circle-element flex mb-8 md:mb-12">
               <div class="w-1/6">
                 <span class="colored-circle"></span>
               </div>
 
               <div class="list-contents w-5/6 pl-4 md:pl-0">
-                <h4 class="h4 mb-6">Adapté à chacun</h4>
-                <p class="p">Pour chaque patient, j’établis un diagnostic spécifique et propose un traitement adapté au
-                  cas
-                  par cas. À cela, s'ajoutent des conseils personnalisés sur l'hygiène de vie (posture, alimentation,
-                  exercices physiques etc…).</p>
-              </div>
-            </li>
-            <li class="colored-circle-element flex mb-8 md:mb-12">
-              <div class="w-1/6">
-                <span class="colored-circle"></span>
-              </div>
-
-              <div class="list-contents w-5/6 pl-4 md:pl-0">
-                <h4 class="h4 mb-6">Adapté à chacun</h4>
-                <p class="p">Pour chaque patient, j’établis un diagnostic spécifique et propose un traitement adapté au
-                  cas
-                  par cas. À cela, s'ajoutent des conseils personnalisés sur l'hygiène de vie (posture, alimentation,
-                  exercices physiques etc…).</p>
-              </div>
-            </li>
-            <li class="colored-circle-element flex mb-8 md:mb-12">
-              <div class="w-1/6">
-                <span class="colored-circle"></span>
-              </div>
-
-              <div class="list-contents w-5/6 pl-4 md:pl-0">
-                <h4 class="h4 mb-6">Adapté à chacun</h4>
-                <p class="p">Pour chaque patient, j’établis un diagnostic spécifique et propose un traitement adapté au
-                  cas
-                  par cas. À cela, s'ajoutent des conseils personnalisés sur l'hygiène de vie (posture, alimentation,
-                  exercices physiques etc…).</p>
+                <h4 class="h4 mb-6">{{ .titre }}</h4>
+                <p class="p">{{ .content | markdownify }}</p>
               </div>
             </li>
 
+            {{ end }}
           </ul>
+          <!-- <ul>
+            <li class="colored-circle-element flex mb-8 md:mb-12">
+              <div class="w-1/6">
+                <span class="colored-circle"></span>
+              </div>
+
+              <div class="list-contents w-5/6 pl-4 md:pl-0">
+                <h4 class="h4 mb-6">Adapté à chacun</h4>
+                <p class="p">Pour chaque patient, j’établis un diagnostic spécifique et propose un traitement adapté au
+                  cas
+                  par cas. À cela, s'ajoutent des conseils personnalisés sur l'hygiène de vie (posture, alimentation,
+                  exercices physiques etc…).</p>
+              </div>
+            </li>
+            <li class="colored-circle-element flex mb-8 md:mb-12">
+              <div class="w-1/6">
+                <span class="colored-circle"></span>
+              </div>
+
+              <div class="list-contents w-5/6 pl-4 md:pl-0">
+                <h4 class="h4 mb-6">Adapté à chacun</h4>
+                <p class="p">Pour chaque patient, j’établis un diagnostic spécifique et propose un traitement adapté au
+                  cas
+                  par cas. À cela, s'ajoutent des conseils personnalisés sur l'hygiène de vie (posture, alimentation,
+                  exercices physiques etc…).</p>
+              </div>
+            </li>
+            <li class="colored-circle-element flex mb-8 md:mb-12">
+              <div class="w-1/6">
+                <span class="colored-circle"></span>
+              </div>
+
+              <div class="list-contents w-5/6 pl-4 md:pl-0">
+                <h4 class="h4 mb-6">Adapté à chacun</h4>
+                <p class="p">Pour chaque patient, j’établis un diagnostic spécifique et propose un traitement adapté au
+                  cas
+                  par cas. À cela, s'ajoutent des conseils personnalisés sur l'hygiène de vie (posture, alimentation,
+                  exercices physiques etc…).</p>
+              </div>
+            </li>
+
+          </ul> -->
         </div>
 
         <div class="w-full lg:w-5/12 order-1 lg:order-2 pl-0 lg:pl-8 lg:pl-24 pt-16 md:pt-32 pb-0 md:pb-8 lg:pb-0">

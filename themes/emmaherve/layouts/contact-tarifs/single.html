@@ -1,0 +1,122 @@
+{{ define "meta-title" }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}
+{{ define "meta-description" }}{{ .Description }}{{ end }}
+
+{{ define "header" }} {{ partial "header.html" . }} {{ end }}
+
+{{ define "main" }}
+<main class="bg-beige relative" data-barba="wrapper">
+  <article data-barba="container">
+    <section class="page-hero w-full flex flex-wrap w-full lg:w-10/12 mx-auto ">
+      <div class="container flex flex-wrap py-8 md:py-16">
+        <div class="w-full md:w-10/12 mx-auto  lg:w-7/12 flex flex-col justify-center py-8 z-1">
+          {{ with .Params.category }}
+          <h5 class="cta text-dark mb-4">{{ . }}</h5>
+          {{ end }}
+          <h1 class="h1-page w-full md:w-4/5">
+            {{ .Title | markdownify }}
+          </h1>
+
+          {{ with .Params.chapeau }}
+          <h2 class="intro-header mb-8">
+            {{ . }}
+          </h2>
+          {{ end }}
+        </div>
+        <!-- TODO: Move shapes on XL screens inside container -->
+        <div class="w-full contact-shapes lg:w-5/12 flex justify-center lg:justify-end items-center">
+          <img class="{{ .Params.imgClasses }} spin--long absolute max-img-width w-10/12 md:w-7/12 lg:w-1/2 w-32"
+            src="{{ .Site.BaseURL }}images/contact-yellow.svg" />
+          <img class="{{ .Params.imgClasses }} spin--long absolute max-img-width w-10/12 md:w-7/12 lg:w-1/2 w-32"
+            src="{{ .Site.BaseURL }}images/contact-orange.svg" />
+          <img class="{{ .Params.imgClasses }} spin--long absolute max-img-width w-10/12 md:w-7/12 lg:w-1/2 w-32"
+            src="{{ .Site.BaseURL }}images/contact-pink.svg" />
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-shape-points bg-no-repeat bg-cover py-16 lg:py-24">
+      <div class="container flex flex-wrap w-full md:w-10/12">
+        <div class="w-full pb-8 lg:pb-0">
+          <ul class="contact-grid">
+            {{ $list := .Params.list}}
+            {{ $list_item := index $list 0 }}
+            <li class="colored-circle-element flex mb-8">
+              <div class="w-1/6">
+                <span class="colored-circle"></span>
+              </div>
+
+              <div class="list-contents w-5/6 pl-4 md:pl-0 pr-0 md:pr-8">
+                <h5 class="h5 mb-6">{{ $list_item.titre }}</h5>
+                <p class="p mb-0">{{ .Site.Params.address }}<br>
+                  <a href="{{ .Site.Params.mapsUrl }}" class="inline-link" target="_blank"
+                    rel="noopener noreferrer">{{ $list_item.content | markdownify }}</a></p>
+              </div>
+            </li>
+
+            {{ $list_item := index $list 1 }}
+            <li class="colored-circle-element flex mb-8">
+              <div class="w-1/6">
+                <span class="colored-circle"></span>
+              </div>
+
+              <div class="list-contents w-5/6 pl-4 md:pl-0 pr-0 md:pr-8">
+                <h5 class="h5 mb-6">{{ $list_item.titre }}</h5>
+                <p class="p mb-0">{{ $list_item.content | markdownify }}</p>
+              </div>
+            </li>
+
+            <li class="no-style">
+              <p class="p-big pr-0 md:pr-16 lg:pr-24 mb-16-imp">Le cabinet est un centre paramédical partagé par
+                différents
+                professionnels de
+                santé dans le
+                but d’offrir une offre de soins pluridisciplinaire aux patients. </p>
+            </li>
+
+            {{ $list := .Params.list }}
+            {{ range after 2 $list }}
+            <li class="colored-circle-element flex mb-8">
+              <div class="w-1/6">
+                <span class="colored-circle"></span>
+              </div>
+
+              <div class="list-contents w-5/6 pl-4 md:pl-0 pr-0 md:pr-8">
+                <h5 class="h5 mb-6">{{ .titre }}</h5>
+                <p class="p">{{ .content | markdownify }}</p>
+              </div>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 lg:py-24">
+      <div class="container flex flex-wrap w-full md:w-10/12">
+        <div class="w-full md:w-1/2 mb-8 md:mb-16">
+          <h5 class="cta mb-6">{{ .Params.prendreRdv.sousTitre }}</h5>
+          <h2 class="h2">{{ .Params.prendreRdv.titre }}</h2>
+        </div>
+
+        <div class="w-full flex flex-wrap">
+          {{ range .Params.prendreRdv.moyen }}
+          <div class="tiers-link w-full md:w-1/3 mb-8 md:mb-12 pr-0 md:pr-8">
+            <h5 class="h5">{{ .titre }}</h5>
+            <p class="p">{{ .content }}</p>
+            <a class="btn btn-doctolib btn-full mt-8 md:mt-12" href="{{ .linkUrl }}" rel="noopener noreferrer"
+              target="_blank">{{ .linkText }}</a>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+
+    {{ partial "shape-points.html" . }}
+
+    {{ partial "more-pages.html" . }}
+
+  </article>
+</main>
+
+
+{{ end }}
