@@ -21,6 +21,7 @@ list:
     31 Rue du Général Beuret, 75015 Paris'
   - titre: Arriver au cabinet
     content: 'Mon cabinet se trouve au rez-de-chaussée tout de suite aorès la porte d’entrée. Aucun code n’est requis.'
+cabinet: Le cabinet est un centre paramédical partagé par    différents professionnels de santé dans le but d’offrir une offre de soins pluridisciplinaire aux patients. 
 prendreRdv:
   sousTitre: Je me lance
   titre: Comment prendre un rendez-vous rapidement
@@ -48,6 +49,13 @@ shapePoints:
   - titre: Les mutuelles qui remboursent
     content: 'Quelques exemples de mutuelles qui remboursent
     <a href="">Lien vers la liste officielle des mutuelles</a>'
+morePages:
+  link1: contact-tarifs/contact-tarifs
+  text1: Trouver les infos du cabinet
+  link2: osteopathie/osteopathie
+  text2: Comment se déroule une consultation ?
+  link3: emma-herve/emma-herve
+  text3: Qui est mon ostéopathe Emma Hervé ?
 draft: false
 type: contact-tarifs
 ---

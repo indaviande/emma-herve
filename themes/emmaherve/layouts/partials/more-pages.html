@@ -5,18 +5,18 @@
     <div class="3-blocks w-full mx-auto">
       <div class="flex flex-wrap justify-center">
         <a class="cta w-full lg:w-1/4 py-8 md:py-12 lg:py-24 px-8 mx-4 text-center mb-4 border-2 border-yellow-500 ease hover:bg-yellow-500"
-          href="">
-          Trouver les infos du cabinet
+          href="{{.Site.BaseURL}}{{.Params.morePages.link1}}">
+          {{.Params.morePages.text1}}
         </a>
 
         <a class="cta w-full lg:w-1/4 py-8 md:py-12 lg:py-24 px-8 mx-4 text-center mb-4 ease hover:bg-pink-700 border-2 border-pink-700"
-          href="">
-          Trouver les infos du cabinet
+          href="{{.Site.BaseURL}}{{.Params.morePages.link2}}">
+          {{.Params.morePages.text2}}
         </a>
 
         <a class="cta w-full lg:w-1/4 py-8 md:py-12 lg:py-24 px-8 mx-4 text-center mb-4 ease hover:bg-blue-300 border-2 border-blue-300"
-          href="">
-          Trouver les infos du cabinet
+          href="{{.Site.BaseURL}}{{.Params.morePages.link3}}">
+          {{.Params.morePages.text3}}
         </a>
       </div>
     </div>

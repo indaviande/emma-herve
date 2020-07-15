@@ -25,11 +25,11 @@
 .spin--long {
 
   &:nth-child(even) {
-    animation: spin 60s linear infinite;
+    animation: spin 120s linear infinite;
   }
 
   &:nth-child(odd) {
-    animation: spin 60s linear reverse infinite;
+    animation: spin 120s linear reverse infinite;
   }
 }
 

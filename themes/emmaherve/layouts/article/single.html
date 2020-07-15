@@ -42,12 +42,14 @@
             id risus.
           </p>
 
-          <!-- TODO: If Credits, then show this section -->
+          {{if .Params.credits.auteur}}
           <div class="credits">
             <hr>
-            <p class="mb-0">Nom prénom de l’auteur</p>
-            <a class="inline-link" href="">Lien de l’article à retrouver sur tel site</a>
+            <p class="mb-0">{{.Params.credits.auteur}}</p>
+            <a class="inline-link" target="_blank" rel="noopener noreferrer"
+              href="{{.Params.credits.linkUrl}}">{{.Params.credits.linkText}}</a>
           </div>
+          {{ end }}
         </div>
       </div>
     </section>

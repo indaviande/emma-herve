@@ -5,4 +5,8 @@ header {
   &.scroll-down {
     transform: translateY(-100%);
   }
+
+  &.scroll-up {
+    @apply bg-beige;
+  }
 }

@@ -11,30 +11,21 @@
 //   }
 // }
 
-.colored-circle-element:nth-child(n+1) .colored-circle {
-  @apply bg-blue-300;
-}
-
+.colored-circle-element:nth-child(n+1) .colored-circle,
 .pour-qui-block-image:nth-child(n+1) .colored-circle-big {
   @apply bg-blue-300;
 }
 
-
-.colored-circle-element:nth-child(n+2) .colored-circle {
+.colored-circle-element:nth-child(2n+2) .colored-circle,
+.pour-qui-block-image:nth-child(2n+2) .colored-circle-big {
   @apply bg-pink-300;
 }
 
-.pour-qui-block-image:nth-child(n+2) .colored-circle-big {
-  @apply bg-pink-300;
-}
-
-.colored-circle-element:nth-child(n+3) .colored-circle {
+.colored-circle-element:nth-child(3n+3) .colored-circle,
+.pour-qui-block-image:nth-child(3n+3) .colored-circle-big {
   @apply bg-yellow-500;
 }
 
-.pour-qui-block-image:nth-child(n+3) .colored-circle-big {
-  @apply bg-yellow-500;
-}
 
 .contact-shape-points {
   .colored-circle-element:nth-child(n+1) .colored-circle {
@@ -118,6 +109,28 @@
       width: auto;
       @apply mx-auto my-8;
     }
+  }
+}
+
+// Ostéopathe page
+
+.pour-qui-block-image:nth-child(odd) {
+  .block-image {
+    order: 1;
+  }
+
+  .block-content {
+    order: 2;
+  }
+}
+
+.pour-qui-block-image:nth-child(even) {
+  .block-image {
+    order: 2;
+  }
+
+  .block-content {
+    order: 1;
   }
 }
 

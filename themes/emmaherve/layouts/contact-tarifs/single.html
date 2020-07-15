@@ -4,7 +4,7 @@
 {{ define "header" }} {{ partial "header.html" . }} {{ end }}
 
 {{ define "main" }}
-<main class="bg-beige relative" data-barba="wrapper">
+<main class="bg-beige" data-barba="wrapper">
   <article data-barba="container">
     <section class="page-hero w-full flex flex-wrap w-full lg:w-10/12 mx-auto ">
       <div class="container flex flex-wrap py-8 md:py-16">
@@ -66,11 +66,7 @@
             </li>
 
             <li class="no-style">
-              <p class="p-big pr-0 md:pr-16 lg:pr-24 mb-16-imp">Le cabinet est un centre paramédical partagé par
-                différents
-                professionnels de
-                santé dans le
-                but d’offrir une offre de soins pluridisciplinaire aux patients. </p>
+              <p class="p-big pr-0 md:pr-16 lg:pr-24 mb-16-imp">{{.Params.cabinet}}</p>
             </li>
 
             {{ $list := .Params.list }}
