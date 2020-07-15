@@ -1,3 +1,5 @@
+// (Sticky Nav under Sticky Header) + (Header hiding) when scrolling down
+
 const stickyNav = document.querySelector('.page-hero-nav');
 const nav = document.querySelector('header');
 const scrollUp = 'scroll-up';
@@ -35,9 +37,10 @@ window.addEventListener('scroll', () => {
 	lastScroll = currentScroll;
 });
 
-// Add header height as padding-top on first section of the page
+// Add header height as padding-top on first section of each page
 
 const headerHeight = document.querySelector('header').clientHeight;
+const introSection = document.querySelector('.page-hero, .hp-hero');
 
 const addHeaderHeight = section => {
 	const currentPadding = parseFloat(
@@ -46,7 +49,6 @@ const addHeaderHeight = section => {
 	section.style.paddingTop = `${currentPadding + headerHeight}px`;
 };
 
-const introSection = document.querySelector('.page-hero, .hp-hero');
 if (introSection) {
 	addHeaderHeight(introSection);
 }

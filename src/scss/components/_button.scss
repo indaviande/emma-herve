@@ -28,8 +28,7 @@
 }
 
 .btn-full {
-  height: 90px;
-  max-width: 100%;
+  height: 80px;
   @apply w-full flex justify-center items-center;
 }
 
@@ -48,5 +47,23 @@
 .tiers-link:nth-child(n+3) {
   .btn-full {
     @apply bg-pink-700;
+  }
+}
+
+@screen lg {
+  .btn-full {
+    max-width: 100%;
+  }
+}
+
+footer .btn.btn-doctolib.footer-btn {
+  max-width: 100% !important;
+  height: 50px !important;
+  @apply w-full;
+}
+
+@screen lg {
+  footer .btn.btn-doctolib.footer-btn {
+    display: none !important;
   }
 }
