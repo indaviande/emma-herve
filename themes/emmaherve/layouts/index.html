@@ -1,4 +1,7 @@
-{{ define "header" }} {{ partial "header.html" . }} {{ end }} {{ define "main" }}
+{{ define "header" }}
+{{ .Scratch.Set "headerClass" "bg-white scroll-down" }}
+{{ partialCached "header.html" . }}
+{{ end }} {{ define "main" }}
 
 <main class="bg-beige" data-barba="wrapper">
 	<article data-barba="container">

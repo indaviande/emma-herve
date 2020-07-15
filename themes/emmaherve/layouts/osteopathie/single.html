@@ -1,11 +1,13 @@
 {{ define "meta-title" }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}
 {{ define "meta-description" }}{{ .Description }}{{ end }}
 
-{{ define "header" }} {{ partial "header.html" . }} {{ end }}
+{{ define "header" }} {{ .Scratch.Set "headerClass" "bg-white"}}
+{{ partial "header.html" . }} {{ end }}
 
 {{ define "main" }}
 <main class="bg-white" data-barba="wrapper">
   <article data-barba="container">
+    {{ .Scratch.Set "bgClass" "bg-white"}}
     {{ partial "page-hero-nav.html" . }}
 
     {{ partial "shape-points.html" . }}

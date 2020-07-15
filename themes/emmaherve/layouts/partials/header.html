@@ -1,4 +1,4 @@
-<header class="w-full fixed z-50 shadow">
+<header class="w-full fixed z-50 {{ .Scratch.Get "headerClass" }}">
   <nav class="flex justify-between w-full">
     <div class="flex items-center">
       <a class="mr-10 dim" href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}images/nav-main-logo.svg"></a>

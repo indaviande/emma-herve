@@ -40,7 +40,7 @@ window.addEventListener('scroll', () => {
 // Add header height as padding-top on first section of each page
 
 const headerHeight = document.querySelector('header').clientHeight;
-const introSection = document.querySelector('.page-hero, .hp-hero');
+const introSection = document.querySelector('.page-hero');
 
 const addHeaderHeight = section => {
 	const currentPadding = parseFloat(

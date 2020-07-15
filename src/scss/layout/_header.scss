@@ -2,11 +2,13 @@ header {
   transform: translateY(0);
   @include tran_simple(0.3s);
 
+
+
   &.scroll-down {
     transform: translateY(-100%);
   }
 
   &.scroll-up {
-    @apply bg-beige;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.06);
   }
 }
