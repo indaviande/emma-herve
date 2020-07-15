@@ -30,6 +30,7 @@ enableRobotsTXT = true
   tel = "06 30 87 41 95"
   doctoUrl = "https://www.doctolib.fr/osteopathe/paris/emma-herve"
   doctotxt = "Prendre rdv sur doctolib"
+  notice = "INFOS CORONAVIRUS : Le cabinet est ouvert, pour connaître notre fonctionnement c’est par ici : Consulter ma page Doctolib"
 
 [menu]
   [[menu.main]]

@@ -52,3 +52,29 @@ const addHeaderHeight = section => {
 if (introSection) {
 	addHeaderHeight(introSection);
 }
+
+// Closing Notice
+
+const closingNotice = (menuToCloseClass, closingButtonClass) => {
+	const menuToClose = document.querySelector(menuToCloseClass);
+	const closingButton = document.querySelector(closingButtonClass);
+	closingButton.addEventListener('click', () => {
+		menuToClose.classList.add('hidden');
+	});
+};
+
+closingNotice('.notice', '.notice--close');
+
+// Toggling Responsive Menu
+
+const togglingMenu = (menuToToggleClass, burgerMenuClass) => {
+	const menuToToggle = document.querySelector(menuToToggleClass);
+	const burgerMenu = document.querySelector(closingButtonClass);
+	burgerMenu.addEventListener('click', () => {
+		console.log('clicked');
+		burgerMenu.classList.toggle('opened');
+		menuToToggle.classList.toggle('opened');
+	});
+};
+
+closingNotice('.nav--mobile__reveal', '.menu--toggle');

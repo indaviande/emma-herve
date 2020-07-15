@@ -11,4 +11,44 @@ header {
   &.scroll-up {
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.06);
   }
+
+  .btn.btn-doctolib.footer-btn {
+    max-width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+  }
+
+  .nav--mobile__header {
+    height: 75px;
+
+    .menu--toggle {
+      width: 75px;
+
+      background-image: url('../images/menu--burger.svg');
+
+      &.opened {
+        background-image: url('../images/menu--close.svg');
+      }
+    }
+  }
+
+  .nav--mobile__reveal {
+    transform: translateY(-100%);
+    @apply ease;
+
+    &.opened {
+      transform: translateY(0);
+    }
+  }
+
+  // .nav--mobile__content {
+  //   padding-top: 75px;
+  // }
+}
+
+
+@screen lg {
+  header .btn.btn-doctolib.footer-btn {
+    display: none !important;
+  }
 }
