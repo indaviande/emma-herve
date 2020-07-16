@@ -1,11 +1,17 @@
+body.opened {
+  header {
+    &.scroll-down {
+      transform: translateY(0);
+    }
+  }
+}
+
 header {
   transform: translateY(0);
   @include tran_simple(0.3s);
 
-
-
   &.scroll-down {
-    transform: translateY(-100%);
+    transform: translateY(0%);
   }
 
   &.scroll-up {
@@ -23,21 +29,16 @@ header {
 
     .menu--toggle {
       width: 75px;
-
-      background-image: url('../images/menu--burger.svg');
-
-      &.opened {
-        background-image: url('../images/menu--close.svg');
-      }
     }
   }
 
   .nav--mobile__reveal {
     transform: translateY(-100%);
-    @apply ease;
+    @apply ease pointer-events-none;
 
     &.opened {
       transform: translateY(0);
+      @apply pointer-events-auto;
     }
   }
 
@@ -46,6 +47,13 @@ header {
   // }
 }
 
+@screen md {
+  header {
+    &.scroll-down {
+      transform: translateY(-100%);
+    }
+  }
+}
 
 @screen lg {
   header .btn.btn-doctolib.footer-btn {

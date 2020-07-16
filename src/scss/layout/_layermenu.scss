@@ -1,0 +1,46 @@
+g {
+  transition: transform 0.5s, opacity 0.5s;
+
+  &.burger-top {
+    transform: translate(20px, 10px);
+  }
+
+  &.burger-middle {
+    transform: translate(20px, 20px);
+
+    rect {
+      transition: width 0.5s;
+    }
+  }
+
+  &.burger-bottom {
+    transform: translate(20px, 30px);
+  }
+}
+
+a.menu-toggle rect {
+  fill: theme('colors.pink.700');
+}
+
+
+body.opened {
+  g.burger-top {
+    transform: translate(20px, 20px) rotate(45deg);
+  }
+
+  g.burger-middle {
+    transform: translate(48px, 20px);
+  }
+
+  g.burger-middle rect {
+    width: 0;
+  }
+
+  g.burger-bottom {
+    transform: translate(20px, 20px) rotate(-45deg);
+  }
+
+  .nav--mobile {
+    @apply min-h-screen;
+  }
+}

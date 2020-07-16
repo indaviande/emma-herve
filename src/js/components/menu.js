@@ -4,6 +4,7 @@ const stickyNav = document.querySelector('.page-hero-nav');
 const nav = document.querySelector('header');
 const scrollUp = 'scroll-up';
 const scrollDown = 'scroll-down';
+const body = document.querySelector('body');
 let lastScroll = 0;
 
 const addHeaderHeightTop = section => {
@@ -40,17 +41,17 @@ window.addEventListener('scroll', () => {
 // Add header height as padding-top on first section of each page
 
 const headerHeight = document.querySelector('header').clientHeight;
-const introSection = document.querySelector('.page-hero');
+const introSectionPadding = document.querySelector('.page-hero');
 
-const addHeaderHeight = section => {
+const addHeaderHeightAsPadding = section => {
 	const currentPadding = parseFloat(
 		window.getComputedStyle(section, null).getPropertyValue('padding-top')
 	);
 	section.style.paddingTop = `${currentPadding + headerHeight}px`;
 };
 
-if (introSection) {
-	addHeaderHeight(introSection);
+if (introSectionPadding) {
+	addHeaderHeightAsPadding(introSectionPadding);
 }
 
 // Closing Notice
@@ -58,9 +59,11 @@ if (introSection) {
 const closingNotice = (menuToCloseClass, closingButtonClass) => {
 	const menuToClose = document.querySelector(menuToCloseClass);
 	const closingButton = document.querySelector(closingButtonClass);
-	closingButton.addEventListener('click', () => {
-		menuToClose.classList.add('hidden');
-	});
+	if (closingButton) {
+		closingButton.addEventListener('click', () => {
+			menuToClose.classList.add('hidden');
+		});
+	}
 };
 
 closingNotice('.notice', '.notice--close');
@@ -68,13 +71,14 @@ closingNotice('.notice', '.notice--close');
 // Toggling Responsive Menu
 
 const togglingMenu = (menuToToggleClass, burgerMenuClass) => {
+	const bodyTag = document.querySelector('body');
 	const menuToToggle = document.querySelector(menuToToggleClass);
-	const burgerMenu = document.querySelector(closingButtonClass);
+	const burgerMenu = document.querySelector(burgerMenuClass);
 	burgerMenu.addEventListener('click', () => {
-		console.log('clicked');
+		bodyTag.classList.toggle('opened');
 		burgerMenu.classList.toggle('opened');
 		menuToToggle.classList.toggle('opened');
 	});
 };
 
-closingNotice('.nav--mobile__reveal', '.menu--toggle');
+togglingMenu('.nav--mobile__reveal', '.menu--toggle');
