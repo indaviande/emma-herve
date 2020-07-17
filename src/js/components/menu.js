@@ -1,4 +1,4 @@
-// (Sticky Nav under Sticky Header) + (Header hiding) when scrolling down
+// (Sticky Nav under Sticky Header) + (Header hiding) when scrolling down, except for mobile screens
 
 const stickyNav = document.querySelector('.page-hero-nav');
 const nav = document.querySelector('header');
@@ -40,8 +40,23 @@ window.addEventListener('scroll', () => {
 
 // Add header height as padding-top on first section of each page
 
+const matchScreenSize = x => {
+	if (x.matches) {
+		// If media query matches
+		const introSectionPadding = document.querySelector('.page-hero');
+		if (introSectionPadding) {
+			addHeaderHeightAsPadding(introSectionPadding);
+		}
+	}
+};
+
+const screenSize = window.matchMedia('(min-width: 576px)');
+document.addEventListener('DOMContentLoaded', () => {
+	matchScreenSize(screenSize); // Call listener function at run time
+	screenSize.addListener(matchScreenSize); // Attach listener function on state changes
+});
+
 const headerHeight = document.querySelector('header').clientHeight;
-const introSectionPadding = document.querySelector('.page-hero');
 
 const addHeaderHeightAsPadding = section => {
 	const currentPadding = parseFloat(
@@ -49,10 +64,6 @@ const addHeaderHeightAsPadding = section => {
 	);
 	section.style.paddingTop = `${currentPadding + headerHeight}px`;
 };
-
-if (introSectionPadding) {
-	addHeaderHeightAsPadding(introSectionPadding);
-}
 
 // Closing Notice
 
