@@ -175,9 +175,10 @@
 
 // Sticky Nav
 .page-hero-nav h5 a {
-  @apply ease pb-1 border-b border-b-3 border-transparent;
+  @apply ease pb-1 border-b-2 border-transparent;
 
-  &.current {
+  &.current,
+  &:hover {
     @apply border-blue-300;
   }
 }
