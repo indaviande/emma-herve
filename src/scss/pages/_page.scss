@@ -1,5 +1,18 @@
 .colored-circle {
+  animation: borderRadiusChange 5s infinite cubic-bezier(.77, 0, .18, 1);
   @apply block h-12 w-12 rounded-full;
+}
+
+@keyframes borderRadiusChange {
+
+  0%,
+  100% {
+    border-radius: 50%;
+  }
+
+  50% {
+    border-radius: 35%;
+  }
 }
 
 // .pour-qui-block-image:nth-child(n+1),
@@ -47,21 +60,13 @@
   .colored-circle-element:nth-child(n+6) .colored-circle {
     @apply bg-yellow-500;
   }
-
-
-  // .colored-circle-element:nth-child(n+4) .colored-circle {
-  //   @apply bg-pink-700;
-  // }
-
-  // .colored-circle-element:nth-child(n+5) .colored-circle {
-  //   @apply bg-yellow-500;
-  // }
-
 }
 
 .colored-circle-big {
+  animation: borderRadiusChange 5s infinite cubic-bezier(.77, 0, .18, 1);
   @apply colored-circle h-32 w-32;
 }
+
 
 .shape-points {
   background-size: 40%;
@@ -165,5 +170,14 @@
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, auto);
     grid-auto-flow: column;
+  }
+}
+
+// Sticky Nav
+.page-hero-nav h5 a {
+  @apply ease pb-1 border-b border-b-3 border-transparent;
+
+  &.current {
+    @apply border-blue-300;
   }
 }

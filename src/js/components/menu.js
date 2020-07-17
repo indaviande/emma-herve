@@ -8,6 +8,7 @@ const body = document.querySelector('body');
 let lastScroll = 0;
 
 const addHeaderHeightTop = section => {
+	const headerHeight = document.querySelector('header').clientHeight;
 	const currentPadding = parseFloat(window.getComputedStyle(section, null).getPropertyValue('top'));
 	section.style.top = `${headerHeight}px`;
 };
@@ -56,9 +57,14 @@ document.addEventListener('DOMContentLoaded', () => {
 	screenSize.addListener(matchScreenSize); // Attach listener function on state changes
 });
 
+// document.addEventListener('DOMContentLoaded', () => {
+// 	const headerHeight2 = document.querySelector('header').clientHeight;
+// 	console.log('new ' + headerHeight2);
+// });
 const headerHeight = document.querySelector('header').clientHeight;
 
 const addHeaderHeightAsPadding = section => {
+	const headerHeight = document.querySelector('header').clientHeight;
 	const currentPadding = parseFloat(
 		window.getComputedStyle(section, null).getPropertyValue('padding-top')
 	);

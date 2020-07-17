@@ -1,12 +1,21 @@
 {{ define "meta-title" }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}
 {{ define "meta-description" }}{{ .Description }}{{ end }}
 
-{{ define "header" }} {{ .Scratch.Set "headerClass" "bg-beige"}} {{ partial "header.html" . }} {{ end }}
+{{ define "header" }} <!-- TODO: Move shapes on XL screens inside container -->
+<div class="relative w-full contact-shapes flex justify-center lg:justify-end items-center">
+  <img class="spin--long absolute w-10/12 md:w-7/12 lg:w-1/2" src="{{ .Site.BaseURL }}images/contact-yellow.svg"
+    alt="shapes rotating" />
+  <img class="spin--long absolute w-10/12 md:w-7/12 lg:w-1/2" src="{{ .Site.BaseURL }}images/contact-orange.svg"
+    alt="shapes rotating" />
+  <img class="spin--long absolute w-10/12 md:w-7/12 lg:w-1/2" src="{{ .Site.BaseURL }}images/contact-pink.svg"
+    alt="shapes rotating" />
+</div>
+{{ .Scratch.Set "headerClass" "bg-beige"}} {{ partial "header.html" . }} {{ end }}
 
 {{ define "main" }}
 <main class="bg-beige" data-barba="wrapper">
   <article data-barba="container">
-    <section class="page-hero w-full flex flex-wrap w-full lg:w-10/12 mx-auto pt-16 md:pt-0">
+    <section class="page-hero w-full flex flex-wrap w-full lg:w-10/12 mx-auto pt-16">
       <div class="container flex flex-wrap py-8 md:py-16">
         <div class="w-full md:w-10/12 mx-auto  lg:w-7/12 flex flex-col justify-center py-8 z-1">
           {{ with .Params.category }}
@@ -17,25 +26,19 @@
           </h1>
 
           {{ with .Params.chapeau }}
-          <h2 class="intro-header mb-8">
+          <h2 class="intro-header">
             {{ . }}
           </h2>
           {{ end }}
         </div>
-        <!-- TODO: Move shapes on XL screens inside container -->
-        <div
-          class="w-full hidden contact-shapes lg:w-5/12 md:flex justify-center lg:justify-end items-center overflow-hidden">
-          <img class="{{ .Params.imgClasses }} spin--long absolute max-img-width w-10/12 md:w-7/12 lg:w-1/2 w-32"
-            src="{{ .Site.BaseURL }}images/contact-yellow.svg" />
-          <img class="{{ .Params.imgClasses }} spin--long absolute max-img-width w-10/12 md:w-7/12 lg:w-1/2 w-32"
-            src="{{ .Site.BaseURL }}images/contact-orange.svg" />
-          <img class="{{ .Params.imgClasses }} spin--long absolute max-img-width w-10/12 md:w-7/12 lg:w-1/2 w-32"
-            src="{{ .Site.BaseURL }}images/contact-pink.svg" />
+        <div class="w-full md:w-5/12 hidden md:flex justify-center lg:justify-end items-center">
+
         </div>
       </div>
+
     </section>
 
-    <section class="contact-shape-points bg-no-repeat bg-cover py-16 lg:py-24">
+    <section class="contact-shape-points bg-no-repeat bg-cover py-16 lg:py-24 z-2 relative">
       <div class="container flex flex-wrap w-full md:w-10/12">
         <div class="w-full pb-8 lg:pb-0">
           <ul class="contact-grid">

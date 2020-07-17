@@ -6,6 +6,7 @@ module.exports = {
 	separator: ':',
 	theme: {
 		colors: {
+			transparent: 'transparent',
 			yellow: {
 				300: '#FEF0A5',
 				500: '#FFDFAF'
