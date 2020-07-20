@@ -24,6 +24,27 @@
 //   }
 // }
 
+.hp-questions li a {
+  position: relative;
+
+  &::after {
+    background-color: theme('colors.pink.700');
+    display: inline-block;
+    content: '';
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    margin-bottom: -6px;
+    width: 87%;
+    height: 2px;
+    @include Ease();
+  }
+
+  &:hover::after {
+    width: 97%;
+  }
+}
+
 .colored-circle-element:nth-child(n+1) .colored-circle,
 .pour-qui-block-image:nth-child(n+1) .colored-circle-big {
   @apply bg-blue-300;

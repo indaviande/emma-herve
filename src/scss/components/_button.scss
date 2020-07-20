@@ -1,6 +1,7 @@
 .btn {
   @include Jost();
   @include Medium();
+  @include Ease();
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -14,6 +15,10 @@
   font-size: 0.875em;
 
   @apply px-6 py-4;
+
+  &:hover {
+    @apply bg-pink-700 text-white border-transparent;
+  }
 }
 
 .btn-doctolib {
