@@ -34,22 +34,22 @@
 
 .btn-full {
   height: 80px;
+  border-width: 2px;
+  border-style: solid;
   @apply w-full flex justify-center items-center;
 
   &:hover {
     background-color: transparent !important;
-    border-width: 2px;
-    border-style: solid;
     // color: theme('colors.dark') !important;
   }
 }
 
 .tiers-link:nth-child(n+1) {
   .btn-full {
+    border-color: theme('colors.blue.500') !important;
     @apply bg-blue-500;
 
     &:hover {
-      border-color: theme('colors.blue.500') !important;
       color: theme('colors.blue.500') !important;
     }
   }
@@ -58,9 +58,9 @@
 .tiers-link:nth-child(n+2) {
   .btn-full {
     @apply bg-pink-500;
+    border-color: theme('colors.pink.500') !important;
 
     &:hover {
-      border-color: theme('colors.pink.500') !important;
       color: theme('colors.pink.500') !important;
     }
   }
@@ -69,9 +69,9 @@
 .tiers-link:nth-child(n+3) {
   .btn-full {
     @apply bg-pink-700;
+    border-color: theme('colors.pink.700') !important;
 
     &:hover {
-      border-color: theme('colors.pink.700') !important;
       color: theme('colors.pink.700') !important;
     }
   }

@@ -21,10 +21,11 @@
           {{ with .Params.category }}
           <h5 class="cta text-dark mb-4">{{ . }}</h5>
           {{ end }}
-          <h1 class="h1-page w-full md:w-4/5">
-            {{ .Title | markdownify }}
-          </h1>
-
+          <div class="overflow-hidden">
+            <h1 class="h1-page w-full md:w-4/5">
+              {{ .Title | markdownify }}
+            </h1>
+          </div>
           {{ with .Params.chapeau }}
           <h2 class="intro-header">
             {{ . }}

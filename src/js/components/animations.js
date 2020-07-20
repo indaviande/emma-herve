@@ -20,3 +20,34 @@ menuItemsWithChildrens.forEach((menuItemWithChildrens, index) => {
 		subMenuItem.style.animationDelay = `${500 * index}ms`;
 	});
 });
+
+// Fadein when text appears
+const observer = new IntersectionObserver(
+	entries => {
+		entries.forEach(entry => {
+			if (entry.intersectionRatio >= 0.1) {
+				entry.target.classList.add('in-view');
+			} else {
+				entry.target.classList.remove('in-view');
+			}
+		});
+	},
+	{
+		threshold: [0, 0.1, 1]
+	}
+);
+
+const headers = document.querySelectorAll('h1');
+// const pBig = document.querySelectorAll('p.big');
+
+headers.forEach(header => {
+	observer.observe(header);
+});
+
+// realisations.forEach(realisation => {
+// 	observer.observe(realisation);
+// });
+
+// pBig.forEach(realisation => {
+// 	observer.observe(realisation);
+// });
