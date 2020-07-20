@@ -36,21 +36,25 @@ enableRobotsTXT = true
   [[menu.main]]
     name = "L’ostéopathie"
     url = "/osteopathie/osteopathie"
+    identifier = "home"
     weight = 1
 
   [[menu.main]]
     name = "Mon ostéo"
     url = "/emma-herve/emma-herve"
+    identifier = "emma"
     weight = 2
 
   [[menu.main]]
   name = "Contact et tarifs"
   url = "/contact-tarifs/contact-tarifs"
+  identifier = "contact"
   weight = 3
   
   [[menu.main]]
   name = "Le Mag"
   url = "/article"
+  identifier = "mag"
   weight = 4
 
 [markup.goldmark.renderer] 

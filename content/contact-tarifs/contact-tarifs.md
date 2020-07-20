@@ -38,6 +38,7 @@ prendreRdv:
     content: Besoin de me communiquer plus d’informations, écrivez-moi !
     linkUrl: mailto:emmaosteo@gmail.com
     linkText: emmaosteo@gmail.com
+    # TODO: Changer hover m
 shapePoints:
   sousTitre: Tarifs et remboursement
   titre: Le règlement de la consulation d’ostéopathie
@@ -48,7 +49,8 @@ shapePoints:
     content: Le règlement des honoraires peut se faire par chèque ou en espèces. Le paiement est à effectuer le jour-même de la consultation.
   - titre: Les mutuelles qui remboursent
     content: 'Quelques exemples de mutuelles qui remboursent
-    <a href="">Lien vers la liste officielle des mutuelles</a>'
+    <a href="" class="inline-link">Lien vers la liste officielle des mutuelles</a>'
+    # TODO: Renseigner l'URL
 morePages:
   link1: contact-tarifs/contact-tarifs
   text1: Trouver les infos du cabinet
