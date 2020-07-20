@@ -511,14 +511,16 @@
 
 // H1 appear at intersection observer
 
-div.overflow-hidden h1 {
-  // @include Ease();
-  opacity: 0;
-  transform: translateY(100%);
-  @include tran_simple(0.8s);
+div.slide__reveal {
+  h1 {
+    // @include Ease();
+    opacity: 0;
+    transform: translateY(100%);
+    @include tran_simple(0.8s);
 
-  &.in-view {
-    opacity: 1;
-    transform: translateY(0);
+    &.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }

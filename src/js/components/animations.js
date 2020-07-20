@@ -37,11 +37,11 @@ const observer = new IntersectionObserver(
 	}
 );
 
-const headers = document.querySelectorAll('h1');
+const slideReveals = document.querySelectorAll('.slide__reveal');
 // const pBig = document.querySelectorAll('p.big');
 
-headers.forEach(header => {
-	observer.observe(header);
+slideReveals.forEach(slide => {
+	observer.observe(slide);
 });
 
 // realisations.forEach(realisation => {
