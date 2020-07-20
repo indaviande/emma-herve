@@ -27,9 +27,11 @@
             </h1>
           </div>
           {{ with .Params.chapeau }}
-          <h2 class="intro-header">
-            {{ . }}
-          </h2>
+          <div class="slide__reveal">
+            <h2 class="intro-header">
+              {{ . }}
+            </h2>
+          </div>
           {{ end }}
         </div>
         <div class="w-full md:w-5/12 hidden md:flex justify-center lg:justify-end items-center">

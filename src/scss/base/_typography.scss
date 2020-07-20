@@ -72,6 +72,15 @@ p {
   }
 }
 
+.no-dim {
+  // opacity: 1;
+  // transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 1 !important;
+  }
+}
+
 .h1-hp {
   @include Albra();
   @include Normal();

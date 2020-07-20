@@ -11,9 +11,11 @@
 			</div>
 
 			{{ with .Params.chapeau }}
-			<h2 class="intro-header mb-8">
-				{{ . }}
-			</h2>
+			<div class="slide__reveal">
+				<h2 class="intro-header mb-8">
+					{{ . }}
+				</h2>
+			</div>
 			{{ end }}
 		</div>
 
@@ -36,8 +38,8 @@
 			<!-- TODO: Souligner la partie en cours -->
 
 			{{ range $nav }}
-			<h5 class="dim mb-0 px-4">
-				<a class="cta mb-4 lg:mb-0 text-center text-pink-700" href="#{{ .id }}">{{ .text }}</a>
+			<h5 class="mb-0 px-4">
+				<a class="no-dim cta mb-4 lg:mb-0 text-center text-pink-700" href="#{{ .id }}">{{ .text }}</a>
 			</h5>
 			{{ end }}
 		</div>
