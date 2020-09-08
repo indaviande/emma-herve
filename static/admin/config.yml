@@ -58,18 +58,6 @@ collections:
                 fields:
                   - { label: 'Image', name: 'url', widget: 'image' }
                   - { label: 'ALT (texte alternatif)', name: 'alt', widget: 'string' }
-          - label: "Section L'Ostéopathie"
-            name: 'sectionOsteopathe'
-            widget: 'object'
-            fields:
-              - { label: 'Titre H2', name: 'h2', widget: 'string' }
-              - { label: 'Paragraphe', name: 'p', widget: 'markdown' }
-              - label: 'Lien'
-                name: 'link'
-                widget: 'object'
-                fields:
-                  - { label: 'Texte du lien', name: 'text', widget: 'string' }
-                  - { label: 'URL de la page', name: 'url', widget: 'string' }
           - label: 'Section Contact & Tarifs'
             name: 'sectionContact'
             widget: 'object'
