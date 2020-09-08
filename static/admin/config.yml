@@ -34,6 +34,12 @@ collections:
             fields:
               - { label: 'Titre H2', name: 'h2', widget: 'string' }
               - { label: 'Paragraphe', name: 'p', widget: 'markdown' }
+              - label: 'Navigation'
+                name: 'heroNav'
+                widget: 'list'
+                fields:
+                  - { label: 'URL de la page', name: 'url', widget: 'string' }
+                  - { label: 'Texte du lien', name: 'text', widget: 'string' }
           # - label: "Section L'Ostéopathie"
           #   name: 'sectionOsteopathe'
           #   widget: 'object'
