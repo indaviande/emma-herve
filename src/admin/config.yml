@@ -34,7 +34,6 @@ collections:
             fields:
               - { label: 'Titre H2', name: 'h2', widget: 'string' }
               - { label: 'Paragraphe', name: 'p', widget: 'text' }
-              - { label: 'Lien', name: 'p', widget: 'text' }
               - label: 'Lien'
                 name: 'link'
                 widget: 'list'
