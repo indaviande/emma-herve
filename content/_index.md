@@ -8,8 +8,8 @@ sectionEmma:
     url: emma-herve/emma-herve
     text: Mon parcours d’osthéopathe
   img:
-    url: images/sharing-visual.jpg
-    alt: Photo d'Emma Hervé, Ostéopathe Paris 15
+    url: images/photo-emma.jpg
+    alt: Photo d'Emma Hervé, Ostéopathe Paris 18
 draft: false
 title: Accueil
 h1: <span class="text-dark">Emma Hervé</span><br />vous reçoit dans son cabinet
