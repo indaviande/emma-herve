@@ -195,5 +195,9 @@ module.exports = {
 		userSelect: false,
 		visibility: false
 	},
-	plugins: []
+	plugins: [],
+	future: {
+		removeDeprecatedGapUtilities: true,
+		purgeLayersByDefault: true
+	}
 };
