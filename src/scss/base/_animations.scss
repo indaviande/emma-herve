@@ -496,17 +496,19 @@
     box-shadow: 2em -1.5em theme('colors.yellow.300'), 2em 1.5em theme('colors.yellow.300');
   }
 
-  50% {
-    box-shadow: 1.8em -1.2em theme('colors.yellow.300'), 2.2em 1.7em theme('colors.yellow.300');
+  33% {
+    box-shadow: 1.5em -1.5em theme('colors.yellow.300'), 1.5em 1.5em theme('colors.yellow.300');
   }
 
-  // TODO: Make the animation smooth
+  66% {
+    box-shadow: 1em -.8em theme('colors.yellow.300'), 1em .8em theme('colors.yellow.300');
+  }
 }
 
 .yellow-box-shadow {
   box-shadow: 2em -1.5em theme('colors.yellow.300'), 2em 1.5em theme('colors.yellow.300');
   transition: box-shadow 1s ease;
-  animation: boxMoving 5s linear infinite;
+  animation: boxMoving 6s ease-in-out infinite alternate;
 }
 
 // H1 appear at intersection observer
@@ -519,7 +521,7 @@
   a {
     opacity: 0;
     transform: translateY(100%);
-    @include tran_simple(0.8s);
+    @include tran_simple(0.75s);
   }
 
   &.in-view {

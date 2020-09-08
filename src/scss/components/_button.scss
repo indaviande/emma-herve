@@ -2,23 +2,23 @@
   @include Jost();
   @include Medium();
   @include Ease();
-  display: inline-block;
+  display: inline-table;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  max-width: 250px;
+  // max-width: 250px;
   background-color: transparent;
   color: theme('colors.dark');
   border: 1px solid rgba(246, 126, 87, 0.4);
   line-height: 1.5;
+  letter-spacing: 0.02em;
   font-size: 0.875em;
 
-  @apply px-6 py-4;
+  @apply px-8 py-4;
 
   &:hover {
     @apply bg-pink-700 text-white border-transparent;
   }
+
 }
 
 .btn-doctolib {
@@ -26,6 +26,11 @@
   display: block;
   color: theme('colors.white');
   border: none;
+  // display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  max-width: 250px;
+  @apply px-6 py-4;
 
   &:hover {
     @apply bg-pink-700;

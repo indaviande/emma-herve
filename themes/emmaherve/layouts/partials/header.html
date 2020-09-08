@@ -17,11 +17,11 @@
 <header class="w-full fixed z-50 {{ .Scratch.Get "headerClass" }} flex flex-col">
   <nav class="nav--desktop hidden md:flex md:flex-wrap lg:flex-no-wrap justify-end lg:justify-between w-full">
     <div class="flex items-center md:w-full lg:w-auto">
-      <a class="mr-10 dim" href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}images/nav-main-logo.svg"></a>
+      <a class="mr-8 dim" href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}images/nav-main-logo.svg"></a>
 
       {{ $currentPage := . }}
       {{ range .Site.Menus.main }}
-      <a class="nav dim mr-8 {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}"
+      <a class="nav dim mx-4 {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}"
         href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
       {{ end }}
 

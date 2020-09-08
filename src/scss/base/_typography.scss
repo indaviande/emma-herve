@@ -99,6 +99,15 @@ h1,
   @apply mb-12;
 }
 
+.slide_reveal {
+  @apply mb-12;
+
+  h1,
+  .h1-page {
+    @apply mb-0;
+  }
+}
+
 h2,
 .h2 {
   @include Jost();

@@ -47,6 +47,10 @@ header {
   // }
 }
 
+address a.p {
+  font-size: 0.875em;
+}
+
 @screen md {
   header {
     &.scroll-down {

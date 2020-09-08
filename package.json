@@ -12,7 +12,10 @@
 	"browserslist": [
 		"last 4 version",
 		"> 1%",
-		"ie 11"
+		"ie 11",
+		"not baidu >= 7.12",
+		"not and_qq >= 1.2",
+		"not op_mini all"
 	],
 	"repository": {
 		"type": "git",
