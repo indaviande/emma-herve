@@ -27,19 +27,19 @@ collections:
             widget: 'list'
             fields:
               - { label: "ID de l'Ancre", name: 'id', widget: 'string' }
-              # - { label: "Texte de l'Ancre", name: 'text', widget: 'string' }
-          - label: "Section L'Ostéopathie"
-            name: 'sectionOsteopathe'
-            widget: 'object'
-            fields:
-              - { label: 'Titre H2', name: 'h2', widget: 'string' }
-              - { label: 'Paragraphe', name: 'p', widget: 'text' }
-              - label: 'Lien'
-                name: 'link'
-                widget: 'list'
-                fields:
-                  - { label: 'URL de la page', name: 'url', widget: 'string' }
-                  - { label: 'Texte du lien', name: 'text', widget: 'string' }
+              - { label: "Texte de l'Ancre", name: 'text', widget: 'string' }
+          # - label: "Section L'Ostéopathie"
+          #   name: 'sectionOsteopathe'
+          #   widget: 'object'
+          #   fields:
+          #     - { label: 'Titre H2', name: 'h2', widget: 'string' }
+          #     - { label: 'Paragraphe', name: 'p', widget: 'text' }
+          #     - label: 'Lien'
+          #       name: 'link'
+          #       widget: 'list'
+          #       fields:
+          #         - { label: 'URL de la page', name: 'url', widget: 'string' }
+          #         - { label: 'Texte du lien', name: 'text', widget: 'string' }
       # - label: "L'Osthéopathie"
       #   name: 'lostheopathie'
       #   file: 'content/osteopathie/osteopathie.md'
