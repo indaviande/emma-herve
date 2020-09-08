@@ -28,6 +28,12 @@ collections:
             fields:
               - { label: "ID de l'Ancre", name: 'id', widget: 'string' }
               - { label: "Texte de l'Ancre", name: 'text', widget: 'string' }
+          - label: "Section L'Ostéopathie"
+            name: 'sectionOsteopathe'
+            widget: 'object'
+            fields:
+              - { label: 'Titre H2', name: 'h2', widget: 'string' }
+              - { label: 'Paragraphe', name: 'p', widget: 'markdown' }
           # - label: "Section L'Ostéopathie"
           #   name: 'sectionOsteopathe'
           #   widget: 'object'
@@ -40,13 +46,13 @@ collections:
           #       fields:
           #         - { label: 'URL de la page', name: 'url', widget: 'string' }
           #         - { label: 'Texte du lien', name: 'text', widget: 'string' }
-      # - label: "L'Osthéopathie"
-      #   name: 'lostheopathie'
-      #   file: 'content/osteopathie/osteopathie.md'
-      #   fields:
-      #     - { label: Titre, name: title, widget: string }
-      #     - { label: Description, name: description, widget: string }
-      #     - { label: Sous-titre, name: subtitle, widget: string }
+      - label: "L'Osthéopathie"
+        name: 'lostheopathie'
+        file: 'content/osteopathie/osteopathie.md'
+        fields:
+          - { label: Titre, name: title, widget: string }
+          - { label: Description, name: description, widget: string }
+          - { label: Sous-titre, name: subtitle, widget: string }
   - name: 'videos' # Used in routes, e.g., /admin/collections/blog
     label: 'Vidéos' # Used in the UI
     folder: 'content/videos' # The path to the folder where the documents are stored
