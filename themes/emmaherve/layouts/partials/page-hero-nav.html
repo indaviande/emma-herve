@@ -22,7 +22,7 @@
 
 		<div class="w-full lg:w-5/12 flex justify-center lg:justify-end items-center {{if .Params.heroImgUrl}}py-8{{end}}">
 			{{if .Params.heroImgUrl}}<img class="{{ .Params.imgClasses }} max-img-width w-10/12 md:w-7/12 lg:w-1/2 w-32"
-				src="{{ .Site.BaseURL }}{{ .Params.heroImgUrl }}" />
+				src="{{ .Site.BaseURL }}{{ .Params.heroImgUrl }}" alt="Photo d'Emma Hervé" />
 			{{ end }}
 		</div>
 
@@ -36,8 +36,6 @@
 	class="page-hero-nav ease {{ .Scratch.Get "bgClass" }} pb-2 lg:pb-4 pt-4 mb-8 mt-4 md:sticky z-50 w-full mx-auto">
 	<div class="container text-pink-700 w-full">
 		<div class="flex flex-wrap justify-between items-center -mx-4">
-			<!-- TODO: Souligner la partie en cours -->
-
 			{{ range $nav }}
 			<h5 class="mb-0 px-4">
 				<a class="no-dim cta mb-4 lg:mb-0 text-center text-pink-700" href="#{{ .id }}">{{ .text }}</a>
