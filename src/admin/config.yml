@@ -6,10 +6,10 @@ media_folder: 'static/images'
 public_folder: 'images'
 site_url: https://emma-herve.netlify.app/
 logo_url: https://emma-herve.netlify.app/images/nav-main-logo.svg
-# slug:
-#   encoding: 'ascii'
-#   clean_accents: true
-#   sanitize_replacement: '-'
+slug:
+  encoding: 'ascii'
+  clean_accents: true
+  sanitize_replacement: '-'
 collections:
   - name: 'pages'
     label: 'Pages'
@@ -119,6 +119,14 @@ collections:
                 fields:
                   - { label: 'Texte du lien', name: 'titre', widget: 'string' }
                   - { label: 'URL de la page', name: 'content', widget: 'markdown' }
+          - label: 'Section Les Motifs de consultation'
+            name: 'motifsConsultation'
+            widget: 'object'
+            fields:
+              - { label: 'Sous-Titre', name: 'sousTitre', widget: 'string' }
+              - { label: 'Titre', name: 'titre', widget: 'string' }
+              - { label: 'Phrase d'introduction', name: 'intro', widget: 'string' }
+              - { label: 'Contenu', name: 'content', widget: 'markdown'}
   - name: 'videos' # Used in routes, e.g., /admin/collections/blog
     label: 'Vidéos' # Used in the UI
     folder: 'content/videos' # The path to the folder where the documents are stored
