@@ -3,7 +3,6 @@ title: 'Contact, tarifs et infos bien pratiques !'
 description: ''
 bgColor: 'bg-beige'
 chapeau: 'Je vous reçois dans mon cabinet parisien dans le 15e arrondissement de Paris du lundi au samedi (sauf vendredi), de 8h à 20h.'
-heroImgUrl: '/images/photo-emma.jpg'
 imgClasses: ''
 list:
   - titre: Adresse
