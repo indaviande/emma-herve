@@ -127,6 +127,31 @@ collections:
               - { label: 'Titre', name: 'titre', widget: 'string' }
               - { label: "Phrase d'introduction", name: 'intro', widget: 'string' }
               - { label: 'Contenu', name: 'content', widget: 'markdown' }
+          - label: 'Section Pour qui ?'
+            name: 'pourqui'
+            widget: 'object'
+            fields:
+              - { label: 'Sous-Titre', name: 'sousTitre', widget: 'string' }
+              - { label: 'Titre', name: 'titre', widget: 'string' }
+              - { label: "Phrase d'introduction", name: 'intro', widget: 'string' }
+              - label: 'Pour qui ?'
+                name: 'public'
+                widget: 'list'
+                fields:
+                  - { label: 'Titre', name: 'titre', widget: 'string' }
+                  - { label: 'Image', name: 'img', widget: 'image' }
+                  - { label: 'Chapeau Explicatif', name: 'chapeau', widget: 'string' }
+                  - { label: 'Contenu', name: 'content', widget: 'markdown' }
+          - label: 'Pour aller plus loin'
+            name: 'morePages'
+            widget: 'object'
+            fields:
+              - { label: 'Lien n°1 : URL', name: 'link1', widget: 'string' }
+              - { label: 'Lien n°1 : Texte', name: 'text1', widget: 'string' }
+              - { label: 'Lien n°2 : URL', name: 'link2', widget: 'string' }
+              - { label: 'Lien n°2 : Texte', name: 'text2', widget: 'string' }
+              - { label: 'Lien n°3 : URL', name: 'link3', widget: 'string' }
+              - { label: 'Lien n°3 : Texte', name: 'text3', widget: 'string' }
   - name: 'videos' # Used in routes, e.g., /admin/collections/blog
     label: 'Vidéos' # Used in the UI
     folder: 'content/videos' # The path to the folder where the documents are stored
