@@ -78,7 +78,7 @@ collections:
                   - { label: 'ALT (texte alternatif)', name: 'alt', widget: 'string' }
       - label: "L'Osthéopathie"
         name: 'lostheopathie'
-        file: 'content/osteopathie/osteopathie.md'
+        file: 'content/_index.md'
         fields:
           - { label: Titre, name: title, widget: string }
           - { label: Chapeau Explicatif, name: chapeau, widget: string }
