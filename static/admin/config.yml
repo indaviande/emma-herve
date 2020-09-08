@@ -6,10 +6,10 @@ media_folder: 'static/images'
 public_folder: 'images'
 site_url: https://emma-herve.netlify.app/
 logo_url: https://emma-herve.netlify.app/images/nav-main-logo.svg
-slug:
-  encoding: 'ascii'
-  clean_accents: true
-  sanitize_replacement: '-'
+# slug:
+#   encoding: 'ascii'
+#   clean_accents: true
+#   sanitize_replacement: '-'
 collections:
   - name: 'pages'
     label: 'Pages'
@@ -22,13 +22,14 @@ collections:
           - { label: Titre, name: title, widget: string }
           - { label: Description, name: description, widget: string }
           - { label: Titre de la page H1, name: h1, widget: markdown }
-          - label: 'Navigation'
+          - { label: 'Navigation'
             name: 'heroNav'
             widget: 'list'
             fields:
               - { label: "ID de l'Ancre", name: 'id', widget: 'string' }
               - { label: "Texte de l'Ancre", name: 'text', widget: 'string' }
-          - label: "Section L'Ostéopathie"
+            }
+          - { label: "Section L'Ostéopathie"
             name: 'sectionOsteopathe'
             widget: 'object'
             fields:
@@ -40,6 +41,7 @@ collections:
                 fields:
                   - { label: 'URL de la page', name: 'url', widget: 'string' }
                   - { label: 'Texte du lien', name: 'text', widget: 'string' }
+            }
       # - label: "L'Osthéopathie"
       #   name: 'lostheopathie'
       #   file: 'content/osteopathie/osteopathie.md'
