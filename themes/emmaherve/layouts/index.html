@@ -18,28 +18,19 @@
 				<div class="flex flex-col justify-center pt-32 p-8 md:pt-32 md:p-16">
 					<div class="slide__reveal mb-12 md:mb-16">
 						<h1 class="h1-hp xl:w-2/3 mb-0">
-							<span class="text-dark">Emma Hervé</span><br />
-							vous reçoit dans son cabinet d’ostéopathie à Paris 15.
+							{{.Params.h1 | markdownify}}
 						</h1>
 					</div>
 
 					<ul class="hp-questions">
+						{{ $navQuestions := .Params.heroNav }}
+						{{ range $navQuestions  }}
 						<li class="no-style mb-6 leading-10">
-							<a href="#osteopathe" class="inline h4">
-								Comment se déroule une consultation ?
+							<a href="#{{.id}}" class="inline h4">
+								{{.text}}
 							</a>
 						</li>
-						<li class="no-style mb-6 leading-10">
-							<a href="#votre-osteopathe" class="inline h4">
-								Le parcours de mon ostéopathe
-							</a>
-						</li>
-
-						<li class="no-style mb-6 leading-10">
-							<a href="#contact-infos" class="inline h4">
-								Contact et tarifs du cabinet
-							</a>
-						</li>
+						{{ end }}
 						<li class="no-style mt-12 db_y-translate">
 							<a href="#osteopathe" class="inline">
 								<svg width="23" height="54" viewBox="0 0 23 54" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,12 +40,12 @@
 								</svg>
 							</a>
 						</li>
-
-
+					</ul>
 				</div>
 			</div>
-			</div>
 		</section>
+
+		{{ with .Params.sectionOsteopathe }}
 
 		<section id="osteopathe" class="w-full bg-beige min-h-screen flex items-center ">
 			<div class="container flex flex-wrap py-8 md:py-16">
@@ -64,58 +55,56 @@
 
 				<div class="w-full md:w-10/12 mx-auto order-1 lg:order-2 lg:w-1/2 flex flex-col justify-center py-8">
 					<h2 class="h2">
-						Qu’est-ce qu’un ostéopathe ?
+						{{.h2}}
 					</h2>
 					<p class="p-big">
-						Découvrez en quoi consiste l'ostéopathe, les différents motifs de consultation et
-						comment se déroule une séance d’osthéopathie. Nourrissons, seniors, travailleurs,
-						sportifs, femmes enceintes, l'ostéopathe s'adresse à tous.<br />
-						“Et il y en a une sur Paris 15 !”
+						{{.p|markdownify}}
 					</p>
-					<a class="btn mt-4" href="{{ .Site.BaseURL }}osteopathie/osteopathie">Comprendre l’osthéopathie</a>
+					<a class="btn mt-4" href="{{ .Site.BaseURL }}{{.link.url}}">{{.link.text}}</a>
 				</div>
 			</div>
 		</section>
 
+		{{ end }}
+
+		{{ with .Params.sectionEmma }}
 		<section id="votre-osteopathe" class="w-full bg-white min-h-screen flex items-center ">
 			<div class="container flex flex-wrap py-8 md:py-16">
 				<div class="lg:pl-16 w-full md:w-10/12 mx-auto order-2 lg:order-1 lg:w-7/12 flex flex-col justify-center py-8">
 					<h2 class="h2">
-						Votre ostéopathe Emma Hervé
+						{{.h2}}
 					</h2>
 					<p class="p-big">
-						Diplômée d'état, votre ostéopathe Emma Hervé, vous accueille dans le 15ème
-						arrondissement de Paris.  Découvrez son parcours professionnel, ses spécialisations
-						post-graduées...
+						{{.p|markdownify}}
 					</p>
-					<a class="btn mt-4" href="{{ .Site.BaseURL }}emma-herve/emma-herve">Mon parcours d’osthéopathe</a>
+					<a class="btn mt-4" href="{{ .Site.BaseURL }}{{.link.url}}">{{.link.text}}</a>
 				</div>
 
 				<div class="w-full lg:w-5/12 order-1 lg:order-2 flex justify-center items-center py-8">
 					<img class="yellow-box-shadow max-img-height w-10/12 md:w-7/12 lg:w-1/2 w-32"
-						src="{{ .Site.BaseURL }}/images/photo-emma.jpg" />
+						src="{{ .Site.BaseURL }}{{.img.url}}" alt="{{.img.alt}}" />
 				</div>
 			</div>
 		</section>
+		{{ end }}
+
+		{{ with .Params.sectionContact }}
 
 		<section id="contact-infos" class="w-full bg-beige min-h-screen flex items-center ">
 			<div class="container flex flex-wrap py-8 md:py-16">
 				<div class="w-full lg:w-1/2 order-2 lg:order-1 flex justify-center items-center py-8">
-					<img class="max-img-width w-10/12 md:w-7/12 lg:w-1/2" src="{{ .Site.BaseURL }}/images/hp-location.svg" />
+					<img class="max-img-width w-10/12 md:w-7/12 lg:w-1/2" src="{{ .Site.BaseURL }}{{.img.url}}"
+						alt="{{.img.alt}}" />
 				</div>
 
 				<div class="w-full md:w-10/12 mx-auto order-1 lg:order-2 lg:w-1/2 flex flex-col justify-center py-8">
-					<h2 class="h2">
-						Un cabinet au coeur du 15e arrondissement de Paris
-					</h2>
-					<p class="p-big">
-						Retrouvez toutes les informations pratiques pour vous rendre sur place, les tarifs,
-						votre couverture et comment régler la consultation.
-					</p>
-					<a class="btn mt-4" href="{{ .Site.BaseURL }}contact-tarifs/contact-tarifs">Contact et infos</a>
+					<h2 class="h2">{{.h2}}</h2>
+					<p class="p-big">{{.p|markdownify}}</p>
+					<a class="btn mt-4" href="{{ .Site.BaseURL }}{{.link.url}}">{{.link.text}}</a>
 				</div>
 			</div>
 		</section>
+		{{ end }}
 
 		{{ partial "magazine.html" . }}
 	</article>
