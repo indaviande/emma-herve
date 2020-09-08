@@ -9,10 +9,4 @@ credits:
   linkText: Lien de l’article à retrouver sur tel site
 draft: false
 type: article
-Content: |-
-  Something must happen.
-
-  * Test something
-
-  1. Et maintenant ?
 ---
