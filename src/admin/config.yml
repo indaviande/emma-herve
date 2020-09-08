@@ -89,7 +89,7 @@ collections:
             fields:
               - { label: "Texte de l'Ancre", name: 'text', widget: 'string' }
               - { label: "ID de l'Ancre", name: 'id', widget: 'string' }
-          - label: 'Section En quoi consiste l'ostéopathie'
+          - label: "Section En quoi consiste l'ostéopathie"
             name: 'shapePoints'
             widget: 'object'
             fields:
@@ -108,7 +108,11 @@ collections:
               - { label: 'Sous-Titre', name: 'sousTitre', widget: 'string' }
               - { label: 'Titre', name: 'titre', widget: 'string' }
               - { label: 'Début consultation', name: 'tempsConsultation', widget: 'string' }
-              - { label: 'Partie colorée (Prix Consultation)', name: 'prixConsultation', widget: 'string' }
+              - {
+                  label: 'Partie colorée (Prix Consultation)',
+                  name: 'prixConsultation',
+                  widget: 'string',
+                }
               - label: 'Point'
                 name: 'point'
                 widget: 'list'
