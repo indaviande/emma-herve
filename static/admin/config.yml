@@ -260,10 +260,11 @@ collections:
       preview: true
     fields: # The fields for each document, usually in front matter
       - { label: Title, name: title, widget: string }
+      - { label: Chapeau Explicatif, name: chapeau, widget: string }
       - { label: Description SEO, name: description, widget: string }
       - { label: Image, name: heroImgUrl, widget: image }
       - { label: Catégorie, name: category, widget: string }
-      - { label: Contenu, name: Content, widget: markdown }
+      - { label: Contenu, name: body, widget: markdown }
       - label: 'Crédits'
         name: 'credits'
         widget: 'object'
