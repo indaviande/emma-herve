@@ -125,8 +125,8 @@ collections:
             fields:
               - { label: 'Sous-Titre', name: 'sousTitre', widget: 'string' }
               - { label: 'Titre', name: 'titre', widget: 'string' }
-              - { label: 'Phrase d'introduction', name: 'intro', widget: 'string' }
-              - { label: 'Contenu', name: 'content', widget: 'markdown'}
+              - { label: "Phrase d'introduction", name: 'intro', widget: 'string' }
+              - { label: 'Contenu', name: 'content', widget: 'markdown' }
   - name: 'videos' # Used in routes, e.g., /admin/collections/blog
     label: 'Vidéos' # Used in the UI
     folder: 'content/videos' # The path to the folder where the documents are stored
