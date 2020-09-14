@@ -152,6 +152,18 @@ collections:
               - { label: 'Lien n°2 : Texte', name: 'text2', widget: 'string' }
               - { label: 'Lien n°3 : URL', name: 'link3', widget: 'string' }
               - { label: 'Lien n°3 : Texte', name: 'text3', widget: 'string' }
+          - {
+              label: 'Type (Ne pas modifier)',
+              name: 'type',
+              widget: 'string',
+              default: 'osteopathie',
+            }
+          - {
+              label: 'Background color (Ne pas modifier)',
+              name: 'bgColor',
+              widget: 'string',
+              default: 'bg-white',
+            }
       - label: 'Emma Hervé'
         name: 'emmaHerve'
         file: 'content/emma-herve.md'
