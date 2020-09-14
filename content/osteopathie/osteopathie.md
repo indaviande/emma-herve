@@ -36,14 +36,19 @@ shapePointsReverse:
     - titre: 3. Le traitement ostéopathique
       content: Le traitement ostéopathique permet de supprimer et de réajuster les restrictions de mobilité du corps, de restaurer les fonctions perturbées dans le respect constant des amplitudes physiologiques propres à chaque organe ou articulation.
 motifsConsultation:
-  sousTitre: fjhgfjh
-  titre: gfjhfgjhfjhg
-  intro: fhjgfjhgf
-  content: hgfjhf
+  sousTitre: Aïe, j'ai mal !
+  titre: Les motifs de consultation
+  intro: Petite liste non-exhaustive des maux rencontrés par mes patients
+  content: "– Vous avez mal au dos<br>
+  – Sciatique, la cruralgie ou la névralgie<br>
+  – Troubles digestifs<br>
+  – Constipations<br>
+  – Dysfonctionnement de la sphère ORL<br><br>
+  <a href='' class='inline-link dim'>Découvrir plus d'exemples</a>"
 pourqui:
-  sousTitre: jhgfhjf
-  titre: jhgfjhfg
-  intro: jhgfhjgfjh
+  sousTitre: Pour qui ?
+  titre: L’ostéopathie pour tous !
+  intro: L'ostéopathie accompagne la croissance et le développement harmonieux du corps de la naissance à l'âge adulte.
   public:
     - titre: fhjg
       chapeau: fghjfgghjkgjkgkj
