@@ -1,9 +1,8 @@
 ---
 title: 'Mais qu’est-ce qu’un ostéopathe ?'
-description: ''
-bgColor: 'bg-white'
 chapeau: 'Un ostéopathe pratique une médecine douce, à la fois préventive et curative visant à restaurer la mobilité des organes, fascias, articulations grâce à des manipulations manuelles.'
-heroImgUrl: '/images/hp-bench.svg'
+description:
+heroImgUrl: 'images/hp-bench.svg'
 shapePointsId: comment-ca-marche
 stickyNav:
   - id: comment-ca-marche
@@ -47,7 +46,25 @@ motifsConsultation:
     – Constipations<br>
     – Dysfonctionnement de la sphère ORL<br><br>
     <a href='' class='inline-link dim'>Découvrir plus d'exemples</a>
-
-draft: false
+pourqui:
+  sousTitre: jhgfhjf
+  titre: jhgfjhfg
+  intro: jhgfhjgfjh
+  public:
+    - titre: fhjg
+      chapeau: fghjfgghjkgjkgkj
+      content: hgkjhgkjgjhgkjhg
+    - titre: hjgkjghjkhjk
+      chapeau: gkjhgkjg
+      img: images/contact-pink.svg
+      content: kjhgjkg
+morePages:
+  link1: kjhgkjgk
+  text1: jhgkjg
+  link2: jkhg
+  text2: kghj
+  link3: gkjgjh
+  text3: gjkgkj
 type: osteopathie
+bgColor: bg-white
 ---
