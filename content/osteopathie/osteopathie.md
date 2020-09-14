@@ -61,10 +61,23 @@ pourqui:
         consultation
         ostéopathique post accouchement rééquilibre le corps suite à tous les changements qu'il vient de subir
         permettant ainsi de retrouver un confort de vie et de prévenir d'éventuelles douleurs.</p>
-    - titre: hjgkjghjkhjk
-      chapeau: gkjhgkjg
-      img: images/contact-pink.svg
-      content: kjhgjkg
+    - titre: Nourrissons
+      img:
+      chapeau: Durant la grossesse et l'accouchement le bébé subit des contraintes importantes pouvant avoir des répercussions très variées tout au long de sa vie.
+      content: >
+        <p>Les motifs de consultation les plus fréquents sont:<br>
+        – la rotation préférentielle de la tête avec apparition d'une déformation du crâne<br>
+        – la régurgitation avec troubles digestifs<br>
+        – la malformation et/ou malpositions entre autres des pieds<br>
+        – certaines affections ORL<br>
+        – des troubles du sommeil…<br>
+        <br>
+        La prise en charge en ostéopathie ne remplace pas le pédiatre ou tout spécialiste dont votre enfant aurait besoin.</p>
+    - titre: Enfants
+      chapeau: La consultation ostéopathique de l'enfant est surtout préventive, permettant de suivre le développement le plus harmonieux possible.
+      content: >
+        <p>Par exemple, l’ostéopathe prend en charge la prévention et le traitement ostéopathique des troubles structurels du squelette comme la scoliose mais aussi les troubles ORL comme les otites, les sinusites, l'asthme, les troubles du sommeil... Il intervient aussi en complémentarité des soins othodontiques, orthophoniques et orthoptiques.</p>
+        <p>La prise en charge en ostéopathie ne remplace pas le pédiatre ou tout spécialiste dont votre enfant aurait besoin.</p>
 morePages:
   link1: contact-tarifs/contact-tarifs
   text1: Trouver les infos du cabinet
