@@ -93,6 +93,13 @@ collections:
           - { label: Titre, name: title, widget: string }
           - { label: Chapeau Explicatif, name: chapeau, widget: string, required: false }
           - { label: Description SEO, name: description, widget: string }
+          - { label: Image, name: heroImgUrl, widget: image, required: false }
+          - {
+              label: Shape Points ID (Ne pas modifier),
+              name: shapePointsId,
+              widget: string,
+              required: false,
+            }
           - label: 'Sticky Navigation'
             name: 'stickyNav'
             widget: 'list'
