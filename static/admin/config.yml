@@ -81,77 +81,98 @@ collections:
         file: 'content/osteopathie/osteopathie.md'
         fields:
           - { label: Titre, name: title, widget: string }
-          - { label: Chapeau Explicatif, name: chapeau, widget: string }
+          - { label: Chapeau Explicatif, name: chapeau, widget: string, required: false }
           - { label: Description SEO, name: description, widget: string }
           - label: 'Sticky Navigation'
             name: 'stickyNav'
             widget: 'list'
             fields:
-              - { label: "Texte de l'Ancre", name: 'text', widget: 'string' }
-              - { label: "ID de l'Ancre", name: 'id', widget: 'string' }
+              - { label: "Texte de l'Ancre", name: 'text', widget: 'string', required: false }
+              - { label: "ID de l'Ancre", name: 'id', widget: 'string', required: false }
           - label: "Section En quoi consiste l'ostéopathie"
             name: 'shapePoints'
             widget: 'object'
             fields:
-              - { label: 'Sous-Titre', name: 'sousTitre', widget: 'string' }
-              - { label: 'Titre', name: 'titre', widget: 'string' }
+              - { label: 'Sous-Titre', name: 'sousTitre', widget: 'string', required: false }
+              - { label: 'Titre', name: 'titre', widget: 'string', required: false }
               - label: 'Point'
                 name: 'point'
                 widget: 'list'
                 fields:
-                  - { label: 'Texte du lien', name: 'titre', widget: 'string' }
-                  - { label: 'URL de la page', name: 'content', widget: 'markdown' }
+                  - { label: 'Texte du lien', name: 'titre', widget: 'string', required: false }
+                  - {
+                      label: 'URL de la page',
+                      name: 'content',
+                      widget: 'markdown',
+                      required: false,
+                    }
           - label: 'Section Comment se déroule une consultation ?'
             name: 'shapePointsReverse'
             widget: 'object'
             fields:
-              - { label: 'Sous-Titre', name: 'sousTitre', widget: 'string' }
-              - { label: 'Titre', name: 'titre', widget: 'string' }
-              - { label: 'Début consultation', name: 'tempsConsultation', widget: 'string' }
+              - { label: 'Sous-Titre', name: 'sousTitre', widget: 'string', required: false }
+              - { label: 'Titre', name: 'titre', widget: 'string', required: false }
+              - {
+                  label: 'Début consultation',
+                  name: 'tempsConsultation',
+                  widget: 'string',
+                  required: false,
+                }
               - {
                   label: 'Partie colorée (Prix Consultation)',
                   name: 'prixConsultation',
                   widget: 'string',
+                  required: false,
                 }
               - label: 'Point'
                 name: 'point'
                 widget: 'list'
                 fields:
-                  - { label: 'Texte du lien', name: 'titre', widget: 'string' }
-                  - { label: 'URL de la page', name: 'content', widget: 'markdown' }
+                  - { label: 'Texte du lien', name: 'titre', widget: 'string', required: false }
+                  - {
+                      label: 'URL de la page',
+                      name: 'content',
+                      widget: 'markdown',
+                      required: false,
+                    }
           - label: 'Section Les Motifs de consultation'
             name: 'motifsConsultation'
             widget: 'object'
             fields:
-              - { label: 'Sous-Titre', name: 'sousTitre', widget: 'string' }
-              - { label: 'Titre', name: 'titre', widget: 'string' }
-              - { label: "Phrase d'introduction", name: 'intro', widget: 'string' }
-              - { label: 'Contenu', name: 'content', widget: 'markdown' }
+              - { label: 'Sous-Titre', name: 'sousTitre', widget: 'string', required: false }
+              - { label: 'Titre', name: 'titre', widget: 'string', required: false }
+              - { label: "Phrase d'introduction", name: 'intro', widget: 'string', required: false }
+              - { label: 'Contenu', name: 'content', widget: 'markdown', required: false }
           - label: 'Section Pour qui ?'
             name: 'pourqui'
             widget: 'object'
             fields:
-              - { label: 'Sous-Titre', name: 'sousTitre', widget: 'string' }
-              - { label: 'Titre', name: 'titre', widget: 'string' }
-              - { label: "Phrase d'introduction", name: 'intro', widget: 'string' }
+              - { label: 'Sous-Titre', name: 'sousTitre', widget: 'string', required: false }
+              - { label: 'Titre', name: 'titre', widget: 'string', required: false }
+              - { label: "Phrase d'introduction", name: 'intro', widget: 'string', required: false }
               - label: 'Pour qui ?'
                 name: 'public'
                 widget: 'list'
                 fields:
-                  - { label: 'Titre', name: 'titre', widget: 'string' }
-                  - { label: 'Image', name: 'img', widget: 'image' }
-                  - { label: 'Chapeau Explicatif', name: 'chapeau', widget: 'string' }
-                  - { label: 'Contenu', name: 'content', widget: 'markdown' }
+                  - { label: 'Titre', name: 'titre', widget: 'string', required: false }
+                  - { label: 'Image', name: 'img', widget: 'image', required: false }
+                  - {
+                      label: 'Chapeau Explicatif',
+                      name: 'chapeau',
+                      widget: 'string',
+                      required: false,
+                    }
+                  - { label: 'Contenu', name: 'content', widget: 'markdown', required: false }
           - label: 'Pour aller plus loin'
             name: 'morePages'
             widget: 'object'
             fields:
-              - { label: 'Lien n°1 : URL', name: 'link1', widget: 'string' }
-              - { label: 'Lien n°1 : Texte', name: 'text1', widget: 'string' }
-              - { label: 'Lien n°2 : URL', name: 'link2', widget: 'string' }
-              - { label: 'Lien n°2 : Texte', name: 'text2', widget: 'string' }
-              - { label: 'Lien n°3 : URL', name: 'link3', widget: 'string' }
-              - { label: 'Lien n°3 : Texte', name: 'text3', widget: 'string' }
+              - { label: 'Lien n°1 : URL', name: 'link1', widget: 'string', required: false }
+              - { label: 'Lien n°1 : Texte', name: 'text1', widget: 'string', required: false }
+              - { label: 'Lien n°2 : URL', name: 'link2', widget: 'string', required: false }
+              - { label: 'Lien n°2 : Texte', name: 'text2', widget: 'string', required: false }
+              - { label: 'Lien n°3 : URL', name: 'link3', widget: 'string', required: false }
+              - { label: 'Lien n°3 : Texte', name: 'text3', widget: 'string', required: false }
           - {
               label: 'Type (Ne pas modifier)',
               name: 'type',
@@ -163,6 +184,7 @@ collections:
               name: 'bgColor',
               widget: 'string',
               default: 'bg-white',
+              required: false,
             }
       - label: 'Emma Hervé'
         name: 'emmaHerve'
