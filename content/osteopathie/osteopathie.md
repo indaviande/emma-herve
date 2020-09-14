@@ -47,9 +47,9 @@ motifsConsultation:
     – Dysfonctionnement de la sphère ORL<br><br>
     <a href='' class='inline-link dim'>Découvrir plus d'exemples</a>
 pourqui:
-  sousTitre: jhgfhjf
-  titre: jhgfjhfg
-  intro: jhgfhjgfjh
+  sousTitre: Pour qui ?
+  titre: L’ostéopathie pour tous !
+  intro: L'ostéopathie accompagne la croissance et le développement harmonieux du corps de la naissance à l'âge adulte.
   public:
     - titre: fhjg
       chapeau: fghjfgghjkgjkgkj
@@ -59,12 +59,12 @@ pourqui:
       img: images/contact-pink.svg
       content: kjhgjkg
 morePages:
-  link1: kjhgkjgk
-  text1: jhgkjg
-  link2: jkhg
-  text2: kghj
-  link3: gkjgjh
-  text3: gjkgkj
+  link1: contact-tarifs/contact-tarifs
+  text1: Trouver les infos du cabinet
+  link2: osteopathie/osteopathie
+  text2: Comment se déroule une consultation ?
+  link3: emma-herve/emma-herve
+  text3: Qui est mon ostéopathe Emma Hervé ?
 type: osteopathie
 bgColor: bg-white
 ---
