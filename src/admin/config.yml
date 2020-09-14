@@ -116,9 +116,9 @@ collections:
                 name: 'point'
                 widget: 'list'
                 fields:
-                  - { label: 'Texte du lien', name: 'titre', widget: 'string', required: false }
+                  - { label: 'Texte du point', name: 'titre', widget: 'string', required: false }
                   - {
-                      label: 'URL de la page',
+                      label: 'Contenu du point',
                       name: 'content',
                       widget: 'markdown',
                       required: false,

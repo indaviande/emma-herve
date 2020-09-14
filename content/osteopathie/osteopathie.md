@@ -1,12 +1,18 @@
 ---
-title: zertjykghbjlkh
-chapeau: kjlhhkjlh
-description: ljhklhlkj
-heroImgUrl: images/contact-orange.svg
-shapePointsId: hjlkhjklhklj
+title: 'Mais qu’est-ce qu’un ostéopathe ?'
+chapeau: 'Un ostéopathe pratique une médecine douce, à la fois préventive et curative visant à restaurer la mobilité des organes, fascias, articulations grâce à des manipulations manuelles.'
+description:
+heroImgUrl: 'images/hp-bench.svg'
+shapePointsId: comment-ca-marche
 stickyNav:
-  - text: hljh
-    id: klhlkjh
+  - id: comment-ca-marche
+    text: Comment ça marche
+  - id: consultation
+    text: La consultation
+  - id: pathologie
+    text: Les pathologies
+  - id: pour-qui
+    text: Pour qui ?
 shapePoints:
   sousTitre: jklh
   titre: lkjhkj
