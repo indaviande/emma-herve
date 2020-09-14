@@ -1,7 +1,8 @@
 ---
 sectionEmma:
   h2: Votre ostéopathe Emma Hervé
-  p: Diplômée d'état, votre ostéopathe Emma Hervé, vous accueille dans le 15ème
+  p: >
+    Diplômée d'état, votre ostéopathe Emma Hervé, vous accueille dans le 15ème
     arrondissement de Paris. Découvrez son parcours professionnel, ses
     spécialisations post-graduées...
   link:
@@ -23,7 +24,8 @@ heroNav:
     text: Contact et tarifs du cabinet
 sectionOsteopathe:
   h2: Qu’est-ce qu’un ostéopathe ?
-  p: Découvrez en quoi consiste l'ostéopathe, les différents motifs de
+  p: >
+    Découvrez en quoi consiste l'ostéopathe, les différents motifs de
     consultation et comment se déroule une séance d’osthéopathie. Nourrissons,
     seniors, travailleurs, sportifs, femmes enceintes, l'ostéopathe s'adresse à
     tous.<br /> “Et il y en a une sur Paris 15 !”
@@ -32,7 +34,8 @@ sectionOsteopathe:
     text: Comprendre l’osthéopathie
 sectionContact:
   h2: Un cabinet au coeur du 15e arrondissement de Paris
-  p: Retrouvez toutes les informations pratiques pour vous rendre sur place, les
+  p: >
+    Retrouvez toutes les informations pratiques pour vous rendre sur place, les
     tarifs, votre couverture et comment régler la consultation.
   link:
     url: contact-tarifs/contact-tarifs
