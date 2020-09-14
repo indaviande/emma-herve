@@ -3,9 +3,7 @@ title: >
   Bonjour,<br> je suis Emma
 description: ''
 bgColor: 'bg-beige'
-chapeau: >
-  Diplomée d’état, mon parcours m'a permis de blablabla lorem ipsum sit dolor amet.<br>
-  Dire quelque chose sur le fait que tu es toujours en recherches de nouveaux projets et partenaires
+chapeau: Diplomée d’état, mon parcours m'a permis de blablabla lorem ipsum sit dolor amet.
 heroImgUrl: '/images/photo-emma.jpg'
 imgClasses: 'yellow-box-shadow max-img-height'
 stickyNav:
