@@ -21,61 +21,71 @@ collections:
         fields:
           - { label: Titre, name: title, widget: string }
           - { label: Description SEO, name: description, widget: string }
-          - { label: Titre de la page H1, name: h1, widget: markdown }
+          - { label: Titre de la page H1, name: h1, widget: markdown, required: false }
           - label: 'Navigation'
             name: 'heroNav'
             widget: 'list'
             fields:
-              - { label: "Texte de l'Ancre", name: 'text', widget: 'string' }
-              - { label: "ID de l'Ancre", name: 'id', widget: 'string' }
+              - { label: "Texte de l'Ancre", name: 'text', widget: 'string', required: false }
+              - { label: "ID de l'Ancre", name: 'id', widget: 'string', required: false }
           - label: "Section L'Ostéopathie"
             name: 'sectionOsteopathe'
             widget: 'object'
             fields:
-              - { label: 'Titre H2', name: 'h2', widget: 'string' }
-              - { label: 'Paragraphe', name: 'p', widget: 'markdown' }
+              - { label: 'Titre H2', name: 'h2', widget: 'string', required: false }
+              - { label: 'Paragraphe', name: 'p', widget: 'markdown', required: false }
               - label: 'Lien'
                 name: 'link'
                 widget: 'object'
                 fields:
-                  - { label: 'Texte du lien', name: 'text', widget: 'string' }
-                  - { label: 'URL de la page', name: 'url', widget: 'string' }
+                  - { label: 'Texte du lien', name: 'text', widget: 'string', required: false }
+                  - { label: 'URL de la page', name: 'url', widget: 'string', required: false }
           - label: 'Section Emma Hervé'
             name: 'sectionEmma'
             widget: 'object'
             fields:
-              - { label: 'Titre H2', name: 'h2', widget: 'string' }
-              - { label: 'Paragraphe', name: 'p', widget: 'markdown' }
+              - { label: 'Titre H2', name: 'h2', widget: 'string', required: false }
+              - { label: 'Paragraphe', name: 'p', widget: 'markdown', required: false }
               - label: 'Lien'
                 name: 'link'
                 widget: 'object'
                 fields:
-                  - { label: 'Texte du lien', name: 'text', widget: 'string' }
-                  - { label: 'URL de la page', name: 'url', widget: 'string' }
+                  - { label: 'Texte du lien', name: 'text', widget: 'string', required: false }
+                  - { label: 'URL de la page', name: 'url', widget: 'string', required: false }
               - label: 'Image'
                 name: 'img'
                 widget: 'object'
                 fields:
-                  - { label: 'Image', name: 'url', widget: 'image' }
-                  - { label: 'ALT (texte alternatif)', name: 'alt', widget: 'string' }
+                  - { label: 'Image', name: 'url', widget: 'image', required: false }
+                  - {
+                      label: 'ALT (texte alternatif)',
+                      name: 'alt',
+                      widget: 'string',
+                      required: false,
+                    }
           - label: 'Section Contact & Tarifs'
             name: 'sectionContact'
             widget: 'object'
             fields:
-              - { label: 'Titre H2', name: 'h2', widget: 'string' }
-              - { label: 'Paragraphe', name: 'p', widget: 'markdown' }
+              - { label: 'Titre H2', name: 'h2', widget: 'string', required: false }
+              - { label: 'Paragraphe', name: 'p', widget: 'markdown', required: false }
               - label: 'Lien'
                 name: 'link'
                 widget: 'object'
                 fields:
-                  - { label: 'Texte du lien', name: 'text', widget: 'string' }
-                  - { label: 'URL de la page', name: 'url', widget: 'string' }
+                  - { label: 'Texte du lien', name: 'text', widget: 'string', required: false }
+                  - { label: 'URL de la page', name: 'url', widget: 'string', required: false }
               - label: 'Image'
                 name: 'img'
                 widget: 'object'
                 fields:
-                  - { label: 'Image', name: 'url', widget: 'image' }
-                  - { label: 'ALT (texte alternatif)', name: 'alt', widget: 'string' }
+                  - { label: 'Image', name: 'url', widget: 'image', required: false }
+                  - {
+                      label: 'ALT (texte alternatif)',
+                      name: 'alt',
+                      widget: 'string',
+                      required: false,
+                    }
       - label: "L'Osthéopathie"
         name: 'lostheopathie'
         file: 'content/osteopathie/osteopathie.md'
@@ -188,103 +198,134 @@ collections:
             }
       - label: 'Emma Hervé'
         name: 'emmaHerve'
-        file: 'content/emma-herve.md'
+        file: 'content/emma-herve/emma-herve.md'
         fields:
           - { label: Titre, name: title, widget: string }
-          - { label: Chapeau Explicatif, name: chapeau, widget: string }
-          - { label: Image, name: heroImgUrl, widget: image }
+          - { label: Chapeau Explicatif, name: chapeau, widget: string, required: false }
+          - { label: Image, name: heroImgUrl, widget: image, required: false }
           - { label: Description SEO, name: description, widget: string }
           - label: 'Sticky Navigation'
             name: 'stickyNav'
             widget: 'list'
             fields:
-              - { label: "Texte de l'Ancre", name: 'text', widget: 'string' }
-              - { label: "ID de l'Ancre", name: 'id', widget: 'string' }
+              - { label: "Texte de l'Ancre", name: 'text', widget: 'string', required: false }
+              - { label: "ID de l'Ancre", name: 'id', widget: 'string', required: false }
               - label: 'Entrées'
                 name: 'entries'
                 widget: 'list'
                 fields:
-                  - { label: 'Année et Statut', name: 'year', widget: 'string' }
-                  - { label: 'Titre', name: 'titre', widget: 'string' }
-                  - { label: 'Lieu', name: 'lieu', widget: 'string' }
+                  - { label: 'Année et Statut', name: 'year', widget: 'string', required: false }
+                  - { label: 'Titre', name: 'titre', widget: 'string', required: false }
+                  - { label: 'Lieu', name: 'lieu', widget: 'string', required: false }
           - label: 'Pour aller plus loin'
             name: 'morePages'
             widget: 'object'
             fields:
-              - { label: 'Lien n°1 : URL', name: 'link1', widget: 'string' }
-              - { label: 'Lien n°1 : Texte', name: 'text1', widget: 'string' }
-              - { label: 'Lien n°2 : URL', name: 'link2', widget: 'string' }
-              - { label: 'Lien n°2 : Texte', name: 'text2', widget: 'string' }
-              - { label: 'Lien n°3 : URL', name: 'link3', widget: 'string' }
-              - { label: 'Lien n°3 : Texte', name: 'text3', widget: 'string' }
+              - { label: 'Lien n°1 : URL', name: 'link1', widget: 'string', required: false }
+              - { label: 'Lien n°1 : Texte', name: 'text1', widget: 'string', required: false }
+              - { label: 'Lien n°2 : URL', name: 'link2', widget: 'string', required: false }
+              - { label: 'Lien n°2 : Texte', name: 'text2', widget: 'string', required: false }
+              - { label: 'Lien n°3 : URL', name: 'link3', widget: 'string', required: false }
+              - { label: 'Lien n°3 : Texte', name: 'text3', widget: 'string', required: false }
+          - {
+              label: 'Type (Ne pas modifier)',
+              name: 'type',
+              widget: 'string',
+              default: 'emma-herve',
+            }
+          - {
+              label: 'Background color (Ne pas modifier)',
+              name: 'bgColor',
+              widget: 'string',
+              default: 'bg-beige',
+              required: false,
+            }
       - label: 'Contact & Tarifs'
         name: 'contactTarifs'
         file: 'content/contact-tarifs/contact-tarifs.md'
         fields:
           - { label: Titre, name: title, widget: markdown }
-          - { label: Chapeau Explicatif, name: chapeau, widget: string }
+          - { label: Chapeau Explicatif, name: chapeau, widget: string, required: false }
           - { label: Description SEO, name: description, widget: string }
           - label: 'Liste de points'
             name: 'list'
             widget: 'list'
             fields:
-              - { label: "Texte de l'Ancre", name: 'titre', widget: 'string' }
-              - { label: "ID de l'Ancre", name: 'content', widget: 'markdown' }
-          - { label: Phrase sur le cabinet, name: cabinet, widget: string }
+              - { label: "Texte de l'Ancre", name: 'titre', widget: 'string', required: false }
+              - { label: "ID de l'Ancre", name: 'content', widget: 'markdown', required: false }
+          - { label: Phrase sur le cabinet, name: cabinet, widget: string, required: false }
 
           - label: 'Section Comment prendre rdv'
             name: 'prendreRdv'
             widget: 'object'
             fields:
-              - { label: 'Sur-titre', name: 'sousTitre', widget: 'markdown' }
-              - { label: 'Titre', name: 'titre', widget: 'string' }
+              - { label: 'Sur-titre', name: 'sousTitre', widget: 'markdown', required: false }
+              - { label: 'Titre', name: 'titre', widget: 'string', required: false }
               - label: 'Par quels moyens ?'
                 name: 'moyen'
                 widget: 'list'
                 fields:
-                  - { label: 'Titre', name: 'titre', widget: 'string' }
-                  - { label: 'Contenu', name: 'content', widget: 'string' }
-                  - { label: 'Link URL', name: 'linkUrl', widget: 'string' }
-                  - { label: 'Link Text', name: 'linkText', widget: 'string' }
+                  - { label: 'Titre', name: 'titre', widget: 'string', required: false }
+                  - { label: 'Contenu', name: 'content', widget: 'string', required: false }
+                  - { label: 'Link URL', name: 'linkUrl', widget: 'string', required: false }
+                  - { label: 'Link Text', name: 'linkText', widget: 'string', required: false }
           - label: 'Section Le Règlement'
             name: 'shapePoints'
             widget: 'object'
             fields:
-              - { label: 'Sous-Titre', name: 'sousTitre', widget: 'string' }
-              - { label: 'Titre', name: 'titre', widget: 'string' }
+              - { label: 'Sous-Titre', name: 'sousTitre', widget: 'string', required: false }
+              - { label: 'Titre', name: 'titre', widget: 'string', required: false }
               - label: 'Point'
                 name: 'point'
                 widget: 'list'
                 fields:
-                  - { label: 'Texte du lien', name: 'titre', widget: 'string' }
-                  - { label: 'URL de la page', name: 'content', widget: 'markdown' }
+                  - { label: 'Texte du lien', name: 'titre', widget: 'string', required: false }
+                  - {
+                      label: 'URL de la page',
+                      name: 'content',
+                      widget: 'markdown',
+                      required: false,
+                    }
           - label: 'Pour aller plus loin'
             name: 'morePages'
             widget: 'object'
             fields:
-              - { label: 'Lien n°1 : URL', name: 'link1', widget: 'string' }
-              - { label: 'Lien n°1 : Texte', name: 'text1', widget: 'string' }
-              - { label: 'Lien n°2 : URL', name: 'link2', widget: 'string' }
-              - { label: 'Lien n°2 : Texte', name: 'text2', widget: 'string' }
-              - { label: 'Lien n°3 : URL', name: 'link3', widget: 'string' }
-              - { label: 'Lien n°3 : Texte', name: 'text3', widget: 'string' }
+              - { label: 'Lien n°1 : URL', name: 'link1', widget: 'string', required: false }
+              - { label: 'Lien n°1 : Texte', name: 'text1', widget: 'string', required: false }
+              - { label: 'Lien n°2 : URL', name: 'link2', widget: 'string', required: false }
+              - { label: 'Lien n°2 : Texte', name: 'text2', widget: 'string', required: false }
+              - { label: 'Lien n°3 : URL', name: 'link3', widget: 'string', required: false }
+              - { label: 'Lien n°3 : Texte', name: 'text3', widget: 'string', required: false }
+          - {
+              label: 'Type (Ne pas modifier)',
+              name: 'type',
+              widget: 'string',
+              default: 'contact-tarifs',
+            }
+          - {
+              label: 'Background color (Ne pas modifier)',
+              name: 'bgColor',
+              widget: 'string',
+              default: 'bg-beige',
+              required: false,
+            }
       - label: 'Le Mag'
         name: 'leMag'
         file: 'content/article/_index.md'
         fields:
           - { label: Titre, name: title, widget: markdown }
-          - { label: Chapeau Explicatif, name: chapeau, widget: string }
+          - { label: Chapeau Explicatif, name: chapeau, widget: string, required: false }
           - { label: Description SEO, name: description, widget: string }
           - label: 'Pour aller plus loin'
             name: 'morePages'
             widget: 'object'
             fields:
-              - { label: 'Lien n°1 : URL', name: 'link1', widget: 'string' }
-              - { label: 'Lien n°1 : Texte', name: 'text1', widget: 'string' }
-              - { label: 'Lien n°2 : URL', name: 'link2', widget: 'string' }
-              - { label: 'Lien n°2 : Texte', name: 'text2', widget: 'string' }
-              - { label: 'Lien n°3 : URL', name: 'link3', widget: 'string' }
-              - { label: 'Lien n°3 : Texte', name: 'text3', widget: 'string' }
+              - { label: 'Lien n°1 : URL', name: 'link1', widget: 'string', required: false }
+              - { label: 'Lien n°1 : Texte', name: 'text1', widget: 'string', required: false }
+              - { label: 'Lien n°2 : URL', name: 'link2', widget: 'string', required: false }
+              - { label: 'Lien n°2 : Texte', name: 'text2', widget: 'string', required: false }
+              - { label: 'Lien n°3 : URL', name: 'link3', widget: 'string', required: false }
+              - { label: 'Lien n°3 : Texte', name: 'text3', widget: 'string', required: false }
   - name: 'articles' # Used in routes, e.g., /admin/collections/blog
     label: 'Articles' # Used in the UI
     folder: 'content/article' # The path to the folder where the documents are stored
@@ -294,9 +335,9 @@ collections:
       preview: true
     fields: # The fields for each document, usually in front matter
       - { label: Title, name: title, widget: string }
-      - { label: Chapeau Explicatif, name: chapeau, widget: string }
+      - { label: Chapeau Explicatif, name: chapeau, widget: string, required: false }
       - { label: Description SEO, name: description, widget: string }
-      - { label: Image, name: heroImgUrl, widget: image }
+      - { label: Image, name: heroImgUrl, widget: image, required: false }
       - { label: Catégorie, name: category, widget: string }
       - { label: Contenu, name: body, widget: markdown }
       - label: 'Crédits'
@@ -304,6 +345,6 @@ collections:
         widget: 'object'
         required: false
         fields:
-          - { label: 'Lien n°1 : URL', name: 'auteur', widget: 'string' }
-          - { label: 'Lien n°1 : Texte', name: 'linkUrl', widget: 'string' }
-          - { label: 'Lien n°2 : URL', name: 'linkText', widget: 'string' }
+          - { label: 'Lien n°1 : URL', name: 'auteur', widget: 'string', required: false }
+          - { label: 'Lien n°1 : Texte', name: 'linkUrl', widget: 'string', required: false }
+          - { label: 'Lien n°2 : URL', name: 'linkText', widget: 'string', required: false }
