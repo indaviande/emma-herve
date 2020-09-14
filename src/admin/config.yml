@@ -185,7 +185,7 @@ collections:
               - { label: 'Lien n°3 : Texte', name: 'text3', widget: 'string' }
       - label: 'Contact & Tarifs'
         name: 'contactTarifs'
-        file: 'contact-tarifs/contact-tarifs.md'
+        file: 'content/contact-tarifs/contact-tarifs.md'
         fields:
           - { label: Titre, name: title, widget: markdown }
           - { label: Chapeau Explicatif, name: chapeau, widget: string }
