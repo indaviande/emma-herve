@@ -2,6 +2,9 @@
 title: TEST EMMA
 chapeau: test
 description: tsets
+stickyNav:
+  - text: uytt
+    id: guytguy
 shapePoints:
   sousTitre: sets
   titre: set
@@ -10,6 +13,9 @@ shapePointsReverse:
   titre: set
   tempsConsultation: ste
   prixConsultation: steste
+  point:
+    - titre: gyugg
+      content: guyg
 motifsConsultation:
   sousTitre: ste
   titre: ste
@@ -19,6 +25,11 @@ pourqui:
   sousTitre: ste
   titre: ste
   intro: swte
+  public:
+    - titre: guyguyg
+      chapeau: yguyg
+      content: uyguyguyguy
+      img: images/contact-orange.svg
 morePages:
   link1: set
   text1: ste
