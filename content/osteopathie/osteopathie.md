@@ -84,9 +84,7 @@ pourqui:
       content: >
         <p>La diminution de l’élasticité des tissus articulaires tels que les ligaments, les tendons musculaires ou encore le cartilage les exposent à des surmenages mécaniques, pouvant aboutir à leur lésion.</p>
         <p>Ces lésions mécaniques peuvent entrainer un enraidissement douloureux de nos articulations, limitant notre capacité à nous mouvoir et rendant difficile la réalisation de certaines tâches quotidiennes.</p>
-
         <p>L'ostéopathie ne guérit pas les douleurs liées à des lésions organiques mais elle intervient dans un contexte de prévention et de soulagement de la douleur, elle permet d'empêcher l'aggravation des troubles ressentis et l'apparition de crises inflammatoires.</p>
-
         <p>Les indications de l’ostéopathie chez les séniors sont les douleurs vertébrales, articulaires, les difficultés de locomotion, l’arthrose (l’ostéopathie permet de soulager certaines de ses conséquences mais ne la réduit pas), les troubles digestifs les vertiges et maux de tête ; la prévention des crises inflammatoires… </p>
     - titre: Douleurs liées au travail
       img: images/image-2.jpg
