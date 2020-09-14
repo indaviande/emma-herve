@@ -78,6 +78,33 @@ pourqui:
       content: >
         <p>Par exemple, l’ostéopathe prend en charge la prévention et le traitement ostéopathique des troubles structurels du squelette comme la scoliose mais aussi les troubles ORL comme les otites, les sinusites, l'asthme, les troubles du sommeil... Il intervient aussi en complémentarité des soins othodontiques, orthophoniques et orthoptiques.</p>
         <p>La prise en charge en ostéopathie ne remplace pas le pédiatre ou tout spécialiste dont votre enfant aurait besoin.</p>
+    - titre: Séniors
+      img: images/pour-qui/image-1.jpg
+      chapeau: Au fil des années, le corps humain évolue et les tissus se transforment.
+      content: >
+        <p>La diminution de l’élasticité des tissus articulaires tels que les ligaments, les tendons musculaires ou encore le cartilage les exposent à des surmenages mécaniques, pouvant aboutir à leur lésion.</p>
+        <p>Ces lésions mécaniques peuvent entrainer un enraidissement douloureux de nos articulations, limitant notre capacité à nous mouvoir et rendant difficile la réalisation de certaines tâches quotidiennes.</p>
+
+        <p>L'ostéopathie ne guérit pas les douleurs liées à des lésions organiques mais elle intervient dans un contexte de prévention et de soulagement de la douleur, elle permet d'empêcher l'aggravation des troubles ressentis et l'apparition de crises inflammatoires.</p>
+
+        <p>Les indications de l’ostéopathie chez les séniors sont les douleurs vertébrales, articulaires, les difficultés de locomotion, l’arthrose (l’ostéopathie permet de soulager certaines de ses conséquences mais ne la réduit pas), les troubles digestifs les vertiges et maux de tête ; la prévention des crises inflammatoires… </p>
+    - titre: Douleurs liées au travail
+      img: images/pour-qui/image-2.jpg
+      chapeau: Les douleurs liées à la répétition de gestes ou au maintien d’une posture délétère dans l’environnement de travail sont fréquentes en consultation ostéopathique.
+      content: >
+        <p>Travailler dans de mauvaises positions sollicite considérablement les tissus du corps humain, ce qui peut conduire à l’apparition de douleurs articulaires, de maux de tête ou encore de vertiges associés à un enraidissement d’un ou plusieurs groupes musculaires.</p>
+        <p>Tous ces stress et ces mauvaises conditions quotidiennes peuvent être soulagés en consultation par des gestes simples et adaptés. </p>
+    - titre: Sportifs
+      img: images/pour-qui/image-3.jpg
+      chapeau: La pratique d’une activité sportive régulière ou non soumet les tissus du corps humain à d’importantes contraintes qui se surajoutent aux troubles existants.
+      content: >
+        <p>Ces contraintes peuvent conduire à des lésions tissulaires, comme les ligaments, les tendons ou encore le cartilage, et entrainer un enraidissement douloureux de l’articulation concernée. L’ostéopathie va permettre d’obtenir un relâchement musculaire diminuant la symptomatologie des pathologies du sportif. Elle améliore le potentiel et la puissance musculaire, la souplesse articulaire et ligamentaire ainsi que la capacité respiratoire.</p>
+
+        <p>L’ostéopathie permet donc une meilleure récupération après l’effort mais aussi la conservation de l’équilibre du corps pour pratiquer une activité sportive durable.</p>
+
+        <p>A titre préventif, un bilan est recommandé avant le démarrage d'une activité sportive, ou dans le cas de la préparation d'une épreuve.</p>
+
+        <p>À titre curatif, suite à un traumatisme, après une entorse, une déchirure, une fracture, une chirurgie afin d'éviter l'installation de douleurs chroniques et de rétablir les équilibres du corps et la mobilité.</p>
 morePages:
   link1: contact-tarifs/contact-tarifs
   text1: Trouver les infos du cabinet
