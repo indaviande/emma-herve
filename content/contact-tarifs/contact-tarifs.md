@@ -9,21 +9,21 @@ list:
       Ouvrir dans Google Maps
   - titre: Horaires
     content: >
-      'Le cabinet est ouvert de 8h à 20h<br>
+      "Le cabinet est ouvert de 8h à 20h<br>
       Ouvert : Lundi - Mardi - Mercredi - Jeudi - Samedi<br>
-      Fermé le vendredi et le dimanche'
+      Fermé le vendredi et le dimanche"
   - titre: Moyens de transport
     content: >
-      'Métro - Convention (ligne 12)<br>
+      Métro - Convention (ligne 12)<br>
       Bus - Convention - Vaugirard (ligne 62)<br>
-      Bus - Abbe Groult (lignes 39 et 80)'
+      Bus - Abbe Groult (lignes 39 et 80)
   - titre: Parking public
     content: >
-      'General Beuret<br>
-      31 Rue du Général Beuret, 75015 Paris'
+      General Beuret<br>
+      31 Rue du Général Beuret, 75015 Paris
   - titre: Arriver au cabinet
     content: >
-      'Mon cabinet se trouve au rez-de-chaussée tout de suite aorès la porte d’entrée. Aucun code n’est requis.'
+      Mon cabinet se trouve au rez-de-chaussée tout de suite aorès la porte d’entrée. Aucun code n’est requis.
 cabinet: Le cabinet est un centre paramédical partagé par    différents professionnels de santé dans le but d’offrir une offre de soins pluridisciplinaire aux patients.
 prendreRdv:
   sousTitre: Je me lance
@@ -41,7 +41,6 @@ prendreRdv:
       content: Besoin de me communiquer plus d’informations, écrivez-moi !
       linkUrl: mailto:emmaosteo@gmail.com
       linkText: emmaosteo@gmail.com
-      # TODO: Changer hover m
 shapePoints:
   sousTitre: Tarifs et remboursement
   titre: Le règlement de la consulation d’ostéopathie
@@ -54,8 +53,8 @@ shapePoints:
         Le règlement des honoraires peut se faire par chèque ou en espèces. Le paiement est à effectuer le jour-même de la consultation.
     - titre: Les mutuelles qui remboursent
       content: >
-        'Quelques exemples de mutuelles qui remboursent
-        <a href="" class="inline-link">Lien vers la liste officielle des mutuelles</a>'
+        Quelques exemples de mutuelles qui remboursent
+        <a href="" class="inline-link">Lien vers la liste officielle des mutuelles</a>
       # TODO: Renseigner l'URL
 morePages:
   link1: contact-tarifs/contact-tarifs
