@@ -51,9 +51,16 @@ pourqui:
   titre: L’ostéopathie pour tous !
   intro: L'ostéopathie accompagne la croissance et le développement harmonieux du corps de la naissance à l'âge adulte.
   public:
-    - titre: fhjg
-      chapeau: fghjfgghjkgjkgkj
-      content: hgkjhgkjgjhgkjhg
+    - titre: Femmes enceintes
+      img: images/pour-qui/image.jpg
+      chapeau: Au cours de la grossesse le corps est soumis à beaucoup de changements mécaniques et hormonaux.
+      content: >
+        <p>Des douleurs existantes peuvent s’intensifier et de nouvelles douleurs apparaissent. Les motifs de consultations les plus fréquents sont des lombalgies avec sciatalgie, des douleurs dans le bas ventre, des troubles de digestion avec souvent des acidités gastriques, des contractions précoces, des troubles du sommeil... Une consultation d’ostéopathie pour femme enceinte par trimestre est indiquée afin de préparer au mieux les structures du corps qui seront sollicitées pendant l’accouchement.</p>
+        <p>
+        Après l'accouchement des douleurs lombaires, des pesanteurs pelviennes peuvent persister. Une
+        consultation
+        ostéopathique post accouchement rééquilibre le corps suite à tous les changements qu'il vient de subir
+        permettant ainsi de retrouver un confort de vie et de prévenir d'éventuelles douleurs.</p>
     - titre: hjgkjghjkhjk
       chapeau: gkjhgkjg
       img: images/contact-pink.svg
