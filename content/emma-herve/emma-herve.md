@@ -12,14 +12,16 @@ stickyNav:
     text: Études
     entries: 
       - year: 2018 - Post-graduée
-        titre: "La sphère gynécologique en ostéopathie : de l'adolescente à la femme ménopausée"
-        lieu: "CFPCO - Isabelle Tousch"
+        titre: 
+          "La sphère gynécologique en ostéopathie : de l'adolescente à la femme ménopausée"
+        lieu: CFPCO - Isabelle Tousch
       - year: 2017 - Post-graduée
-        titre: "Comment traiter le whiplash et la myalgie chronique du trapèze ?"
-        lieu: "CFPCO-Eyal Lederman"
+        titre: Comment traiter le whiplash et la myalgie chronique du trapèze ?
+        lieu: CFPCO-Eyal Lederman
       - year: 2018 - Post-graduée
-        titre: "La sphère gynécologique en ostéopathie: de l'adolescente à la femme ménopausée"
-        lieu: "CFPCO - Isabelle Tousch"
+        titre: 
+          "La sphère gynécologique en ostéopathie : de l'adolescente à la femme ménopausée"
+        lieu: CFPCO - Isabelle Tousch
   - id: experiences-professionnelles
     text: Expériences professionnelles
   - id: formations
