@@ -39,12 +39,7 @@ motifsConsultation:
   sousTitre: Aïe, j'ai mal !
   titre: Les motifs de consultation
   intro: Petite liste non-exhaustive des maux rencontrés par mes patients
-  content: "– Vous avez mal au dos<br>
-  – Sciatique, la cruralgie ou la névralgie<br>
-  – Troubles digestifs<br>
-  – Constipations<br>
-  – Dysfonctionnement de la sphère ORL<br><br>
-  <a href='' class='inline-link dim'>Découvrir plus d'exemples</a>"
+  content: hgfjhf
 pourqui:
   sousTitre: jhgfhjf
   titre: jhgfjhfg
