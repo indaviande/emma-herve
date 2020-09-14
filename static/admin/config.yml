@@ -145,13 +145,8 @@ collections:
                 name: 'point'
                 widget: 'list'
                 fields:
-                  - { label: 'Texte du lien', name: 'titre', widget: 'string', required: false }
-                  - {
-                      label: 'URL de la page',
-                      name: 'content',
-                      widget: 'markdown',
-                      required: false,
-                    }
+                  - { label: 'Texte du point', name: 'titre', widget: 'string', required: false }
+                  - { label: 'Contenu', name: 'content', widget: 'markdown', required: false }
           - label: 'Section Les Motifs de consultation'
             name: 'motifsConsultation'
             widget: 'object'
@@ -293,13 +288,8 @@ collections:
                 name: 'point'
                 widget: 'list'
                 fields:
-                  - { label: 'Texte du lien', name: 'titre', widget: 'string', required: false }
-                  - {
-                      label: 'URL de la page',
-                      name: 'content',
-                      widget: 'markdown',
-                      required: false,
-                    }
+                  - { label: 'Titre du point', name: 'titre', widget: 'string', required: false }
+                  - { label: 'Contenu', name: 'content', widget: 'markdown', required: false }
           - label: 'Pour aller plus loin'
             name: 'morePages'
             widget: 'object'

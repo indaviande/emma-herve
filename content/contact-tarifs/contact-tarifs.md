@@ -53,7 +53,7 @@ shapePoints:
         Le règlement des honoraires peut se faire par chèque ou en espèces. Le paiement est à effectuer le jour-même de la consultation.
     - titre: Les mutuelles qui remboursent
       content: >
-        Quelques exemples de mutuelles qui remboursent
+        Quelques exemples de mutuelles qui remboursent<br>
         <a href="" class="inline-link">Lien vers la liste officielle des mutuelles</a>
       # TODO: Renseigner l'URL
 morePages:
