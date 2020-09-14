@@ -13,7 +13,7 @@ slug:
 collections:
   - name: 'pages'
     label: 'Pages'
-    # create: false # Allow users to create new documents in this collection
+    create: false # Allow users to create new documents in this collection
     files:
       - label: 'Accueil'
         name: 'accueil'
@@ -154,7 +154,7 @@ collections:
               - { label: 'Lien n°3 : Texte', name: 'text3', widget: 'string' }
       - label: 'Emma Hervé'
         name: 'emmaHerve'
-        file: 'content/emma-herve/emma-herve.md'
+        file: 'content/emma-herve.md'
         fields:
           - { label: Titre, name: title, widget: string }
           - { label: Chapeau Explicatif, name: chapeau, widget: string }
