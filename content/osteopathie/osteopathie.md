@@ -24,13 +24,17 @@ shapePoints:
     - titre: Préventif et curatif
       content: Le traitement ostéopathique permet de supprimer et de réajuster les restrictions de mobilité du corps, de restaurer les fonctions perturbées dans le respect constant des amplitudes physiologiques propres à chaque organe ou articulation.
 shapePointsReverse:
-  sousTitre: lkjhl
-  titre: hkj
-  tempsConsultation: hljk
-  prixConsultation: jkhkl
+  sousTitre: 3 étapes
+  titre: Comment se déroule une consultation ?
+  tempsConsultation: Le temps de consultation dure 40 minutes en moyenne
+  prixConsultation: et coûte 60€.
   point:
-    - titre: lkjhkljh
-      content: kjhlkjhklh
+    - titre: 1. L’anamnèse
+      content: L’essentiel de mon travail d’ostéopathe consiste à identifier l’origine physique et environnementale des différents troubles que subit le patient, puis à rétablir manuellement un bon fonctionnement de l’organisme.
+    - titre: 2. L’examen et les tests cliniques
+      content: Pour chaque patient, j’établis un diagnostic spécifique et propose un traitement adapté au cas par cas. À cela, s'ajoutent des conseils personnalisés sur l'hygiène de vie (posture, alimentation, exercices physiques etc…).
+    - titre: 3. Le traitement ostéopathique
+      content: Le traitement ostéopathique permet de supprimer et de réajuster les restrictions de mobilité du corps, de restaurer les fonctions perturbées dans le respect constant des amplitudes physiologiques propres à chaque organe ou articulation.
 motifsConsultation:
   sousTitre: fjhgfjh
   titre: gfjhfgjhfjhg
