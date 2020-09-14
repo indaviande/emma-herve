@@ -207,7 +207,7 @@ collections:
         name: 'emmaHerve'
         file: 'content/emma-herve/emma-herve.md'
         fields:
-          - { label: Titre, name: title, widget: string }
+          - { label: Titre, name: title, widget: markdown }
           - { label: Chapeau Explicatif, name: chapeau, widget: string, required: false }
           - { label: Image, name: heroImgUrl, widget: image, required: false }
           - { label: Description SEO, name: description, widget: string }
@@ -245,6 +245,13 @@ collections:
               name: 'bgColor',
               widget: 'string',
               default: 'bg-beige',
+              required: false,
+            }
+          - {
+              label: 'Img Classes (Ne pas modifier)',
+              name: 'imgClasses',
+              widget: 'string',
+              default: 'yellow-box-shadow max-img-height',
               required: false,
             }
       - label: 'Contact & Tarifs'

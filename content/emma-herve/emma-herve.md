@@ -33,7 +33,6 @@ morePages:
   text2: Comment se déroule une consultation ?
   link3: emma-herve/emma-herve
   text3: Qui est mon ostéopathe Emma Hervé ?  
-
 draft: false
 type: emma-herve
 ---
