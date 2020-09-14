@@ -1,6 +1,6 @@
 ---
 title: >
-  'Bonjour,<br> je suis Emma'
+  Bonjour,<br> je suis Emma
 description: ''
 bgColor: 'bg-beige'
 chapeau: >
