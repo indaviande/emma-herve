@@ -2,7 +2,9 @@
 <html lang="{{ $.Site.LanguageCode | default "fr-fr" }}">
 
     <head>
-        <title>{{ block "meta-title" . }}{{ .Site.Title }}{{ .Site.Params.homeTitle }}{{ end }}</title>
+        <title>
+            {{ block "meta-title" . }}{{ .Site.Title }}{{ .Site.Params.homeTitle}}{{ end }}
+        </title>
         <meta name="description" content="{{ block "meta-description" . }}{{ .Site.Params.Description }}{{ end }}">
         <link rel="canonical" href="{{ .Permalink }}">
         <meta charset="utf-8">

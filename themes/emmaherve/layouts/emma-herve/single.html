@@ -1,15 +1,15 @@
-{{ define "meta-title" }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}
+{{ define "meta-title" }} Votre Ostéopathe sur Paris 15 &ndash; {{ .Site.Title}}{{ end }}
 {{ define "meta-description" }}{{ .Description }}{{ end }}
 
 {{ define "header" }} {{ .Scratch.Set "headerClass" "bg-beige"}}
 {{ partial "header.html" . }} {{ end }}
 
 {{ define "main" }}
+
 <main class="bg-beige" data-barba="wrapper">
   <article data-barba="container">
     {{ .Scratch.Set "bgClass" "bg-beige"}}
     {{ partial "page-hero-nav.html" . }}
-
     <section class="bg-beige">
       <div class="container flex flex-wrap py-8">
         <div class="w-full lg:w-1/2 mx-auto post-content">

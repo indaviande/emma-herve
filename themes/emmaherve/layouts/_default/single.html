@@ -1,1 +1,1 @@
-{{ define "meta-title" }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}
+{{ define "meta-title" }}{{ .Title | markdownify }} &ndash; {{ .Site.Title }}{{ end }}
