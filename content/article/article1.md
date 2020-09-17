@@ -2,7 +2,9 @@
 draft: false
 title: Mais qu’est-ce qu’un ostéopathe ?
 chapeau: hjk
-heroImgUrl: /images/Vector-1.jpg
+heroImg:
+  url: /images/Vector-1.jpg
+  alt: Test
 credits:
   auteur: Nom prénom de l’auteur
   linkUrl: Test

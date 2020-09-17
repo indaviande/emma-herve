@@ -1,7 +1,9 @@
 ---
 title: 'Un ostéopathe ?'
 category: 'Conseil'
-heroImgUrl: /images/Vector-3.jpg
+heroImg:
+  url: /images/Vector-3.jpg
+  alt: Test
 description: ''
 draft: false
 type: article

@@ -11,8 +11,8 @@
         <div class="article-card article-card--default w-1/2 lg:w-1/4 px-4 mb-8 md:mb-12">
           <a href="{{.Permalink|safeURL}}" class="article-card__inner w-full">
             <div class="article-card__image-container">
-              <img class="article-card__image article-card__image--center w-full" alt="" style="opacity: 1;"
-                src="{{ .Site.BaseURL }}{{ .Params.heroImgUrl }}">
+              <img class="article-card__image article-card__image--center w-full" alt="{{ .Params.heroImg.alt }}"
+                style="opacity: 1;" src="{{ .Site.BaseURL }}{{ .Params.heroImg.url }}">
             </div>
             <div class="article-card__contents">
               <h5 class="cta text-pink-700 mb-2">{{ .Params.category }}</h5>

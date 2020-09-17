@@ -93,7 +93,12 @@ collections:
           - { label: Titre, name: title, widget: string }
           - { label: Chapeau Explicatif, name: chapeau, widget: string, required: false }
           - { label: Description SEO, name: description, widget: string }
-          - { label: Image, name: heroImgUrl, widget: image, required: false }
+          - label: 'Image',
+            name: 'heroImg',
+            widget: 'object',
+            fields:
+              - { label: 'Image', name: 'url', widget: 'image', required: false }
+              - { label: 'ALT (texte alternatif)', name: 'alt', widget: 'string', required: false }
           - {
               label: Shape Points ID (Ne pas modifier),
               name: shapePointsId,
@@ -204,7 +209,12 @@ collections:
         fields:
           - { label: Titre, name: title, widget: markdown }
           - { label: Chapeau Explicatif, name: chapeau, widget: string, required: false }
-          - { label: Image, name: heroImgUrl, widget: image, required: false }
+          - label: 'Image',
+            name: 'heroImg',
+            widget: 'object',
+            fields:
+              - { label: 'Image', name: 'url', widget: 'image', required: false }
+              - { label: 'ALT (texte alternatif)', name: 'alt', widget: 'string', required: false }
           - { label: Description SEO, name: description, widget: string }
           - label: 'Sticky Navigation'
             name: 'stickyNav'
@@ -341,7 +351,12 @@ collections:
       - { label: Title, name: title, widget: string }
       - { label: Chapeau Explicatif, name: chapeau, widget: string, required: false }
       - { label: Description SEO, name: description, widget: string }
-      - { label: Image, name: heroImgUrl, widget: image, required: false }
+      - label: 'Image',
+        name: 'heroImg',
+        widget: 'object',
+        fields:
+          - { label: 'Image', name: 'url', widget: 'image', required: false }
+          - { label: 'ALT (texte alternatif)', name: 'alt', widget: 'string', required: false }
       - { label: Catégorie, name: category, widget: string }
       - { label: Contenu, name: body, widget: markdown }
       - label: 'Crédits'

@@ -4,7 +4,9 @@ title: >
 description: ''
 bgColor: 'bg-beige'
 chapeau: Diplomée d’état, mon parcours m'a permis de blablabla lorem ipsum sit dolor amet.
-heroImgUrl: '/images/photo-emma.jpg'
+heroImg:
+  url: /images/photo-emma.jpg
+  alt: Test
 imgClasses: 'yellow-box-shadow max-img-height'
 stickyNav:
   - id: etudes

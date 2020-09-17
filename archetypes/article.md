@@ -2,7 +2,9 @@
 title: '{{ replace .Name "-" " " | title }}'
 description: ''
 category:
-heroImgUrl:
+heroImg:
+  url:
+  alt:
 date: { { .Date } }
 credits:
   auteur:

@@ -2,7 +2,9 @@
 title: 'Mais qu’est-ce qu’un ostéopathe ?'
 chapeau: 'Un ostéopathe pratique une médecine douce, à la fois préventive et curative visant à restaurer la mobilité des organes, fascias, articulations grâce à des manipulations manuelles.'
 description:
-heroImgUrl: 'images/hp-bench.svg'
+heroImg:
+  url: 'images/hp-bench.svg'
+  alt: Test
 shapePointsId: comment-ca-marche
 stickyNav:
   - id: comment-ca-marche
