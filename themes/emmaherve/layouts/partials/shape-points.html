@@ -1,7 +1,10 @@
 {{ $stickyNav := .Params.shapePointsId }}
 
+
+
 <section class="shape-points bg-no-repeat bg-cover pt-24 lg:pt-48"
-  style="background-image:url('{{ .Site.BaseURL }}images/osteopathie-shape-1.svg')" id="{{ $stickyNav }}">
+  style="background-image:url('{{ .Site.BaseURL }}images/osteopathie-shape-1.svg')"
+  {{ if .Params.stickyNav }}id="{{ $stickyNav }}" {{ end }}>
   <div class="container flex flex-wrap w-full md:w-10/12">
     <div class="w-full lg:w-5/12 pb-8 lg:pb-0">
       <h5 class="cta mb-6">{{ .Params.shapePoints.sousTitre }}</h5>

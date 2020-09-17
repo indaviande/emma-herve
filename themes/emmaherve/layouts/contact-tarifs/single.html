@@ -1,7 +1,7 @@
 {{ define "meta-title" }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}
 {{ define "meta-description" }}{{ .Description }}{{ end }}
 
-{{ define "header" }} <!-- TODO: Move shapes on XL screens inside container -->
+{{ define "header" }}
 <div class="relative w-full contact-shapes flex justify-center lg:justify-end items-center">
   <img class="spin--long absolute w-10/12 md:w-7/12 lg:w-1/2" src="{{ .Site.BaseURL }}images/contact-yellow.svg"
     alt="shapes rotating" />

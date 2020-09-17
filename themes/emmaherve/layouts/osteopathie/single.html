@@ -91,16 +91,14 @@
             <div class="block-image w-full lg:w-1/2 pr-0 md:pr-32 mb-16">
               <figure class="relative">
                 <span class="colored-circle-big absolute top-50-left-50 transform-m50-m50"></span>
-                <img class="w-full" src="{{ .Site.BaseURL }}/{{ .img }}">
+                <img class="w-full" src="{{ .Site.BaseURL }}/{{ .img }}" alt="Public concerné">
               </figure>
             </div>
             <div class="block-content w-full lg:w-1/2 pr-0 md:pr-32 mb-16">
               <h3 class="h3">{{.titre}}</h3>
               <hr class="my-8 border-t-2 border-pink-700">
               <p class="p-bold text-pink-700 mb-6">{{.chapeau}}</p>
-              <p>
-                {{.content|markdownify}}
-              </p>
+              {{.content|markdownify}}
             </div>
           </div>
 
@@ -112,9 +110,7 @@
               <h3 class="h3">{{.titre}}</h3>
               <hr class="my-8 border-t-2 border-pink-700">
               <p class="p-bold text-pink-700 mb-6">{{.chapeau}}</p>
-              <p>
-                {{.content|markdownify}}
-              </p>
+              {{.content|markdownify}}
             </div>
           </div>
 

@@ -17,7 +17,8 @@
 <header class="w-full fixed z-50 {{ .Scratch.Get "headerClass" }} flex flex-col">
   <nav class="nav--desktop hidden md:flex md:flex-wrap lg:flex-no-wrap justify-end lg:justify-between w-full">
     <div class="flex items-center md:w-full lg:w-auto">
-      <a class="mr-8 dim" href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}images/nav-main-logo.svg"></a>
+      <a class="mr-8 dim" href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}images/nav-main-logo.svg"
+          alt="Emma Hervé Ostéopathe Paris 15 Logo"></a>
 
       {{ $currentPage := . }}
       {{ range .Site.Menus.main }}
@@ -58,7 +59,8 @@
         {{ end }}
       </div>
       <div class="nav--mobile__footer flex items-center bg-beige">
-        <a class="mr-2 dim" href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}images/nav-main-logo.svg"></a>
+        <a class="mr-2 dim" href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}images/nav-main-logo.svg"
+            alt="Emma Hervé Ostéopathe Paris 15 Logo"></a>
         <address class="mr-2 not-italic">
           <a class="p border-b border-blue-300 inline dim" target="_blank" rel="noopener noreferrer"
             href="{{ .Site.Params.mapsUrl }}">{{ .Site.Params.address }}</a>
