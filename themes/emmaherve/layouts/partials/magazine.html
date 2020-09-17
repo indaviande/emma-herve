@@ -9,7 +9,7 @@
         {{ range first 4 $articles }}
 
         <div class="article-card article-card--default w-1/2 lg:w-1/4 px-4 mb-8 md:mb-12">
-          <a href="{{ .URL }}" class="article-card__inner w-full">
+          <a href="{{.Permalink|safeURL}}" class="article-card__inner w-full">
             <div class="article-card__image-container">
               <img class="article-card__image article-card__image--center w-full" alt="" style="opacity: 1;"
                 src="{{ .Site.BaseURL }}{{ .Params.heroImgUrl }}">
