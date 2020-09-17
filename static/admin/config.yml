@@ -93,9 +93,9 @@ collections:
           - { label: Titre, name: title, widget: string }
           - { label: Chapeau Explicatif, name: chapeau, widget: string, required: false }
           - { label: Description SEO, name: description, widget: string }
-          - label: 'Image',
-            name: 'heroImg',
-            widget: 'object',
+          - label: 'Featured Image'
+            name: 'heroImg'
+            widget: 'object'
             fields:
               - { label: 'Image', name: 'url', widget: 'image', required: false }
               - { label: 'ALT (texte alternatif)', name: 'alt', widget: 'string', required: false }
@@ -209,9 +209,9 @@ collections:
         fields:
           - { label: Titre, name: title, widget: markdown }
           - { label: Chapeau Explicatif, name: chapeau, widget: string, required: false }
-          - label: 'Image',
-            name: 'heroImg',
-            widget: 'object',
+          - label: 'Featured Image'
+            name: 'heroImg'
+            widget: 'object'
             fields:
               - { label: 'Image', name: 'url', widget: 'image', required: false }
               - { label: 'ALT (texte alternatif)', name: 'alt', widget: 'string', required: false }
@@ -351,9 +351,9 @@ collections:
       - { label: Title, name: title, widget: string }
       - { label: Chapeau Explicatif, name: chapeau, widget: string, required: false }
       - { label: Description SEO, name: description, widget: string }
-      - label: 'Image',
-        name: 'heroImg',
-        widget: 'object',
+      - label: 'Featured Image'
+        name: 'heroImg'
+        widget: 'object'
         fields:
           - { label: 'Image', name: 'url', widget: 'image', required: false }
           - { label: 'ALT (texte alternatif)', name: 'alt', widget: 'string', required: false }
