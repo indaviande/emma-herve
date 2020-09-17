@@ -496,11 +496,11 @@
     box-shadow: 2em -1.5em theme('colors.yellow.300'), 2em 1.5em theme('colors.yellow.300');
   }
 
-  33% {
-    box-shadow: 1.5em -1.5em theme('colors.yellow.300'), 1.5em 1.5em theme('colors.yellow.300');
-  }
+  // 33% {
+  //   box-shadow: 1.5em -1.5em theme('colors.yellow.300'), 1.5em 1.5em theme('colors.yellow.300');
+  // }
 
-  66% {
+  50% {
     box-shadow: 1em -.8em theme('colors.yellow.300'), 1em .8em theme('colors.yellow.300');
   }
 }
@@ -508,7 +508,7 @@
 .yellow-box-shadow {
   box-shadow: 2em -1.5em theme('colors.yellow.300'), 2em 1.5em theme('colors.yellow.300');
   transition: box-shadow 1s ease;
-  animation: boxMoving 6s ease-in-out infinite alternate;
+  animation: boxMoving 4.5s ease-in-out infinite alternate;
 }
 
 // H1 appear at intersection observer
