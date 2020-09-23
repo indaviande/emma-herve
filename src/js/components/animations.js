@@ -51,10 +51,34 @@ slideReveals.forEach(slide => {
 	observer.observe(slide);
 });
 
-// realisations.forEach(realisation => {
-// 	observer.observe(realisation);
-// });
+// Fading Background-color by sections
+const sections = document.querySelectorAll('section');
+const bodyTag = document.querySelector('body');
+console.log(sections);
+console.log(bodyTag);
 
-// pBig.forEach(realisation => {
-// 	observer.observe(realisation);
-// });
+const changeBackground = () => {
+	const topViewport = window.pageYOffset;
+	const midViewport = topViewport + window.innerHeight / 2;
+
+	sections.forEach((section, index) => {
+		const topSection = section.offsetTop;
+		const midSection = topSection + section.offsetHeight / 2;
+
+		const distanceToSection = midViewport - midSection;
+		console.log(distanceToSection);
+
+		if (distanceToSection > -300) {
+			const dataBackground = section.getAttribute('data-background');
+			bodyTag.style.backgroundColor = dataBackground;
+		}
+	});
+};
+
+document.addEventListener('scroll', () => {
+	changeBackground();
+});
+
+window.addEventListener('resize', () => {
+	changeBackground();
+});

@@ -3,14 +3,14 @@
 {{ partialCached "header.html" . }}
 {{ end }} {{ define "main" }}
 
-<main class="bg-beige" data-barba="wrapper">
+<main class="" data-barba="wrapper">
 	<article data-barba="container">
-		<section class="hp-hero w-full min-h-screen flex flex-wrap">
+		<section class="hp-hero w-full min-h-screen flex flex-wrap" data-background="#FFFFFF">
 			<div
 				class="w-full order-2 lg:order-1 lg:w-5/12 bg-beige flex items-end bg-hand bg-center lg:bg-bottom bg-no-repeat bg-cover">
 			</div>
 
-			<div class="bg-white w-full order-1 lg:order-2 lg:w-7/12 relative flex items-center">
+			<div class="w-full order-1 lg:order-2 lg:w-7/12 relative flex items-center">
 				<div class="hidden md:block absolute right-0 top-0">
 					{{ partial "doctolib.html" . }}
 				</div>
@@ -47,7 +47,7 @@
 
 		{{ with .Params.sectionOsteopathe }}
 
-		<section id="osteopathe" class="w-full bg-beige min-h-screen flex items-center ">
+		<section id="osteopathe" class="w-full min-h-screen flex items-center" data-background="#FBF5F1">
 			<div class="container flex flex-wrap py-8 md:py-16">
 				<div class="w-full lg:w-1/2 order-2 lg:order-1 flex justify-center items-center py-8">
 					<img class="max-img-width  w-10/12 md:w-7/12 lg:w-1/2" src="{{ .Site.BaseURL }}/images/hp-bench.svg"
@@ -69,7 +69,7 @@
 		{{ end }}
 
 		{{ with .Params.sectionEmma }}
-		<section id="votre-osteopathe" class="w-full bg-white min-h-screen flex items-center ">
+		<section id="votre-osteopathe" class="w-full min-h-screen flex items-center" data-background="#FFFFFF">
 			<div class="container flex flex-wrap py-8 md:py-16">
 				<div class="lg:pl-16 w-full md:w-10/12 mx-auto order-2 lg:order-1 lg:w-7/12 flex flex-col justify-center py-8">
 					<h2 class="h2">
@@ -91,7 +91,7 @@
 
 		{{ with .Params.sectionContact }}
 
-		<section id="contact-infos" class="w-full bg-beige min-h-screen flex items-center ">
+		<section id="contact-infos" class="w-full min-h-screen flex items-center" data-background="#FBF5F1">
 			<div class="container flex flex-wrap py-8 md:py-16">
 				<div class="w-full lg:w-1/2 order-2 lg:order-1 flex justify-center items-center py-8">
 					<img class="max-img-width w-10/12 md:w-7/12 lg:w-1/2" src="{{ .Site.BaseURL }}{{.img.url}}"

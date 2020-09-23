@@ -18,6 +18,10 @@
 //   }
 // }
 
+body {
+  transition: background-color 1s ease;
+}
+
 .spin {
   animation: spin 3s linear infinite;
 }

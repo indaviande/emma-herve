@@ -44,5 +44,5 @@ sectionContact:
     url: images/hp-location.svg
     alt: Emma Hervé, Ostéopathe situé Paris 15
 description: accueil
-bgColor: bg-beige
+bgColor:
 ---
