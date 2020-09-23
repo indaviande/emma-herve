@@ -13,9 +13,9 @@
 {{ .Scratch.Set "headerClass" "bg-beige"}} {{ partial "header.html" . }} {{ end }}
 
 {{ define "main" }}
-<main class="bg-beige" data-barba="wrapper">
+<main data-barba="wrapper">
   <article data-barba="container">
-    <section class="page-hero w-full flex flex-wrap w-full lg:w-10/12 mx-auto pt-16">
+    <section class="page-hero w-full flex flex-wrap w-full lg:w-10/12 mx-auto pt-16" data-background="#FBF5F1">
       <div class="container flex flex-wrap py-8 md:py-16">
         <div class="w-full md:w-10/12 mx-auto  lg:w-7/12 flex flex-col justify-center py-8 z-1">
           <div class="slide__reveal">
@@ -32,13 +32,11 @@
           {{ end }}
         </div>
         <div class="w-full md:w-5/12 hidden md:flex justify-center lg:justify-end items-center">
-
         </div>
       </div>
-
     </section>
 
-    <section class="contact-shape-points bg-no-repeat bg-cover py-16 lg:py-24 z-2 relative">
+    <section class="contact-shape-points bg-no-repeat bg-cover py-16 lg:py-24 z-2 relative" data-background="#FBF5F1">
       <div class="container flex flex-wrap w-full md:w-10/12">
         <div class="w-full pb-8 lg:pb-0">
           <ul class="contact-grid">
@@ -91,7 +89,7 @@
       </div>
     </section>
 
-    <section class="py-16 lg:py-24">
+    <section class="py-16 lg:py-24" data-background="#FBF5F1">
       <div class="container flex flex-wrap w-full md:w-10/12">
         <div class="w-full lg:w-1/2 mb-8 md:mb-16">
           <h5 class="cta mb-6">{{ .Params.prendreRdv.sousTitre }}</h5>

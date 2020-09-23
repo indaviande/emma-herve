@@ -6,11 +6,11 @@
 
 {{ define "main" }}
 
-<main class="bg-beige" data-barba="wrapper">
+<main data-barba="wrapper">
   <article data-barba="container">
     {{ partial "page-hero-nav.html" . }}
 
-    <section class="magazine w-full flex items-center ">
+    <section class="magazine w-full flex items-center" data-background="#FBF5F1">
       <div class="container">
 
         <div class="magazine-articles w-full py-8 mx-auto">
@@ -38,10 +38,7 @@
       </div>
     </section>
 
-
     {{ partial "more-pages.html" . }}
   </article>
 </main>
-
-
 {{ end }}

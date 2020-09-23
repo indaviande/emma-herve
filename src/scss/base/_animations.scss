@@ -18,7 +18,9 @@
 //   }
 // }
 
-body {
+body,
+.page-hero-nav,
+.nav--desktop {
   transition: background-color 1s ease;
 }
 

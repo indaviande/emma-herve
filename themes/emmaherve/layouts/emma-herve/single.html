@@ -6,11 +6,11 @@
 
 {{ define "main" }}
 
-<main class="bg-beige" data-barba="wrapper">
+<main data-barba="wrapper">
   <article data-barba="container">
     {{ .Scratch.Set "bgClass" "bg-beige"}}
     {{ partial "page-hero-nav.html" . }}
-    <section class="bg-beige">
+    <section data-background="#FBF5F1">
       <div class="container flex flex-wrap py-8">
         <div class="w-full lg:w-1/2 mx-auto post-content">
 

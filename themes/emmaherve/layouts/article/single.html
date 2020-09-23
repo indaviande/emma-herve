@@ -5,12 +5,12 @@
 
 {{ define "main" }}
 
-<main class="bg-beige" data-barba="wrapper">
+<main data-barba="wrapper">
   <article data-barba="container">
 
     {{ partial "page-hero-nav.html" . }}
 
-    <section class="bg-white">
+    <section data-background="#FFFFFF">
       <div class="container flex flex-wrap py-8 md:py-16 lg:py-24">
         <div class="w-full lg:w-1/2 mx-auto post-content">
           {{ .Content }}
@@ -55,9 +55,9 @@
       </div>
     </section>
 
-    <div class="bg-white">
+    <section data-background="#FFFFFF">
       {{ partial "magazine.html" . }}
-    </div>
+    </section>
 
   </article>
 </main>

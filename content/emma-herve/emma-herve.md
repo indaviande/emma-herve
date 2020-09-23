@@ -2,7 +2,6 @@
 title: >
   Bonjour,<br> je suis Emma
 description: ''
-bgColor: 'bg-beige'
 chapeau: Diplomée d’état, mon parcours m'a permis de blablabla lorem ipsum sit dolor amet.
 heroImg:
   url: /images/photo-emma.jpg
@@ -36,4 +35,5 @@ morePages:
   text3: Qui est mon ostéopathe Emma Hervé ?
 draft: false
 type: emma-herve
+bgColor: bg-beige
 ---

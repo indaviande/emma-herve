@@ -1,7 +1,6 @@
 ---
 title: 'Contact, tarifs et infos bien pratiques !'
 description: ''
-bgColor: 'bg-beige'
 chapeau: 'Je vous reçois dans mon cabinet parisien dans le 15e arrondissement de Paris du lundi au samedi (sauf vendredi), de 8h à 20h.'
 list:
   - titre: Adresse
@@ -65,4 +64,5 @@ morePages:
   text3: Qui est mon ostéopathe Emma Hervé ?
 draft: false
 type: contact-tarifs
+bgColor: bg-beige
 ---

@@ -5,7 +5,7 @@
 {{ partial "header.html" . }} {{ end }}
 
 {{ define "main" }}
-<main class="bg-white" data-barba="wrapper">
+<main data-barba="wrapper">
   <article data-barba="container">
     {{ .Scratch.Set "bgClass" "bg-white"}}
     {{ partial "page-hero-nav.html" . }}
@@ -14,7 +14,7 @@
 
     {{ $stickyNav := .Params.stickyNav }}
 
-    <section class="shape-points-reverse bg-no-repeat bg-cover pt-0 lg:pt-48"
+    <section data-background="#FFFFFF" class="shape-points-reverse bg-no-repeat bg-cover pt-0 lg:pt-48"
       style="background-image:url('{{ .Site.BaseURL }}images/osteopathie-shape-2.svg')"
       id='{{ (index $stickyNav 1).id }}'>
       <div class="container flex flex-wrap w-full md:w-10/12">
@@ -54,7 +54,7 @@
       </div>
     </section>
 
-    <section class="motifs bg-beige py-16 md:py-24" id="{{ (index $stickyNav 2).id }}">
+    <section class="motifs py-16 md:py-24" id="{{ (index $stickyNav 2).id }}" data-background="#FBF5F1">
       <div class="container flex flex-wrap w-full md:w-10/12">
         <div class="w-full lg:w-1/2 pr-0 md:pr-32">
           <h5 class="cta mb-6">{{ .Params.motifsConsultation.sousTitre}}</h5>
@@ -69,7 +69,7 @@
     </section>
 
 
-    <section class="osteopathe-pour-tous bg-white py-16 md:py-24" id="{{ (index $stickyNav 3).id }}">
+    <section class="osteopathe-pour-tous py-16 md:py-24" id="{{ (index $stickyNav 3).id }}" data-background="#FFFFFF">
       <div class="container w-full md:w-10/12">
         <div class="titre flex flex-wrap mb-16">
           <div class="w-full lg:w-1/2 pr-0 md:pr-32">

@@ -54,23 +54,24 @@ slideReveals.forEach(slide => {
 // Fading Background-color by sections
 const sections = document.querySelectorAll('section');
 const bodyTag = document.querySelector('body');
-console.log(sections);
-console.log(bodyTag);
 
 const changeBackground = () => {
 	const topViewport = window.pageYOffset;
 	const midViewport = topViewport + window.innerHeight / 2;
+	const stickyNav = document.querySelector('.page-hero-nav');
+	const menu = document.querySelector('.nav--desktop');
 
 	sections.forEach((section, index) => {
 		const topSection = section.offsetTop;
-		const midSection = topSection + section.offsetHeight / 2;
+		const distanceToSectionTop = midViewport - topSection;
 
-		const distanceToSection = midViewport - midSection;
-		console.log(distanceToSection);
-
-		if (distanceToSection > -300) {
+		if (distanceToSectionTop > -100) {
 			const dataBackground = section.getAttribute('data-background');
 			bodyTag.style.backgroundColor = dataBackground;
+			if (stickyNav) {
+				stickyNav.style.backgroundColor = dataBackground;
+			}
+			menu.style.backgroundColor = dataBackground;
 		}
 	});
 };
