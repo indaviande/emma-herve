@@ -32,8 +32,7 @@
 
 {{ $nav := .Params.stickyNav }}
 {{ if $nav }}
-<section
-	class=" page-hero-nav ease {{ .Scratch.Get "bgClass" }} pb-2 lg:pb-4 pt-4 mb-8 mt-4 md:sticky z-50 w-full mx-auto">
+<section class=" page-hero-nav ease pb-2 lg:pb-4 pt-4 mb-8 mt-4 md:sticky z-50 w-full mx-auto">
 	<div class="container text-pink-700 w-full">
 		<div class="flex flex-wrap justify-between items-center -mx-4">
 			{{ range $nav }}

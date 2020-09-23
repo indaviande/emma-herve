@@ -11,7 +11,7 @@ devDependencies:
   browser-sync: 2.26.7
   browserslist: 4.13.0
   del: 5.1.0
-  gsap: 3.3.4
+  gsap: 3.5.1
   gulp: 4.0.2
   gulp-clean-css: 4.3.0
   gulp-cli: 2.3.0
@@ -20,6 +20,7 @@ devDependencies:
   gulp-postcss: 8.0.0
   gulp-sass: 4.1.0
   gulp-sourcemaps: 2.6.5
+  imagesloaded: 4.1.4
   lottie-web: 5.7.0
   postcss-import: 12.0.1
   postcss-preset-env: 6.7.0
@@ -3450,6 +3451,10 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
+  /ev-emitter/1.1.1:
+    dev: true
+    resolution:
+      integrity: sha512-ipiDYhdQSCZ4hSbX4rMW+XzNKMD1prg/sTvoVmSLkuQ1MVlwjJQQA+sW8tMYR3BLUr9KjodFV4pvzunvRhd33Q==
   /event-emitter/0.3.5:
     dependencies:
       d: 1.0.1
@@ -4295,10 +4300,10 @@ packages:
     optional: true
     resolution:
       integrity: sha1-TK+tdrxi8C+gObL5Tpo906ORpyU=
-  /gsap/3.3.4:
+  /gsap/3.5.1:
     dev: true
     resolution:
-      integrity: sha512-qqrPsuh1eNN+Qtvux8f+UExXtd5N+TFhqyPlUX5PBwwDdig9CUxi50dYzUpSKkOczOmmiLMBiwoywPok1iOlDw==
+      integrity: sha512-EMV0RSUKZNeTUzLKAizGlwxVOUyif3/g8I3S1aA/hf3gbqwBvmQ02x1RdTBQNQMOpHCVBv9y/vaHwfctoAg8zw==
   /gulp-clean-css/4.3.0:
     dependencies:
       clean-css: 4.2.3
@@ -4720,6 +4725,12 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-33AmZ+xjZhg2JMCe+vDf6a9mzWukE7l+wAtesjE7KyteqqKjzxv7aVQeWnul1Ve26mWvEQqyPwl0OctNBfSR9w==
+  /imagesloaded/4.1.4:
+    dependencies:
+      ev-emitter: 1.1.1
+    dev: true
+    resolution:
+      integrity: sha512-ltiBVcYpc/TYTF5nolkMNsnREHW+ICvfQ3Yla2Sgr71YFwQ86bDwV9hgpFhFtrGPuwEx5+LqOHIrdXBdoWwwsA==
   /immutable/3.8.2:
     dev: true
     engines:
@@ -9445,7 +9456,7 @@ specifiers:
   browser-sync: ^2.26.7
   browserslist: ^4.13.0
   del: ^5.1.0
-  gsap: ^3.3.4
+  gsap: ^3.5.1
   gulp: ^4.0.2
   gulp-clean-css: ^4.3.0
   gulp-cli: ^2.3.0
@@ -9454,6 +9465,7 @@ specifiers:
   gulp-postcss: ^8.0.0
   gulp-sass: ^4.1.0
   gulp-sourcemaps: ^2.6.5
+  imagesloaded: ^4.1.4
   lottie-web: ^5.7.0
   postcss-import: ^12.0.1
   postcss-preset-env: ^6.7.0
