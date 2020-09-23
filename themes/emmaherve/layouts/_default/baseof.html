@@ -3,7 +3,7 @@
 
     <head>
         <title>
-            {{ block "meta-title" . }}{{ .Site.Title }}{{ .Site.Params.homeTitle}}{{ end }}
+            {{ block "meta-title" . }}{{ .Site.Params.homeTitle}}{{ .Site.Title }}{{ end }}
         </title>
         <meta name="description" content="{{ block "meta-description" . }}{{ .Site.Params.Description }}{{ end }}">
         <link rel="canonical" href="{{ .Permalink }}">

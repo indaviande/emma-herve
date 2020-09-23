@@ -2,7 +2,7 @@ baseURL = "https://emma-herve.netlify.app/"
 languageCode = "fr-fr"
 languageLang = "fr"
 defaultContentLanguage = "fr"
-title = "Emma Hervé"
+title = "Ostéopathe Paris 15"
 theme = "emmaherve"
 googleAnalytics = ""
 disableLiveReload = false
@@ -21,7 +21,7 @@ enableRobotsTXT = true
 
 [params]
   description = "Cabinet d'Ostéopathie Paris 15ème"
-  homeTitle = " - Le meilleur des kakapos"
+  homeTitle = "Emma Hervé - "
   facebookUrl = "https://www.facebook.com/OsteopathieEmmaHerve"
   og_image = "images/sharing-visual.jpg"
   mail = "emmaosteo@gmail.com"

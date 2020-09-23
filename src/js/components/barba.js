@@ -64,15 +64,13 @@ barba.init({
 
 					timeline
 						.set(next.container, { opacity: 0 })
-						.set('.bg-hand', { opacity: 0 })
 						.to('footer', { y: '0' }, 0)
-						.to('.bg-hand', { opacity: 1 })
 						.to(next.container, { opacity: 1 });
 				});
 			}
 		},
 		{
-			name: 'homepage',
+			name: 'homepage-transition',
 			to: { namespace: 'homepage' },
 			once({ current, next, trigger }) {
 				return new Promise(resolve => {
@@ -86,10 +84,12 @@ barba.init({
 						.set(next.container, { opacity: 0 })
 						.set('.bg-hand', { opacity: 0, x: '-50px' })
 						.set('.hp-questions li', { opacity: 0 })
+						.set('.notice', { y: '-100%' })
 						.to('footer', { y: '0' }, 0)
 						.to(next.container, { opacity: 1 })
 						.to('.bg-hand', { opacity: 1, x: '0' })
-						.to('.hp-questions li', { opacity: 1, stagger: 0.1 });
+						.to('.hp-questions li', { opacity: 1, stagger: 0.1 })
+						.to('.notice', { y: '0' });
 				});
 			},
 			leave({ current, next, trigger }) {

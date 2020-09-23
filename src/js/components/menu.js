@@ -10,9 +10,6 @@ const menuScripts = () => {
 
 	const addHeaderHeightTop = section => {
 		const headerHeight = document.querySelector('header').clientHeight;
-		const currentPadding = parseFloat(
-			window.getComputedStyle(section, null).getPropertyValue('top')
-		);
 		section.style.top = `${headerHeight}px`;
 	};
 
@@ -33,9 +30,11 @@ const menuScripts = () => {
 			}
 		} else if (currentScroll < lastScroll && nav.classList.contains(scrollDown)) {
 			// up
+			console.log('up is detected');
 			nav.classList.remove(scrollDown);
 			nav.classList.add(scrollUp);
 			if (stickyNav) {
+				console.log('should be adding top');
 				addHeaderHeightTop(stickyNav);
 			}
 		}
