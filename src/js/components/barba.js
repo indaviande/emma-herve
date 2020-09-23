@@ -43,12 +43,14 @@ barba.init({
 						}
 					});
 
-					timeline.to('footer', { y: '100%' }, 0).to(current.container, { opacity: 0 });
+					timeline
+						.to('footer', { y: '100%' }, 0)
+						.to(current.container, { opacity: 0 })
+						.to(next.container, { opacity: 0 });
 				});
 			},
 			enter({ current, next, trigger }) {
 				return new Promise(resolve => {
-					scroll2top();
 					const timeline = gsap.timeline({
 						onComplete() {
 							runScripts();
@@ -57,6 +59,8 @@ barba.init({
 							resolve();
 						}
 					});
+
+					scroll2top();
 
 					timeline
 						.set(next.container, { opacity: 0 })
@@ -72,10 +76,8 @@ barba.init({
 			to: { namespace: 'homepage' },
 			once({ current, next, trigger }) {
 				return new Promise(resolve => {
-					scroll2top();
 					const timeline = gsap.timeline({
 						onComplete() {
-							runScripts();
 							resolve();
 						}
 					});
@@ -99,18 +101,24 @@ barba.init({
 						}
 					});
 
-					timeline.to('footer', { y: '100%' }, 0).to(current.container, { opacity: 0 });
+					timeline
+						.to('footer', { y: '100%' }, 0)
+						.to(current.container, { opacity: 0 })
+						.to(next.container, { opacity: 0 });
 				});
 			},
 			enter({ current, next, trigger }) {
 				return new Promise(resolve => {
-					scroll2top();
 					const timeline = gsap.timeline({
 						onComplete() {
 							runScripts();
+							menuScripts();
+							stickyScripts();
 							resolve();
 						}
 					});
+
+					scroll2top();
 
 					timeline
 						.set(next.container, { opacity: 0 })
