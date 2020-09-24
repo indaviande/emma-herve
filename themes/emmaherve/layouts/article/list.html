@@ -5,7 +5,6 @@
 
 
 {{ define "main" }}
-
 <main data-barba="wrapper">
   <article data-barba="container">
     {{ partial "page-hero-nav.html" . }}
@@ -17,7 +16,6 @@
           <div class="-mx-4 flex flex-wrap">
 
             {{ range .Pages.ByDate }}
-
             <div class="article-card article-card--default w-1/2 lg:w-1/4 px-4 mb-12">
               <a href="{{.Permalink | safeURL}}" class="article-card__inner w-full">
                 <div class="article-card__image-container">
