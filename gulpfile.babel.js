@@ -12,6 +12,7 @@ import atimport from 'postcss-import';
 import del from 'del';
 import named from 'vinyl-named';
 import webpack from 'webpack-stream';
+import uglify from 'gulp-uglify';
 import browserSync from 'browser-sync';
 import imagemin from 'gulp-imagemin';
 const PRODUCTION = yargs.argv.prod;
@@ -77,6 +78,7 @@ export const scripts = () => {
 				}
 			})
 		)
+		.pipe(gulpif(PRODUCTION, uglify()))
 		.pipe(dest(destFolder + '/js'));
 };
 export const watchForChanges = () => {
