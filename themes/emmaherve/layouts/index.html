@@ -50,7 +50,7 @@
 		<section id="osteopathe" class="w-full min-h-screen flex items-center" data-background="#FBF5F1">
 			<div class="container flex flex-wrap py-8 md:py-16">
 				<div class="w-full lg:w-1/2 order-2 lg:order-1 flex justify-center items-center py-8">
-					<img class="max-img-width  w-10/12 md:w-7/12 lg:w-1/2" src="{{ .Site.BaseURL }}/images/hp-bench.svg"
+					<img class="lazy max-img-width  w-10/12 md:w-7/12 lg:w-1/2" data-src="{{ .Site.BaseURL }}/images/hp-bench.svg"
 						alt="banc d'ostéopathe" />
 				</div>
 
@@ -82,8 +82,8 @@
 				</div>
 
 				<div class="w-full lg:w-5/12 order-1 lg:order-2 flex justify-center items-center py-8">
-					<img class="yellow-box-shadow max-img-height w-10/12 md:w-7/12 lg:w-1/2 w-32"
-						src="{{ .Site.BaseURL }}{{.img.url}}" alt="{{.img.alt}}" />
+					<img class="lazy yellow-box-shadow max-img-height w-10/12 md:w-7/12 lg:w-1/2 w-32"
+						data-src="{{ .Site.BaseURL }}{{.img.url}}" alt="{{.img.alt}}" />
 				</div>
 			</div>
 		</section>
@@ -94,7 +94,7 @@
 		<section id="contact-infos" class="w-full min-h-screen flex items-center" data-background="#FBF5F1">
 			<div class="container flex flex-wrap py-8 md:py-16">
 				<div class="w-full lg:w-1/2 order-2 lg:order-1 flex justify-center items-center py-8">
-					<img class="max-img-width w-10/12 md:w-7/12 lg:w-1/2" src="{{ .Site.BaseURL }}{{.img.url}}"
+					<img class="lazy max-img-width w-10/12 md:w-7/12 lg:w-1/2" data-src="{{ .Site.BaseURL }}{{.img.url}}"
 						alt="{{.img.alt}}" />
 				</div>
 

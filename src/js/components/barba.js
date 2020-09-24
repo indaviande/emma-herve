@@ -4,9 +4,11 @@ import gsap from 'gsap';
 import runScripts from './animations';
 import menuScripts from './menu';
 import stickyScripts from './sticky';
+import optimizations from './optimizations';
 
 runScripts();
 menuScripts();
+optimizations();
 stickyScripts();
 
 const scroll2top = () => {
@@ -55,6 +57,7 @@ barba.init({
 						onComplete() {
 							runScripts();
 							menuScripts();
+							optimizations();
 							stickyScripts();
 							resolve();
 						}
@@ -113,6 +116,7 @@ barba.init({
 						onComplete() {
 							runScripts();
 							menuScripts();
+							optimizations();
 							stickyScripts();
 							resolve();
 						}

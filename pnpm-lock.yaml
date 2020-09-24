@@ -25,6 +25,7 @@ devDependencies:
   postcss-import: 12.0.1
   postcss-preset-env: 6.7.0
   tailwindcss: 1.4.6
+  vanilla-lazyload: 17.1.2
   vinyl-named: 1.1.0
   webpack: 4.43.0_webpack@4.43.0
   webpack-stream: 5.2.1
@@ -9046,6 +9047,10 @@ packages:
       node: '>= 0.10'
     resolution:
       integrity: sha1-HCQ6ULWVwb5Up1S/7OhWO5/42BM=
+  /vanilla-lazyload/17.1.2:
+    dev: true
+    resolution:
+      integrity: sha512-WC5350/UlY3c9MEBDxKdWuvwgyPwUmVgUwqiYFmdjmUCTEdCnuW3RFQzQXu9fO1q5c545OYCPPs24Yma9rI/Mg==
   /verror/1.10.0:
     dependencies:
       assert-plus: 1.0.0
@@ -9470,6 +9475,7 @@ specifiers:
   postcss-import: ^12.0.1
   postcss-preset-env: ^6.7.0
   tailwindcss: ^1.4.6
+  vanilla-lazyload: ^17.1.2
   vinyl-named: ^1.1.0
   webpack: ^4.43.0
   webpack-stream: ^5.2.1

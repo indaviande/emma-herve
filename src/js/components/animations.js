@@ -39,7 +39,6 @@ const runScripts = () => {
 	);
 
 	const slideReveals = document.querySelectorAll('.slide__reveal');
-	// const pBig = document.querySelectorAll('p.big');
 
 	slideReveals.forEach((slide, index) => {
 		const subMenuItems = slide.querySelectorAll('h1,h2');

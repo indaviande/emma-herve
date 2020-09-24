@@ -10,6 +10,8 @@ const menuScripts = () => {
 
 	const addHeaderHeightTop = section => {
 		const headerHeight = document.querySelector('header').clientHeight;
+		console.log('should even be adding this from Header ' + headerHeight);
+		console.log(section);
 		section.style.top = `${headerHeight}px`;
 	};
 
@@ -55,15 +57,15 @@ const menuScripts = () => {
 
 	const screenSize = window.matchMedia('(min-width: 576px)');
 	document.addEventListener('DOMContentLoaded', () => {
-		matchScreenSize(screenSize); // Call listener function at run time
-		screenSize.addListener(matchScreenSize); // Attach listener function on state changes
+		matchScreenSize(screenSize);
+		screenSize.addListener(matchScreenSize);
 	});
 
 	// document.addEventListener('DOMContentLoaded', () => {
 	// 	const headerHeight2 = document.querySelector('header').clientHeight;
 	// 	console.log('new ' + headerHeight2);
 	// });
-	const headerHeight = document.querySelector('header').clientHeight;
+	// const headerHeight = document.querySelector('header').clientHeight;
 
 	const addHeaderHeightAsPadding = section => {
 		const headerHeight = document.querySelector('header').clientHeight;
