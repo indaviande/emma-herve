@@ -1,15 +1,3 @@
-// .link {
-//   font-family: 'Rubik';
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 14px;
-//   line-height: 1.6;
-//   /* or 22px */
-//   text-align: center;
-//   letter-spacing: 0.1em;
-//   text-transform: uppercase;
-// }
-
 a.inline-link {
   @include Jost();
   @include Normal();

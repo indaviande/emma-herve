@@ -12,7 +12,6 @@ import atimport from 'postcss-import';
 import del from 'del';
 import named from 'vinyl-named';
 import webpack from 'webpack-stream';
-import purgecss from '@fullhuman/postcss-purgecss';
 import browserSync from 'browser-sync';
 import imagemin from 'gulp-imagemin';
 const PRODUCTION = yargs.argv.prod;
@@ -22,7 +21,6 @@ const destFolder = 'static';
 const bundleCssFile = srcFolder + '/scss/app.scss';
 const bundleJsFile = srcFolder + '/js/bundle.js';
 const tailwindConfig = './tailwind.config.js';
-const purgeCssFiles = './themes/emmaherve/layouts/**/*.html';
 
 const server = browserSync.create();
 
@@ -32,21 +30,7 @@ export const styles = () => {
 	return src(bundleCssFile)
 		.pipe(gulpif(!PRODUCTION, sourcemaps.init()))
 		.pipe(sass().on('error', sass.logError))
-		.pipe(
-			postcss([
-				atimport(),
-				tailwindcss(tailwindConfig),
-				postcssPresetEnv({ stage: 1 }),
-				...(process.env.NODE_ENV === 'production'
-					? [
-							purgecss({
-								content: [purgeCssFiles],
-								defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
-							})
-					  ]
-					: [])
-			])
-		)
+		.pipe(postcss([atimport(), tailwindcss(tailwindConfig), postcssPresetEnv({ stage: 1 })]))
 		.pipe(gulpif(PRODUCTION, postcss([autoprefixer])))
 		.pipe(gulpif(PRODUCTION, cleanCss({ compatibility: 'ie8' })))
 		.pipe(gulpif(!PRODUCTION, sourcemaps.write()))
@@ -90,9 +74,6 @@ export const scripts = () => {
 				devtool: !PRODUCTION ? 'inline-source-map' : false,
 				output: {
 					filename: '[name].js'
-				},
-				externals: {
-					jquery: 'jQuery'
 				}
 			})
 		)

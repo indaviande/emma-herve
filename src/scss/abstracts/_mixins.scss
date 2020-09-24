@@ -6,9 +6,9 @@
   font-weight: 500;
 }
 
-@mixin Bold() {
-  font-weight: 700;
-}
+// @mixin Bold() {
+//   font-weight: 700;
+// }
 
 strong {
   @include Medium();
@@ -43,9 +43,9 @@ strong {
   transition: all $timing ease-in-out;
 }
 
-@mixin tran_adv($property, $timing) {
-  transition: $property $timing ease-in-out !important;
-}
+// @mixin tran_adv($property, $timing) {
+//   transition: $property $timing ease-in-out !important;
+// }
 
 // @mixin tran_bezier($timing) {
 //   transition: all $timing $bezier;
