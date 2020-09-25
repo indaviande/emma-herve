@@ -15,7 +15,7 @@
 {{end}}
 
 <header class="w-full fixed z-50 {{ .Scratch.Get "headerClass" }} flex flex-col">
-  <nav class="nav--desktop hidden md:flex md:flex-wrap lg:flex-no-wrap justify-end lg:justify-between w-full">
+  <nav class="nav--desktop hidden lg:flex flex-no-wrap justify-between w-full">
     <div class="flex items-center md:w-full lg:w-auto">
       <a class="mr-8 dim" href="{{ .Site.BaseURL }}"><img data-src="{{ .Site.BaseURL }}images/nav-main-logo.svg"
           alt="Emma Hervé Ostéopathe Paris 15 Logo" class="lazy"></a>
@@ -31,7 +31,7 @@
     {{ partial "doctolib.html" . }}
   </nav>
 
-  <nav class="nav--mobile pointer-events-none fixed md:hidden w-full order-1 md:order-2 z-50 flex flex-col">
+  <nav class="nav--mobile pointer-events-none fixed lg:hidden w-full order-1 md:order-2 z-50 flex flex-col">
     <div class="nav--mobile__header flex z-50 pointer-events-auto">
       <button aria-label="Toggle menu"
         class="menu--toggle bg-pink-300 p-6 flex items-center justify-center bg-no-repeat bg-center">

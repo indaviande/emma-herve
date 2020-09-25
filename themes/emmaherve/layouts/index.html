@@ -16,7 +16,7 @@
 				</div>
 
 				<div class="flex flex-col justify-center pt-32 p-8 md:pt-32 md:p-16">
-					<div class="slide__reveal mb-12 md:mb-16">
+					<div class="slide__reveal mb-8 md:mb-12 lg:mb-16">
 						<h1 class="h1-hp xl:w-2/3 mb-0">
 							{{.Params.h1 | markdownify}}
 						</h1>
@@ -25,7 +25,7 @@
 					<ul class="hp-questions">
 						{{ $navQuestions := .Params.heroNav }}
 						{{ range $navQuestions  }}
-						<li class="no-style mb-6 leading-10">
+						<li class="no-style mb-3 md:mb-6 leading-10">
 							<a href="#{{.id}}" class="inline h4">
 								{{.text}}
 							</a>

@@ -2,7 +2,7 @@ let defaultConfig = require('tailwindcss/defaultConfig');
 
 module.exports = {
 	purge: {
-		enabled: true,
+		// enabled: true,
 		content: ['./themes/emmaherve/layouts/**/*.html', './src/**/*.js']
 	},
 	prefix: '',

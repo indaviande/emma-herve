@@ -17,6 +17,8 @@
 
 .hp-questions li a {
   position: relative;
+  padding-bottom: 3px;
+  border-bottom: theme('colors.pink.700') 2px solid;
 
   &::after {
     background-color: theme('colors.pink.700');
@@ -26,13 +28,25 @@
     left: 0;
     position: absolute;
     margin-bottom: -6px;
-    width: 87%;
-    height: 2px;
+    width: 100%;
+    // height: 2px;
     @include Ease();
   }
+}
 
-  &:hover::after {
-    width: 98%;
+@screen md {
+  .hp-questions li a {
+    padding-bottom: 0px;
+    border-bottom: none;
+
+    &::after {
+      width: 87%;
+      height: 2px;
+    }
+
+    &:hover::after {
+      width: 98%;
+    }
   }
 }
 
